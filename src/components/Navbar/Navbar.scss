@@ -1,0 +1,33 @@
+nav {
+  padding: 40px 80px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+
+  .right-side {
+    display: flex;
+    gap: 30px;
+
+    .sakstat-logo {
+      width: 113px;
+      height: 65px;
+    }
+
+    .census-logo {
+      width: 127px;
+      height: 65px;
+    }
+  }
+
+  .left-side {
+    ul {
+      display: flex;
+      gap: 15px;
+      list-style: none;
+
+      li {
+        cursor: pointer;
+      }
+    }
+  }
+}
