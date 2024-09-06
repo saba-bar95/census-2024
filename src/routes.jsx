@@ -7,6 +7,8 @@ import GoalsAndObjectives from "./components/GoalsAndObjectives/GoalsAndObjectiv
 import LegalBasis from "./components/LegalBasis/LegalBasis.jsx";
 
 const routes = [
+  { path: "/", element: <App /> },
+
   { path: "main", element: <App /> },
   {
     path: "questionnaries",

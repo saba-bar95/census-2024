@@ -1,5 +1,6 @@
 import "./Navbar.scss";
 import { Link } from "react-router-dom";
+import LanguageChanger from "../LanguageChanger/LanguageChanger";
 
 export default function Navbar() {
   return (
@@ -30,12 +31,14 @@ export default function Navbar() {
           <li>
             <Link to="/results">შედეგები</Link>
           </li>
-          <li>
-            <button>
-              <Link to="/vacancies">ვაკანსიები</Link>
-            </button>
-          </li>
         </ul>
+        <div className="buttons-container">
+          <button className="vacancies--btn">
+            <Link to="/vacancies">ვაკანსიები</Link>
+          </button>
+          <button className="self-registration--btn">თვითრეგისტრაცია</button>
+        </div>
+        <LanguageChanger />
       </div>
     </nav>
   );
