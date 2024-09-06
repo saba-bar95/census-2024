@@ -1,5 +1,5 @@
 import "./Questionnaires.scss";
-import Navbar from "../Navbar/Navbar";
+import Navbar from "../../components/Navbar/Navbar";
 
 export default function Questionnaires() {
   return (

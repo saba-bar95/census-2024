@@ -1,5 +1,5 @@
-import Navbar from "../Navbar/Navbar";
 import "./GoalsAndObjectives.scss";
+import Navbar from "../../components/Navbar/Navbar";
 
 export default function GoalsAndObjectives() {
   return (

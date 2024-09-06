@@ -1,5 +1,5 @@
-import Navbar from "../Navbar/Navbar";
 import "./LegalBasis.scss";
+import Navbar from "../../components/Navbar/Navbar";
 
 export default function LegalBasis() {
   return (

@@ -1,10 +1,10 @@
 import App from "./App.jsx";
-import Questionnaires from "./components/Questionnaires/Questionnaires";
-import Methodology from "./components/Methodology/Methodology.jsx";
-import Results from "./components/Results/Results.jsx";
-import Vacancies from "./components/Vacancies/Vacancies.jsx";
-import GoalsAndObjectives from "./components/GoalsAndObjectives/GoalsAndObjectives.jsx";
-import LegalBasis from "./components/LegalBasis/LegalBasis.jsx";
+import Questionnaires from "./Pages/Questionnaires/Questionnaires.jsx";
+import Methodology from "./Pages/Methodology/Methodology.jsx";
+import Results from "./Pages/Results/Results.jsx";
+import Vacancies from "./Pages/Vacancies/Vacancies.jsx";
+import GoalsAndObjectives from "./Pages/GoalsAndObjectives/GoalsAndObjectives.jsx";
+import LegalBasis from "./Pages/LegalBasis/LegalBasis.jsx";
 
 const routes = [
   { path: "/", element: <App /> },
@@ -34,6 +34,7 @@ const routes = [
     path: "legalbasis",
     element: <LegalBasis />,
   },
+  ,
 ];
 
 export default routes;

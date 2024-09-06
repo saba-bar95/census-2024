@@ -1,5 +1,5 @@
-import Navbar from "../Navbar/Navbar";
 import "./Vacancies.scss";
+import Navbar from "../../components/Navbar/Navbar";
 
 export default function Vacancies() {
   return (
