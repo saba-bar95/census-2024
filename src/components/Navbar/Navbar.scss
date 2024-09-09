@@ -1,74 +1,80 @@
 @use "/src/styles/variables" as *;
 
-nav {
+.nav-container {
+  display: flex;
+  justify-content: center;
   padding: 30px 100px;
   background-color: #ffffff;
-  display: flex;
-  justify-content: space-between;
 
-  .right-side {
+  nav {
     display: flex;
-    gap: 30px;
-    align-items: center;
+    justify-content: space-between;
+    gap: 200px;
 
-    .sakstat-logo {
-      cursor: pointer;
-    }
-  }
-
-  .left-side {
-    display: flex;
-    align-items: center;
-    gap: 50px;
-    font-weight: 700;
-    font-size: 1em;
-
-    a {
-      text-decoration: none;
-    }
-
-    a:visited {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    ul {
+    .right-side {
       display: flex;
+      gap: 30px;
+      align-items: center;
+
+      .sakstat-logo {
+        cursor: pointer;
+      }
+    }
+
+    .left-side {
+      display: flex;
+      align-items: center;
       gap: 50px;
-      list-style: none;
+      font-weight: 700;
+      font-size: 1em;
 
-      li {
-        cursor: pointer;
+      a {
         text-decoration: none;
-        color: $header-color;
-      }
-    }
-
-    .buttons-container {
-      display: flex;
-      gap: 20px;
-
-      button {
-        padding: 20px 40px;
-        border-radius: 15px;
-        font-family: inherit;
-        font-weight: inherit;
-        line-height: 19px;
-        outline: none;
-        border: none;
-        font-size: 1.1em;
-        cursor: pointer;
       }
 
-      .vacancies--btn {
-        color: #fe7155;
-        border: 1px solid #fe7155;
-        background-color: #ffffff;
+      a:visited {
+        color: inherit;
+        text-decoration: none;
       }
 
-      .self-registration--btn {
-        background-color: #165ce2;
-        color: #ffffff;
+      ul {
+        display: flex;
+        gap: 50px;
+        list-style: none;
+
+        li {
+          cursor: pointer;
+          text-decoration: none;
+          color: $header-color;
+        }
+      }
+
+      .buttons-container {
+        display: flex;
+        gap: 20px;
+
+        button {
+          padding: 20px 40px;
+          border-radius: 15px;
+          font-family: inherit;
+          font-weight: inherit;
+          line-height: 19px;
+          outline: none;
+          border: none;
+          font-size: 1.1em;
+          cursor: pointer;
+        }
+
+        .vacancies--btn {
+          color: #fe7155;
+          border: 1px solid #fe7155;
+          background-color: #ffffff;
+        }
+
+        .self-registration--btn {
+          background-color: #165ce2;
+          color: #ffffff;
+        }
       }
     }
   }

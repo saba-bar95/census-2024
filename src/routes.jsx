@@ -3,7 +3,7 @@ import Questionnaires from "./Pages/Questionnaires/Questionnaires.jsx";
 import Methodology from "./Pages/Methodology/Methodology.jsx";
 import Results from "./Pages/Results/Results.jsx";
 import Vacancies from "./Pages/Vacancies/Vacancies.jsx";
-import GoalsAndObjectives from "./Pages/GoalsAndObjectives/GoalsAndObjectives.jsx";
+import Goals from "./Pages/Goals/Goals.jsx";
 import LegalBasis from "./Pages/LegalBasis/LegalBasis.jsx";
 
 const routes = [
@@ -27,8 +27,8 @@ const routes = [
     element: <Vacancies />,
   },
   {
-    path: "goalsandobjectives",
-    element: <GoalsAndObjectives />,
+    path: "goals",
+    element: <Goals />,
   },
   {
     path: "legalbasis",

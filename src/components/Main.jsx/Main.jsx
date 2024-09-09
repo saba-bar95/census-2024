@@ -1,11 +1,15 @@
 import "./Main.scss";
-import CensusHistortySection from "./CensusHistorySection/CensusHistortySection";
+import History from "./History/History";
+import Goals from "./Goals/Goals";
+import LegalBasis from "./LegalBasis/LegalBasis";
 
 export default function Main() {
   return (
     <>
       <main>
-        <CensusHistortySection />
+        <History />
+        <Goals />
+        <LegalBasis />
       </main>
     </>
   );

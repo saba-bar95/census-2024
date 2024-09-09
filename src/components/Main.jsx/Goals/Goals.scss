@@ -1,0 +1,65 @@
+.goals--section {
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 70px;
+
+  h1 {
+    text-align: center;
+    color: #00255e;
+    font-weight: 900;
+  }
+
+  .info-container {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 130rem;
+    margin: auto;
+
+    .goal-container {
+      background-color: #f5f5f7;
+      padding: 50px 70px;
+      border-radius: 60px;
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      flex-basis: 45%;
+      min-width: 800px;
+
+      .image-container {
+        padding: 70px 50px;
+        border-radius: 40px;
+        text-align: center;
+        min-width: 200px;
+      }
+
+      p {
+        letter-spacing: 0.02em;
+        color: #1e1e1e;
+        line-height: 36px;
+        font-size: 1.1rem;
+      }
+    }
+  }
+
+  a {
+    align-self: center;
+
+    button {
+      padding: 20px 40px;
+      border-radius: 15px;
+      font-family: inherit;
+      font-weight: inherit;
+      line-height: 19px;
+      outline: none;
+      border: none;
+      font-size: 1.1em;
+      cursor: pointer;
+      background-color: #165ce2;
+      color: #ffffff;
+    }
+  }
+}

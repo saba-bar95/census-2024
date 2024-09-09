@@ -1,6 +1,11 @@
-.census-history--section {
-  background: linear-gradient(235.95deg, #0e2756 -8.02%, #3e275a 94.77%);
+.history-container {
   padding: 20px 100px;
+  background: linear-gradient(235.95deg, #0e2756 -8.02%, #3e275a 94.77%);
+  display: flex;
+  justify-content: center;
+}
+
+.history--section {
   display: flex;
   justify-content: space-between;
 
