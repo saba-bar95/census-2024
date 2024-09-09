@@ -4,33 +4,34 @@
   align-items: center;
   gap: 10px;
   cursor: pointer;
-  &:hover {
+
+  &.show-languages {
     .language-options {
       display: block;
     }
   }
+}
 
-  .language-options {
-    position: absolute;
-    top: 30px;
-    left: 0;
-    background-color: #fff;
-    border: 1px solid #ddd;
+.language-options {
+  position: absolute;
+  top: 30px; /* adjust the top position according to your design */
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  display: none;
+
+  li {
     padding: 10px;
-    display: none;
+    border-bottom: 1px solid #ddd;
 
-    li {
-      padding: 10px;
-      border-bottom: 1px solid #ddd;
+    &:hover {
+      background-color: #f0f0f0;
+      cursor: pointer;
+    }
 
-      &:hover {
-        background-color: #f0f0f0;
-        cursor: pointer;
-      }
-
-      &:last-child {
-        border-bottom: none;
-      }
+    &:last-child {
+      border-bottom: none;
     }
   }
 }

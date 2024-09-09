@@ -3,8 +3,6 @@ import hammer from "/src/assets/images/hammer.svg";
 import sakstat from "/src/assets/images/sakstat-logo.svg";
 import defence from "/src/assets/images/defence.svg";
 import { Link } from "react-router-dom";
-import background2 from "/src/assets/images/legal-background2.svg";
-import scales from "/src/assets/images/scales.png";
 
 export default function LegalBasis() {
   return (
@@ -38,10 +36,6 @@ export default function LegalBasis() {
               <button>სრულად</button>
             </Link>
           </div>
-          {/* <div className="backgrounds">
-            <img src={background2} alt="" className="background-2" />
-            <img src={scales} alt="" className="scales" />
-          </div> */}
         </div>
       </div>
     </>

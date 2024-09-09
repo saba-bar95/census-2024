@@ -1,0 +1,64 @@
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #244966;
+  padding: 50px;
+
+  .footer-container {
+    max-width: 130rem;
+    display: flex;
+    justify-content: space-around;
+    gap: 400px;
+    color: #ffffff;
+
+    .container {
+      display: flex;
+      gap: 50px;
+      flex-direction: column;
+
+      .socials {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        .icons {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 30px;
+
+          img {
+            cursor: pointer;
+          }
+        }
+      }
+      div {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        list-style: none;
+
+        a:visited {
+          color: inherit;
+          text-decoration: none;
+        }
+
+        a {
+          text-decoration: none;
+        }
+
+        li {
+          cursor: pointer;
+          text-decoration: none;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
