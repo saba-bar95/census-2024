@@ -5,8 +5,8 @@ import BackgroundSvg from "./Backgroundsvg";
 export default function History() {
   return (
     <>
-      <div className="history-container">
-        <div className="history--section">
+      <div className="history--section">
+        <div className="history-container">
           <div className="right-side">
             <h1>აღწერების ისტორია საქართველოში</h1>
             <div className="para-container">

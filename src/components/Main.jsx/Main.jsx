@@ -7,9 +7,11 @@ export default function Main() {
   return (
     <>
       <main>
-        <History />
-        <Goals />
-        <LegalBasis />
+        <div className="main-container">
+          <History />
+          <Goals />
+          <LegalBasis />
+        </div>
       </main>
     </>
   );
