@@ -5,6 +5,7 @@ import LegalBasis from "./LegalBasis/LegalBasis";
 import Subject from "./Subjects/Subject";
 import Responsible from "./Responsible/Responsible";
 import Date from "./Date/Date";
+import Settlements from "./Settlements/Settlements";
 
 export default function Main() {
   return (
@@ -16,6 +17,7 @@ export default function Main() {
         <Subject />
         <Responsible />
         <Date />
+        <Settlements />
       </main>
     </>
   );

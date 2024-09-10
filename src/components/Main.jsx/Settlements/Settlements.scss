@@ -1,0 +1,115 @@
+@font-face {
+  font-family: FiraGOBold;
+  src: url(/src/assets/fonts/FiraGO/FiraGO-ExtraBold.otf);
+}
+
+.settlements--section {
+  padding: 60px 100px 120px 100px;
+  background-color: rgba(242, 242, 242, 1);
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  h1 {
+    text-align: center;
+    font-family: FiraGOBold;
+    color: #00255e;
+  }
+
+  p {
+    width: 65%;
+    color: #1e1e1e;
+    font-size: 20px;
+    line-height: 40px;
+    margin: auto;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    max-width: 130rem;
+    margin: auto;
+    gap: 15px;
+    background-color: rgba(75, 43, 220, 1);
+    border-radius: 50px;
+    flex-direction: column;
+    margin: auto;
+
+    ul {
+      display: flex;
+      padding: 30px;
+      align-items: center;
+      gap: 40px;
+      list-style-type: none;
+      color: #ffffff;
+      margin: auto;
+
+      li {
+        cursor: pointer;
+        padding: 20px 40px;
+      }
+
+      .selected {
+        border-radius: 15px;
+        font-family: inherit;
+        font-weight: inherit;
+        outline: none;
+        font-size: 1.1em;
+        cursor: pointer;
+        background-color: rgba(80, 47, 232, 1);
+        color: #ffffff;
+        border: 2px solid #ffffff;
+      }
+    }
+
+    .border-container {
+      border-bottom: 1px solid rgba(255, 255, 255, 1);
+    }
+
+    .wrapper {
+      margin: 40px;
+      gap: 50px;
+      display: flex;
+
+      .left-side {
+        position: relative;
+        background-color: rgba(255, 255, 255, 1);
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        max-width: 600px;
+        padding: 30px;
+        border-radius: 35px;
+        gap: 30px;
+        max-height: 580px;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+
+        h3,
+        h2 {
+          color: rgba(0, 37, 94, 1);
+        }
+
+        h3 {
+          margin-top: -15px;
+        }
+
+        p {
+          width: 100%;
+          max-height: 200px;
+          overflow-y: scroll;
+          font-size: 14px;
+          line-height: 26px;
+        }
+      }
+
+      .right-side {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}
