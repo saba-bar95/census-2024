@@ -4,6 +4,7 @@ import Goals from "./Goals/Goals";
 import LegalBasis from "./LegalBasis/LegalBasis";
 import Subject from "./Subjects/Subject";
 import Responsible from "./Responsible/Responsible";
+import Date from "./Date/Date";
 
 export default function Main() {
   return (
@@ -14,6 +15,7 @@ export default function Main() {
         <LegalBasis />
         <Subject />
         <Responsible />
+        <Date />
       </main>
     </>
   );

@@ -1,0 +1,60 @@
+@font-face {
+  font-family: FiraGOBold;
+  src: url(/src/assets/fonts/FiraGO/FiraGO-ExtraBold.otf);
+}
+
+.date--section {
+  padding: 60px 0 120px 0;
+
+  h1 {
+    text-align: center;
+    font-family: FiraGOBold;
+    color: #00255e;
+    margin-bottom: 50px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    max-width: 130rem;
+    margin: auto;
+    gap: 25px;
+    padding: 0 300px;
+
+    .left-side {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      padding: 40px 0;
+      position: relative;
+
+      p {
+        color: #1e1e1e;
+        font-size: 20px;
+        line-height: 40px;
+      }
+
+      .date-container {
+        position: absolute;
+        top: 35%;
+        background-color: rgba(69, 40, 201, 1);
+        padding: 50px;
+        border-radius: 50px;
+      }
+
+      button {
+        padding: 20px 40px;
+        border-radius: 15px;
+        font-family: inherit;
+        font-weight: inherit;
+        line-height: 19px;
+        outline: none;
+        border: none;
+        font-size: 1.1em;
+        cursor: pointer;
+        background-color: #165ce2;
+        color: #ffffff;
+      }
+    }
+  }
+}
