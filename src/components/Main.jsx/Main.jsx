@@ -6,6 +6,7 @@ import Subject from "./Subjects/Subject";
 import Responsible from "./Responsible/Responsible";
 import Date from "./Date/Date";
 import Settlements from "./Settlements/Settlements";
+import Methods from "./Methods/Methods";
 
 export default function Main() {
   return (
@@ -18,6 +19,7 @@ export default function Main() {
         <Responsible />
         <Date />
         <Settlements />
+        <Methods />
       </main>
     </>
   );

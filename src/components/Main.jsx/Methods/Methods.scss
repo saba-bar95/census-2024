@@ -1,0 +1,116 @@
+@font-face {
+  font-family: FiraGOBold;
+  src: url(/src/assets/fonts/FiraGO/FiraGO-ExtraBold.otf);
+}
+
+.methods--section {
+  padding: 60px 300px 200px 300px;
+
+  h1 {
+    font-family: FiraGOBold;
+    color: #00255e;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  h2 {
+    text-align: center;
+    color: #1e1e1e;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    max-width: 130rem;
+    margin: auto;
+    gap: 15px;
+    border-radius: 50px;
+    flex-direction: column;
+    margin: auto;
+    padding: 50px 100px;
+
+    .top-side {
+      display: flex;
+      gap: 50px;
+      justify-content: center;
+
+      .right-side {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        .top {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+
+          h2 {
+            font-family: FiraGOBold;
+            color: #ee5453;
+            text-align: start;
+            font-size: 1.4rem;
+          }
+        }
+        .bot {
+          p {
+            color: #1e1e1e;
+            line-height: 40px;
+          }
+        }
+      }
+    }
+
+    .bottom-side {
+      justify-content: center;
+      display: flex;
+      gap: 50px;
+
+      .left-side {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        flex: 1;
+
+        .top {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+
+          h2 {
+            font-family: FiraGOBold;
+            color: #4529cc;
+            text-align: start;
+            font-size: 1.4rem;
+          }
+        }
+
+        p {
+          color: #1e1e1e;
+          line-height: 40px;
+        }
+
+        button {
+          padding: 20px 40px;
+          border-radius: 15px;
+          font-family: inherit;
+          font-weight: inherit;
+          line-height: 19px;
+          outline: none;
+          border: none;
+          font-size: 1.1em;
+          cursor: pointer;
+        }
+
+        .self-registration--btn {
+          background-color: #165ce2;
+          color: #ffffff;
+          align-self: start;
+        }
+      }
+    }
+    .img {
+      flex: 1;
+    }
+  }
+}
