@@ -34,7 +34,6 @@ const routes = [
     path: "legalbasis",
     element: <LegalBasis />,
   },
-  ,
 ];
 
 export default routes;

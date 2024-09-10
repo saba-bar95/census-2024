@@ -1,6 +1,5 @@
 import "./History.scss";
 import CountdownComponent from "./CountDown/CountDown";
-import BackgroundSvg from "./Backgroundsvg";
 
 export default function History() {
   return (
