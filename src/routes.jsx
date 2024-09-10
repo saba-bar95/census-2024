@@ -5,34 +5,80 @@ import Results from "./Pages/Results/Results.jsx";
 import Vacancies from "./Pages/Vacancies/Vacancies.jsx";
 import Goals from "./Pages/Goals/Goals.jsx";
 import LegalBasis from "./Pages/LegalBasis/LegalBasis.jsx";
+import ScrollToTop from "./ScrollToTop";
 
 const routes = [
-  { path: "/", element: <App /> },
-
-  { path: "main", element: <App /> },
+  {
+    path: "/",
+    element: (
+      <>
+        <ScrollToTop />
+        <App />
+      </>
+    ),
+  },
+  {
+    path: "main",
+    element: (
+      <>
+        <ScrollToTop />
+        <App />
+      </>
+    ),
+  },
   {
     path: "questionnaries",
-    element: <Questionnaires />,
+    element: (
+      <>
+        <ScrollToTop />
+        <Questionnaires />
+      </>
+    ),
   },
   {
     path: "methodology",
-    element: <Methodology />,
+    element: (
+      <>
+        <ScrollToTop />
+        <Methodology />
+      </>
+    ),
   },
   {
     path: "results",
-    element: <Results />,
+    element: (
+      <>
+        <ScrollToTop />
+        <Results />
+      </>
+    ),
   },
   {
     path: "vacancies",
-    element: <Vacancies />,
+    element: (
+      <>
+        <ScrollToTop />
+        <Vacancies />
+      </>
+    ),
   },
   {
     path: "goals",
-    element: <Goals />,
+    element: (
+      <>
+        <ScrollToTop />
+        <Goals />
+      </>
+    ),
   },
   {
     path: "legalbasis",
-    element: <LegalBasis />,
+    element: (
+      <>
+        <ScrollToTop />
+        <LegalBasis />
+      </>
+    ),
   },
 ];
 
