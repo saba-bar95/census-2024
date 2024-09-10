@@ -1,7 +1,7 @@
 import "./LanguageChanger.scss";
 import { useState } from "react";
 import changeLanguage from "/src/assets/images/change-language.png";
-import downArrow from "/src/assets/images/down-Arrow.png";
+import downArrow from "/src/assets/images/down-arrow.png";
 
 const languages = ["Geo", "Eng"];
 
