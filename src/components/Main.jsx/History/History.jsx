@@ -1,5 +1,7 @@
 import "./History.scss";
 import CountdownComponent from "./CountDown/CountDown";
+import polygon from "/src/assets/images/polygon.svg";
+import map from "/src/assets/images/georgian-map.svg";
 
 export default function History() {
   return (
@@ -19,14 +21,10 @@ export default function History() {
               </p>
             </div>
             <CountdownComponent />
-            <img
-              src="src\assets\images\polygon.svg"
-              alt="polygon"
-              className="polygon"
-            />
+            <img src={polygon} alt="polygon" className="polygon" />
           </div>
           <div className="left-side">
-            <img src="src\assets\images\georgian-map.svg" alt="" />
+            <img src={map} alt="map" />
           </div>
         </div>
       </div>

@@ -1,5 +1,7 @@
 import "./LanguageChanger.scss";
 import { useState } from "react";
+import changeLanguage from "/src/assets/images/change-language.png";
+import downArrow from "/src/assets/images/down-Arrow.png";
 
 const languages = ["Geo", "Eng"];
 
@@ -17,9 +19,9 @@ function LanguageChanger() {
       className={`language-changer ${showLanguages ? "show-languages" : ""}`}
       onClick={() => setShowLanguages(!showLanguages)}
     >
-      <img src="src\assets\images\change-language.png" alt="" />
+      <img src={changeLanguage} alt="change-language" />
       <p>{selectedLanguage}</p>
-      <img src="src\assets\images\down-arrow.png" alt="" />
+      <img src={downArrow} alt="down-arrow" />
       {showLanguages && (
         <ul className="language-options">
           {languages.map((language, index) => (

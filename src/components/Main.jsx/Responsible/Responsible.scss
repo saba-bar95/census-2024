@@ -1,0 +1,13 @@
+@font-face {
+  font-family: FiraGOBold;
+  src: url(/src/assets/fonts/FiraGO/FiraGO-ExtraBold.otf);
+}
+
+.responsible--section {
+  h1 {
+    text-align: center;
+    font-family: FiraGOBold;
+    color: #00255e;
+    margin-bottom: 50px;
+  }
+}
