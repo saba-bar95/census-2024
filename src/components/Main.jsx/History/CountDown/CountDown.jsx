@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const CountdownComponent = () => {
+const CountdownComponent = (page) => {
   const [days, setDays] = useState(0);
   const [hours, setHours] = useState(0);
   const [minutes, setMinutes] = useState(0);
@@ -54,21 +54,23 @@ const CountdownComponent = () => {
 
   return (
     <div className="time-left">
-      <div className="top-side">
-        <p className="year">2024</p>
-        <p className="time-left--para">აღწერამდე დარჩა</p>
-      </div>
+      {page.page || (
+        <div className="top-side">
+          <p className="year">2024</p>
+          <p className="time-left--para">აღწერამდე დარჩა</p>
+        </div>
+      )}
       <div className="bottom-side">
         <div className="days">
           <h1>{days} :</h1>
           <p>დღე</p>
         </div>
         <div className="hours">
-          <h1>{hours} :</h1>
+          <h1>{hours > 10 ? hours : `0${hours}`} :</h1>
           <p>საათი</p>
         </div>
         <div className="minutes">
-          <h1>{minutes} :</h1>
+          <h1>{minutes > 10 ? minutes : `0${minutes}`} :</h1>
           <p>წუთი</p>
         </div>
         <div className="seconds">
@@ -76,6 +78,12 @@ const CountdownComponent = () => {
           <p>წამი</p>
         </div>
       </div>
+      {page.page && (
+        <>
+          <div className="border-container"></div>
+          <button>შემახსენე</button>
+        </>
+      )}
     </div>
   );
 };

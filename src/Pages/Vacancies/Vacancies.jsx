@@ -6,7 +6,6 @@ export default function Vacancies() {
   return (
     <>
       <Navbar />
-      <h2>Vacancies</h2>
       <Footer />
     </>
   );

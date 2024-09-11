@@ -9,7 +9,7 @@ export default function Navbar() {
     <div className="nav-container">
       <nav>
         <div className="right-side">
-          <Link to="/main">
+          <Link to="/">
             <img src={sakstat} alt="sakstat" className="sakstat-logo" />
           </Link>
           <img src={census} alt="აღწერა" className="census-logo" />
@@ -26,14 +26,13 @@ export default function Navbar() {
               <Link to="/methodology">მეთოდოლოგია</Link>
             </li>
             <li>
-              <Link to="/results">შედეგები</Link>
+              <Link to="/">შედეგები</Link>
             </li>
           </ul>
           <div className="buttons-container">
-            <Link to="/vacancies">
+            <Link to="/">
               <button className="vacancies--btn">ვაკანსიები</button>
             </Link>
-
             <button className="self-registration--btn">თვითრეგისტრაცია</button>
           </div>
           <LanguageChanger />

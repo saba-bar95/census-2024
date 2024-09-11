@@ -38,7 +38,7 @@ export default function Footer() {
               <Link to="/methodology">მეთოდოლოგია</Link>
             </li>
             <li>
-              <Link to="/results">შედეგები</Link>
+              <Link to="/">შედეგები</Link>
             </li>
           </ul>
         </div>

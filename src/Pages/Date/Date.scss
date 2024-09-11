@@ -1,0 +1,117 @@
+@font-face {
+  font-family: FiraGOBold;
+  src: url(/src/assets/fonts/FiraGO/FiraGO-ExtraBold.otf);
+}
+
+.date-container {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  padding: 80px 120px 170px 120px;
+  margin: auto;
+  max-width: 130rem;
+
+  h1 {
+    font-family: FiraGOBold;
+    line-height: 64px;
+    width: 50%;
+    font-size: 48px;
+    color: #214476;
+    width: 100%;
+    text-align: center;
+  }
+
+  .info-container {
+    padding: 0 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: auto;
+    align-items: center;
+
+    p {
+      line-height: 36px;
+      font-size: 20px;
+      width: 70%;
+      color: #1e1e1e;
+      line-height: 40px;
+    }
+
+    .header {
+      font-family: FiraGOBold;
+      color: #00255e;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 42px;
+    }
+
+    .background {
+      background-color: #4528c9;
+      border-radius: 50px;
+      padding: 50px;
+    }
+
+    .container {
+      border-radius: 50px;
+      position: relative;
+
+      .time-left {
+        width: max-content;
+        border-radius: 50px;
+        background-color: #f2f2f2cc;
+        padding: 30px;
+        position: absolute;
+        top: 15%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 20px;
+
+        .bottom-side {
+          display: flex;
+          gap: 20px;
+
+          h1 {
+            color: #4528c9;
+          }
+
+          h1,
+          p {
+            margin: 0;
+            text-wrap: nowrap;
+          }
+
+          h1 {
+            letter-spacing: 0.02em;
+          }
+
+          p {
+            color: #514d4f;
+          }
+        }
+
+        .bottom-side div {
+          width: 80px;
+        }
+
+        .border-container {
+          border: 1px solid rgba(208, 208, 208, 1);
+          width: 100%;
+        }
+
+        button {
+          align-self: start;
+          padding: 20px 40px;
+          border-radius: 15px;
+          line-height: 19px;
+          outline: none;
+          border: none;
+          font-size: 1.1em;
+          cursor: pointer;
+          background-color: #165ce2;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}

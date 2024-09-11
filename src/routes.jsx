@@ -6,6 +6,7 @@ import Vacancies from "./Pages/Vacancies/Vacancies.jsx";
 import Goals from "./Pages/Goals/Goals.jsx";
 import LegalBasis from "./Pages/LegalBasis/LegalBasis.jsx";
 import ScrollToTop from "./ScrollToTop";
+import Date from "./Pages/Date/Date.jsx";
 
 const routes = [
   {
@@ -36,6 +37,15 @@ const routes = [
     ),
   },
   {
+    path: "date",
+    element: (
+      <>
+        <ScrollToTop />
+        <Date />
+      </>
+    ),
+  },
+  {
     path: "methodology",
     element: (
       <>
@@ -49,7 +59,7 @@ const routes = [
     element: (
       <>
         <ScrollToTop />
-        <Results />
+        <App />
       </>
     ),
   },
@@ -58,7 +68,7 @@ const routes = [
     element: (
       <>
         <ScrollToTop />
-        <Vacancies />
+        <App />
       </>
     ),
   },

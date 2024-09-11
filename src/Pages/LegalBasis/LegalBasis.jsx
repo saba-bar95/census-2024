@@ -11,7 +11,7 @@ export default function LegalBasis() {
   return (
     <>
       <Navbar />
-      <div className="legal-container">
+      <div className="legal--container">
         <h1>სამართლებრივი საფუძვლები</h1>
         <div className="info-container">
           <p>

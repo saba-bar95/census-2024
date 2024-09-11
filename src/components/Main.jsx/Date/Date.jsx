@@ -18,7 +18,7 @@ export default function Date() {
           <div className="date-container">
             <img src={date} alt="" />
           </div>
-          <Link to="/">
+          <Link to="/date">
             <button>სრულად</button>
           </Link>
         </div>
