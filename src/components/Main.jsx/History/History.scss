@@ -101,9 +101,9 @@
     }
 
     .left-side {
-      img {
-        max-width: 1050px;
-      }
+      background: url(/src/assets/images/history-background.svg);
+      background-position: 70% 45%;
+      background-repeat: no-repeat;
     }
   }
 }
