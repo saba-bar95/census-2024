@@ -1,3 +1,118 @@
-h1 {
-  color: green;
+@font-face {
+  font-family: FiraGOBold;
+  src: url(/src/assets/fonts/FiraGO/FiraGO-ExtraBold.otf);
+}
+
+.questionnaires-container {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+
+  .background-container {
+    background: linear-gradient(90deg, #182848 0%, #4b6cb7 100%);
+    margin: 0 130px;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    justify-content: center;
+
+    .text-container {
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      width: 40%;
+
+      h1 {
+        font-family: FiraGOBold;
+        line-height: 64px;
+        width: 50%;
+        font-size: 48px;
+      }
+
+      p {
+        line-height: 36px;
+        font-size: 20px;
+      }
+    }
+    .image-container {
+      transform: translateY(10%);
+    }
+  }
+
+  .container {
+    .questionnaires {
+      display: flex;
+      flex-direction: column;
+      max-width: 130rem;
+      padding: 0 200px;
+      gap: 30px;
+      margin: auto;
+      margin-bottom: 100px;
+
+      .top-side {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        p {
+          color: #157afe;
+          font-size: 22px;
+          line-height: 30px;
+          font-weight: 700;
+        }
+
+        h1 {
+          color: #00255e;
+          font-family: FiraGOBold;
+          font-size: 36px;
+          line-height: 44px;
+        }
+      }
+
+      .bot-side {
+        display: flex;
+        gap: 60px;
+
+        .info-container {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+
+          p {
+            color: #1e1e1e;
+            font-size: 20px;
+            line-height: 24px;
+          }
+
+          ul {
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+
+            li {
+              display: flex;
+              gap: 15px;
+              align-items: center;
+              font-size: 20px;
+              line-height: 45px;
+            }
+          }
+
+          button {
+            align-self: start;
+            padding: 20px 40px;
+            border-radius: 15px;
+            line-height: 19px;
+            outline: none;
+            border: none;
+            font-size: 1.1em;
+            cursor: pointer;
+            background-color: #165ce2;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
 }
