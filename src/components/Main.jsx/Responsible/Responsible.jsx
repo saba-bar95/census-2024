@@ -11,7 +11,7 @@ export default function Responsible() {
       <h1>აღწერის ჩატარებაზე პასუხისმგებელი ორგანო</h1>
       <div className="container">
         <div className="icons-container">
-          <img src={group} alt="group" />
+          <img src={group} alt="group" className="main" />
           <div className="sakstat-logo">
             <img src={sakstat} alt="sakstat-logo" />
           </div>
