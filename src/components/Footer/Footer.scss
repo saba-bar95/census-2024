@@ -1,3 +1,5 @@
+@use "src/styles/_breakpoints.scss" as *;
+
 footer {
   display: flex;
   justify-content: center;
@@ -57,6 +59,55 @@ footer {
           cursor: pointer;
           text-decoration: none;
           color: #ffffff;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $tablet) and (max-width: $desktop) {
+  footer {
+    .footer-container {
+      gap: 200px;
+    }
+  }
+}
+
+@media only screen and (min-width: $mobile) and (max-width: $tablet) {
+  footer {
+    .footer-container {
+      gap: 100px;
+    }
+  }
+}
+
+@media only screen and (min-width: 0) and (max-width: $mobile) {
+  footer {
+    padding: 25px;
+
+    .footer-container {
+      flex-direction: column;
+      gap: 30px;
+
+      .container {
+        gap: 15px;
+
+        p.header {
+          text-align: center;
+          margin-bottom: 10px;
+        }
+
+        .socials {
+          text-align: center;
+          margin-top: 10px;
+
+          p {
+            display: none;
+          }
+
+          .icons {
+            gap: 15px;
+          }
         }
       }
     }

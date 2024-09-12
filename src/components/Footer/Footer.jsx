@@ -9,7 +9,7 @@ export default function Footer() {
     <footer>
       <div className="footer-container">
         <div className="container">
-          <p>კონტაქტი</p>
+          <p className="header">კონტაქტი</p>
           <div>
             <p>საქართველოს სტატისტიკის სამსახური</p>
             <p> +995 32 2 36 72 10 | +995 32 2 60 11 60 </p>
@@ -26,7 +26,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="container">
-          <p>მენიუ</p>
+          <p className="header">მენიუ</p>
           <ul>
             <li>
               <Link to="/main">მთავარი</Link>

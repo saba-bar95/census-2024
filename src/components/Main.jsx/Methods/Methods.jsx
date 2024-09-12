@@ -10,7 +10,7 @@ export default function Methods() {
     <div className="methods--section">
       <h1>მონაცემთა შეგროვების მეთოდები</h1>
       <h2>
-        2024 წლის აღწერის ფარგლებში მონაცემთა შეგროვება დაგეგმილია ორი მეთოდით:
+        2024 წლის აღწერის ფარგლებში მონაცემთა შეგროვება დაგეგმილია ორი მეთოდით:
       </h2>
       <div className="container">
         <div className="top-side">
