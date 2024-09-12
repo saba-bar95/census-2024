@@ -88,14 +88,6 @@
   }
 }
 
-// @media only screen and (min-width: 1500px) and (max-width: $desktop)  {
-//   .legal--section {
-//     .legal-container {
-//       background-image: url("/src/assets/images/legal-background2.svg"),
-//         url("/src/assets/images/legal-background1.svg");
-//       background-position: right, 50% center;
-// }
-
 @media only screen and (min-width: $tablet) and (max-width: $desktop) {
   .legal--section {
     .legal-container {
@@ -120,7 +112,7 @@
   }
 }
 
-@media only screen and (min-width: $mobile) and (max-width: $tablet) {
+@media only screen and (min-width: calc($mobile + 1px)) and (max-width: calc($tablet - 1px)) {
   .legal--section {
     margin: 0 80px 40px 80px;
 
@@ -149,6 +141,7 @@
 
           div {
             padding: 15px 8px;
+            // max-width: 300px;
 
             p {
               font-size: 0.9rem;
@@ -205,11 +198,12 @@
         }
         a {
           align-self: center;
-        }
-        button {
-          padding: 10px 20px;
-          line-height: 15px;
-          font-size: 0.9em;
+
+          button {
+            padding: 10px 20px;
+            line-height: 15px;
+            font-size: 0.9em;
+          }
         }
       }
     }
