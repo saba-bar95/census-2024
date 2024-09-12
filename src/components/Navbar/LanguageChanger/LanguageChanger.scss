@@ -1,3 +1,5 @@
+@use "src/styles/_breakpoints.scss" as *;
+
 .language-changer {
   position: relative;
   display: flex;
@@ -32,6 +34,14 @@
 
     &:last-child {
       border-bottom: none;
+    }
+  }
+}
+
+@media only screen and (min-width: 0) and (max-width: $mobile) {
+  .language-options {
+    li {
+      font-size: 0.8rem;
     }
   }
 }

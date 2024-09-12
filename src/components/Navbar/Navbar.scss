@@ -169,35 +169,6 @@
   }
 }
 
-@media only screen and (min-width: $tablet) and (max-width: $desktop) {
-  .nav-container {
-    nav {
-      gap: 60px;
-
-      .right-side {
-        img {
-          width: 90px;
-          height: auto;
-        }
-      }
-
-      .left-side {
-        gap: 20px;
-
-        ul {
-          gap: 15px;
-        }
-
-        .buttons-container {
-          button {
-            padding: 10px 20px;
-          }
-        }
-      }
-    }
-  }
-}
-
 @media only screen and (min-width: 0) and (max-width: $mobile) {
   .nav-container {
     nav {
@@ -216,6 +187,20 @@
         .buttons-container {
           button {
             padding: 7px 14px;
+          }
+        }
+
+        .language-changer {
+          img {
+            width: 15px;
+          }
+
+          img.down-arrow {
+            width: 10px;
+          }
+
+          p {
+            font-size: 0.8rem;
           }
         }
       }

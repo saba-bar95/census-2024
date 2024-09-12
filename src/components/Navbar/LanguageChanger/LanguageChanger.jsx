@@ -21,7 +21,7 @@ function LanguageChanger() {
     >
       <img src={changeLanguage} alt="change-language" />
       <p>{selectedLanguage}</p>
-      <img src={downArrow} alt="down-arrow" />
+      <img src={downArrow} alt="down-arrow" className="down-arrow" />
       {showLanguages && (
         <ul className="language-options">
           {languages.map((language, index) => (
