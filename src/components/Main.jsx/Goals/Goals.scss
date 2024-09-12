@@ -1,3 +1,5 @@
+@use "src/styles/_breakpoints.scss" as *;
+
 @font-face {
   font-family: FiraGOBold;
   src: url(/src/assets/fonts/FiraGO/FiraGO-ExtraBold.otf);
@@ -66,6 +68,112 @@
       cursor: pointer;
       background-color: #165ce2;
       color: #ffffff;
+    }
+  }
+}
+
+@media only screen and (min-width: $tablet) and (max-width: $desktop) {
+  .goals--section {
+    .info-container {
+      .goal-container {
+        min-width: 0;
+        flex-direction: column;
+        padding: 30px 50px;
+        gap: 25px;
+
+        .image-container {
+          padding: 50px 35px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: calc($mobile + 1px)) and (max-width: calc($tablet - 1px)) {
+  .goals--section {
+    gap: 45px;
+
+    h1 {
+      font-size: 22px;
+    }
+
+    .info-container {
+      gap: 30px;
+
+      .goal-container {
+        min-width: 0;
+        flex-direction: column;
+        padding: 20px 30px;
+        gap: 20px;
+
+        .image-container {
+          padding: 20px 15px;
+          min-width: 150px;
+
+          img {
+            width: 80px;
+            height: 80px;
+          }
+        }
+
+        p {
+          font-size: 0.9rem;
+          line-height: 22px;
+        }
+      }
+    }
+
+    a {
+      button {
+        padding: 10px 20px;
+        line-height: 15px;
+        font-size: 0.9em;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 0) and (max-width: $mobile) {
+  .goals--section {
+    padding: 50px;
+    gap: 25px;
+
+    h1 {
+      font-size: 22px;
+    }
+
+    .info-container {
+      gap: 30px;
+
+      .goal-container {
+        min-width: 350px;
+        flex-direction: column;
+        padding: 20px 40px;
+        gap: 20px;
+
+        .image-container {
+          padding: 20px 12px;
+          min-width: 100px;
+
+          img {
+            width: 60px;
+            height: 60px;
+          }
+        }
+
+        p {
+          font-size: 0.9rem;
+          line-height: 22px;
+        }
+      }
+    }
+
+    a {
+      button {
+        padding: 10px 20px;
+        line-height: 15px;
+        font-size: 0.9em;
+      }
     }
   }
 }

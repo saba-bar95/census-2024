@@ -118,7 +118,7 @@
   }
 }
 
-@media only screen and (min-width: $mobile) and (max-width: $tablet) {
+@media only screen and (min-width: calc($mobile + 1px)) and (max-width: calc($tablet - 1px)) {
   .nav-container {
     nav {
       gap: 20px;
