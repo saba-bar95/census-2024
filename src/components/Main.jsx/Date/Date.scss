@@ -1,3 +1,5 @@
+@use "src/styles/_breakpoints.scss" as *;
+
 @font-face {
   font-family: FiraGOBold;
   src: url(/src/assets/fonts/FiraGO/FiraGO-ExtraBold.otf);
@@ -32,6 +34,7 @@
         color: #1e1e1e;
         font-size: 20px;
         line-height: 40px;
+        max-width: 600px;
       }
 
       .date-container {
@@ -54,6 +57,115 @@
         cursor: pointer;
         background-color: #165ce2;
         color: #ffffff;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1501px) and (max-width: $desktop) {
+  .date--section {
+    .container {
+      .left-side {
+        p {
+          width: 500px;
+        }
+
+        .date-container {
+          padding: 25px;
+          top: 44%;
+
+          img {
+            max-width: 650px;
+          }
+        }
+      }
+      .right-side {
+        img {
+          max-width: 620px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $tablet) and (max-width: 1500px) {
+  .date--section {
+    .container {
+      padding: 0 80px;
+
+      .left-side {
+        p {
+          width: 500px;
+        }
+        .date-container {
+          padding: 25px;
+          top: 44%;
+
+          img {
+            max-width: 600px;
+          }
+        }
+      }
+      .right-side {
+        img {
+          max-width: 580px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 0) and (max-width: calc($tablet - 1px)) {
+  .date--section {
+    h1 {
+      margin-bottom: 0;
+      font-size: 22px;
+    }
+    .container {
+      padding: 0 50px;
+      flex-direction: column;
+
+      .left-side {
+        padding: 40px 0 0 0;
+        gap: 30px;
+        margin: auto;
+        max-width: 600px;
+
+        p {
+          max-width: 100%;
+          font-size: 16px;
+          line-height: 25px;
+        }
+
+        .date-container {
+          position: inherit;
+          padding: 30px;
+          margin: 0;
+          max-width: 500px;
+        }
+        a {
+          button {
+            padding: 10px 20px;
+            line-height: 15px;
+            font-size: 0.9em;
+          }
+        }
+      }
+      .right-side {
+        display: none;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 0) and (max-width: $mobile) {
+  .date--section {
+    .container {
+      padding: 0 20px;
+      flex-direction: column;
+
+      .left-side {
+        max-width: 400px;
       }
     }
   }

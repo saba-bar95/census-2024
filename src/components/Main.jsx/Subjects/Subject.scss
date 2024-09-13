@@ -137,6 +137,8 @@
 
 @media only screen and (min-width: 0) and (max-width: $mobile) {
   .subject--section {
+    margin: 50px;
+
     h1 {
       margin-bottom: 60px;
       font-size: 22px;
