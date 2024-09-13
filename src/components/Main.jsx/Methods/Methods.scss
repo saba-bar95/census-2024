@@ -1,3 +1,5 @@
+@use "src/styles/_breakpoints.scss" as *;
+
 @font-face {
   font-family: FiraGOBold;
   src: url(/src/assets/fonts/FiraGO/FiraGO-ExtraBold.otf);
@@ -34,8 +36,12 @@
       gap: 50px;
       justify-content: center;
 
+      img {
+        max-height: 400px;
+      }
+
       .right-side {
-        flex: 1;
+        width: 520px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -70,7 +76,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        flex: 1;
+        width: 520px;
 
         .top {
           display: flex;
@@ -109,8 +115,79 @@
         }
       }
     }
-    .img {
-      flex: 1;
+  }
+}
+
+@media only screen and (min-width: $tablet) and (max-width: $desktop) {
+  .methods--section {
+    padding: 60px 0;
+  }
+}
+
+@media only screen and (min-width: 0) and (max-width: calc($tablet - 1px)) {
+  .methods--section {
+    padding: 60px 0;
+
+    h1 {
+      font-size: 22px;
+    }
+
+    h2 {
+      font-size: 20px;
+      width: 80%;
+      margin: auto;
+      margin-bottom: 20px;
+    }
+
+    .container {
+      padding: 20px 40px;
+      gap: 40px;
+
+      img {
+        display: none;
+      }
+
+      .top-side {
+        .right-side {
+          .top {
+            h2 {
+              font-size: 20px;
+              margin: inherit;
+              width: 100%;
+              margin-bottom: 15px;
+            }
+          }
+
+          .bot {
+            p {
+              font-size: 16px;
+              line-height: 25px;
+            }
+          }
+        }
+      }
+
+      .bottom-side {
+        .left-side {
+          .top {
+            h2 {
+              font-size: 20px;
+              margin: inherit;
+              width: 100%;
+              margin-bottom: 15px;
+            }
+          }
+
+          p {
+            font-size: 16px;
+            line-height: 25px;
+          }
+
+          button {
+            margin-top: 30px;
+          }
+        }
+      }
     }
   }
 }
