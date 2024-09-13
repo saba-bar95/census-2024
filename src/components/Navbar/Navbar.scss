@@ -182,12 +182,17 @@
         flex-direction: column;
 
         ul {
-          gap: 10px;
+          gap: 5px;
+
+          li {
+            font-size: 14px;
+          }
         }
 
         .buttons-container {
           button {
             padding: 7px 14px;
+            font-size: 0.8rem;
           }
         }
 

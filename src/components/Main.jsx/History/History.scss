@@ -203,8 +203,42 @@
         justify-content: center;
 
         img {
-          width: 380px;
+          width: 420px;
         }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1051px) and (max-width: calc($tablet - 1px)) {
+  .history--section {
+    .history-container {
+      .left-side {
+        img {
+          width: 650px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1050px) {
+  .history--section {
+    .history-container {
+      .left-side {
+        img {
+          width: 550px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: calc($mobile + 1px)) and (max-width: 850px) {
+  .history--section {
+    .history-container {
+      .right-side {
+        padding-left: 30px;
       }
     }
   }
