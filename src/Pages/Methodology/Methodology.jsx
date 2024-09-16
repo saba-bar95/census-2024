@@ -25,7 +25,7 @@ export default function Methodology() {
           <div className="background">
             <img src={unece} alt="unece" />
           </div>
-          <img src={fao} alt="fao" />
+          <img src={fao} alt="fao" className="fao" />
         </div>
         <div className="text-container">
           <p>

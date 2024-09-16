@@ -1,3 +1,5 @@
+@use "src/styles/_breakpoints.scss" as *;
+
 @font-face {
   font-family: FiraGOBold;
   src: url(/src/assets/fonts/FiraGO/FiraGO-ExtraBold.otf);
@@ -39,6 +41,7 @@
       width: 90%;
       color: #1e1e1e;
       line-height: 40px;
+      font-size: 1.1rem;
 
       span {
         display: block;
@@ -54,6 +57,7 @@
 
     li {
       margin: -15px;
+      font-size: 1.1rem;
     }
 
     li::before {
@@ -61,6 +65,140 @@
       font-size: 4em; /* adjust the size as needed */
       margin-right: 0.3em;
       vertical-align: middle; /* align the dot with the text */
+    }
+  }
+}
+
+@media only screen and (min-width: 1501px) and (max-width: $desktop) {
+  .methodology-container {
+    padding: 80px 0 130px 0;
+
+    .container {
+      .background {
+        img {
+          max-width: 500px;
+        }
+      }
+      .fao {
+        max-width: 350px;
+      }
+    }
+    .text-container {
+      padding: 0 300px;
+    }
+  }
+}
+
+@media only screen and (min-width: $tablet) and (max-width: 1500px) {
+  .methodology-container {
+    padding: 60px 0 110px 0;
+
+    .container {
+      .background {
+        img {
+          max-width: 450px;
+        }
+      }
+      .fao {
+        max-width: 310px;
+      }
+    }
+
+    .text-container {
+      padding: 0 200px;
+    }
+  }
+}
+
+@media only screen and (min-width: $mobile) and (max-width: calc($tablet - 1px)) {
+  .methodology-container {
+    gap: 30px;
+    padding: 30px 0 70px 0;
+
+    h1 {
+      font-size: 22px;
+    }
+
+    .container {
+      .background {
+        img {
+          max-width: 300px;
+        }
+      }
+      .fao {
+        max-width: 200px;
+      }
+    }
+
+    .text-container {
+      padding: 0 100px;
+      gap: 40px;
+
+      p {
+        line-height: 25px;
+        font-size: 0.8rem;
+
+        span {
+          margin-top: 15px;
+        }
+      }
+      li {
+        font-size: 0.8rem;
+        line-height: 55px;
+      }
+
+      li::before {
+        font-size: 3em; /* adjust the size as needed */
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 0) and (max-width: calc($mobile - 1px)) {
+  .methodology-container {
+    padding: 15px 0 30px 0;
+    gap: 30px;
+
+    h1 {
+      font-size: 22px;
+    }
+
+    .container {
+      flex-direction: column;
+      align-items: center;
+
+      .background {
+        img {
+          max-width: 250px;
+        }
+      }
+      .fao {
+        max-width: 250px;
+      }
+    }
+
+    .text-container {
+      padding: 0 20px;
+      gap: 30px;
+
+      p {
+        line-height: 25px;
+        font-size: 0.8rem;
+
+        span {
+          margin-top: 15px;
+        }
+      }
+
+      li {
+        margin: 0;
+        line-height: 25px;
+        font-size: 0.8rem;
+      }
+
+      li::before {
+        font-size: 3em; /* adjust the size as needed */
+      }
     }
   }
 }
