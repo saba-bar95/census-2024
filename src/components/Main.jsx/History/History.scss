@@ -6,20 +6,23 @@
 }
 
 .history--section {
-  padding: 20px 100px;
+  padding: 20px 100px 60px 100px;
   background: linear-gradient(235.95deg, #0e2756 -8.02%, #3e275a 94.77%);
   display: flex;
   justify-content: center;
+  flex-direction: column;
 
   .history-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 
     .right-side {
       margin-top: 100px;
       display: flex;
       gap: 50px;
       flex-direction: column;
+      flex: 1;
+      justify-content: center;
 
       h1 {
         color: #ffffff;
@@ -40,7 +43,8 @@
       }
 
       .time-left {
-        width: max-content;
+        overflow: hidden;
+        max-width: max-content;
         border: 1px solid #f78a23;
         border-radius: 20px 20px 20px 0;
 
@@ -106,16 +110,44 @@
       background: url(/src/assets/images/history-background.svg);
       background-position: 70% 45%;
       background-repeat: no-repeat;
+      display: flex;
+
+      img {
+        width: 100% !important;
+      }
     }
   }
-}
 
-@media only screen and (min-width: $tablet) and (max-width: 1450px) {
-  .history--section {
-    .history-container {
-      .left-side {
-        img {
-          width: 700px !important;
+  .years-container {
+    width: 100%;
+    display: flex;
+    gap: 2px;
+
+    .years-child {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      gap: 2px;
+
+      p {
+        color: rgba(156, 204, 101, 1);
+      }
+      .border-container {
+        width: 100%;
+        border-bottom: 3px solid rgba(156, 204, 101, 1);
+      }
+
+      .text {
+        position: relative;
+
+        p.dot {
+          font-size: 1.5em;
+        }
+
+        p.year {
+          position: absolute;
+          transform: translateX(-12px);
+          font-size: 1.3em;
         }
       }
     }
@@ -124,6 +156,8 @@
 
 @media only screen and (min-width: $tablet) and (max-width: $desktop) {
   .history--section {
+    padding: 20px 50px 50px 50px;
+
     .history-container {
       .right-side {
         gap: 30px;
@@ -156,6 +190,8 @@
 
 @media only screen and (min-width: calc($mobile + 1px)) and (max-width: calc($tablet - 1px)) {
   .history--section {
+    padding: 20px 30px 40px 30px;
+
     .history-container {
       .right-side {
         gap: 20px;
@@ -201,33 +237,15 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-
-        img {
-          width: 420px;
-        }
       }
     }
-  }
-}
 
-@media only screen and (min-width: 1051px) and (max-width: calc($tablet - 1px)) {
-  .history--section {
-    .history-container {
-      .left-side {
-        img {
-          width: 650px;
-        }
-      }
-    }
-  }
-}
-
-@media only screen and (min-width: 900px) and (max-width: 1050px) {
-  .history--section {
-    .history-container {
-      .left-side {
-        img {
-          width: 550px;
+    .years-container {
+      .years-child {
+        .text {
+          p.year {
+            font-size: 0.9rem;
+          }
         }
       }
     }
@@ -246,7 +264,7 @@
 
 @media only screen and (min-width: 0) and (max-width: $mobile) {
   .history--section {
-    padding: 35px 70px;
+    padding: 20px 40px 40px 40px;
     .history-container {
       flex-direction: column;
 
@@ -299,9 +317,15 @@
       .left-side {
         background: none;
         text-align: center;
+      }
+    }
 
-        img {
-          width: 380px;
+    .years-container {
+      .years-child {
+        .text {
+          p.year {
+            font-size: 0.7rem;
+          }
         }
       }
     }
