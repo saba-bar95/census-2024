@@ -1,3 +1,5 @@
+@use "src/styles/_breakpoints.scss" as *;
+
 @font-face {
   font-family: FiraGOBold;
   src: url(/src/assets/fonts/FiraGO/FiraGO-ExtraBold.otf);
@@ -53,6 +55,129 @@
 
     img {
       margin: 15px 0;
+    }
+  }
+}
+
+@media only screen and (min-width: 1501px) and (max-width: $desktop) {
+  .goals-container {
+    .images-container {
+      .image-1 {
+        max-width: 800px;
+      }
+
+      .image-2 {
+        max-width: 500px;
+      }
+    }
+
+    .info-container {
+      padding: 0 50px;
+    }
+  }
+}
+
+@media only screen and (min-width: $tablet) and (max-width: 1500px) {
+  .goals-container {
+    padding: 30px 60px 75px 60px;
+    gap: 50px;
+
+    h1 {
+      font-size: 35px;
+    }
+
+    .images-container {
+      .image-1 {
+        max-width: 620px;
+      }
+
+      .image-2 {
+        max-width: 400px;
+      }
+    }
+
+    .info-container {
+      padding: 0 20px;
+
+      p {
+        width: 85%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $mobile) and (max-width: calc($tablet - 1px)) {
+  .goals-container {
+    padding: 30px 60px;
+    gap: 30px;
+
+    h1 {
+      font-size: 22px;
+    }
+
+    .images-container {
+      .image-1 {
+        max-width: 600px;
+      }
+
+      .image-2 {
+        display: none;
+      }
+    }
+
+    .info-container {
+      padding: 0 20px;
+      gap: 15px;
+
+      p {
+        width: 90%;
+        line-height: 30px;
+        font-size: 16px;
+      }
+
+      img {
+        max-width: 600px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 0) and (max-width: calc($mobile - 1px)) {
+  .goals-container {
+    padding: 10px 20px;
+    gap: 15px;
+
+    h1 {
+      font-size: 22px;
+    }
+
+    .images-container {
+      .image-1 {
+        max-width: 380px;
+      }
+
+      .image-2 {
+        display: none;
+      }
+    }
+
+    .info-container {
+      padding: 0 20px;
+      gap: 15px;
+
+      p {
+        width: 90%;
+        line-height: 30px;
+        font-size: 16px;
+      }
+
+      .header {
+        font-size: 22px;
+      }
+
+      img {
+        max-width: 380px;
+      }
     }
   }
 }

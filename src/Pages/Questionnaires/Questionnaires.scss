@@ -28,7 +28,6 @@
       h1 {
         font-family: FiraGOBold;
         line-height: 64px;
-        width: 50%;
         font-size: 48px;
       }
 
@@ -138,6 +137,13 @@
     .background-container {
       margin: 0 80px;
 
+      .text-container {
+        h1 {
+          font-size: 35px;
+          line-height: 50px;
+        }
+      }
+
       .image-container {
         img {
           max-width: 520px;
@@ -180,9 +186,8 @@
 
       .text-container {
         h1 {
-          font-size: 22px;
-          line-height: 0;
-          width: 100%;
+          font-size: 30px;
+          line-height: 30px;
         }
 
         p {
@@ -265,7 +270,7 @@
     .background-container {
       margin: 0 15px;
       flex-direction: column;
-      padding: 20px;
+      padding: 40px 30px;
       max-width: 430px;
       margin: auto;
 

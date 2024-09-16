@@ -14,8 +14,8 @@ export default function Goals() {
       <div className="goals-container">
         <h1>2024 წლის აღწერის მიზნები და ამოცანები</h1>
         <div className="images-container">
-          <img src={image1} alt="baner1" />
-          <img src={image2} alt="baner2" />
+          <img src={image1} alt="baner1" className="image-1" />
+          <img src={image2} alt="baner2" className="image-2" />
         </div>
         <div className="info-container">
           <p>
