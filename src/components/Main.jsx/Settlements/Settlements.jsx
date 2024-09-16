@@ -1,12 +1,51 @@
 import "./Settlements.scss";
 import mestia from "/src/assets/images/mestia.png";
-import map from "/src/assets/images/settlements-map.png";
 import { useState } from "react";
+import GoogleMap from "./GoogleMap";
 
 export default function Settlements() {
   const [selected, setSelected] = useState(0);
-  const handleClick = (index) => {
+  const [selectedLocation, setSelectedLocation] = useState(null);
+
+  // const handleClick = (index) => {
+  //   setSelected(index);
+  // };
+
+  const settlements = ["მესტია", "ყაზბეგი", "ლენტეხი", "ახმეტა", "დუშეთი"];
+
+  const getCoordinates = (address) => {
+    if (address === undefined) {
+      console.error("Address is undefined");
+      throw new Error("Address is undefined");
+    }
+
+    return new Promise((resolve, reject) => {
+      const geocoder = new google.maps.Geocoder();
+      geocoder.geocode({ address }, (results, status) => {
+        if (status === "OK") {
+          const coordinates = results[0].geometry.location;
+          resolve({ lat: coordinates.lat(), lng: coordinates.lng() });
+        } else {
+          console.error(`Failed to get coordinates for address: ${address}`);
+          console.error(`Status: ${status}`);
+          reject(
+            new Error(`Failed to get coordinates for address: ${address}`)
+          );
+        }
+      });
+    });
+  };
+
+  const handleClick = async (index) => {
     setSelected(index);
+    const address = settlements[index];
+    try {
+      const coordinates = await getCoordinates(address);
+      setSelectedLocation(coordinates); // use the setSelectedLocation function
+      console.log(coordinates);
+    } catch (error) {
+      console.error(error);
+    }
   };
 
   return (
@@ -20,17 +59,15 @@ export default function Settlements() {
       </p>
       <div className="container">
         <ul>
-          {["მესტია", "ყაზბეგი", "ლენტეხი", "ახმეტა", "დუშეთი"].map(
-            (item, index) => (
-              <li
-                key={index}
-                className={selected === index ? "selected" : ""}
-                onClick={() => handleClick(index)}
-              >
-                {item}
-              </li>
-            )
-          )}
+          {settlements.map((item, index) => (
+            <li
+              key={index}
+              className={selected === index ? "selected" : ""}
+              onClick={() => handleClick(index)}
+            >
+              {item}
+            </li>
+          ))}
         </ul>
         <div className="border-container"></div>
         <div className="wrapper">
@@ -67,7 +104,8 @@ export default function Settlements() {
             </p>
           </div>
           <div className="right-side">
-            <img src={map} alt="map" />
+            {/* <GoogleMap /> */}
+            <GoogleMap location={selectedLocation} />
           </div>
         </div>
       </div>

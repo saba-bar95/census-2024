@@ -113,7 +113,7 @@
       display: flex;
 
       img {
-        width: 100% !important;
+        width: 100%;
       }
     }
   }
@@ -179,10 +179,6 @@
 
       .left-side {
         background-position: 50% 50%;
-
-        img {
-          width: 900px;
-        }
       }
     }
   }
