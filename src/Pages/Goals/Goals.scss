@@ -55,6 +55,7 @@
 
     img {
       margin: 15px 0;
+      width: 70%;
     }
   }
 }
@@ -98,10 +99,6 @@
 
     .info-container {
       padding: 0 20px;
-
-      p {
-        width: 85%;
-      }
     }
   }
 }
@@ -117,7 +114,8 @@
 
     .images-container {
       .image-1 {
-        max-width: 600px;
+        width: 70%;
+        margin: auto;
       }
 
       .image-2 {
@@ -130,13 +128,8 @@
       gap: 15px;
 
       p {
-        width: 90%;
         line-height: 30px;
         font-size: 16px;
-      }
-
-      img {
-        max-width: 600px;
       }
     }
   }
@@ -153,7 +146,8 @@
 
     .images-container {
       .image-1 {
-        max-width: 380px;
+        width: 85%;
+        margin: auto;
       }
 
       .image-2 {
@@ -166,7 +160,7 @@
       gap: 15px;
 
       p {
-        width: 90%;
+        width: 85%;
         line-height: 30px;
         font-size: 16px;
       }
@@ -176,7 +170,7 @@
       }
 
       img {
-        max-width: 380px;
+        width: 85%;
       }
     }
   }

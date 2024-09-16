@@ -1,3 +1,5 @@
+@use "src/styles/_breakpoints.scss" as *;
+
 @font-face {
   font-family: FiraGOBold;
   src: url(/src/assets/fonts/FiraGO/FiraGO-ExtraBold.otf);
@@ -22,17 +24,17 @@
   }
 
   .info-container {
-    padding: 0 200px;
     display: flex;
     flex-direction: column;
     gap: 30px;
     margin: auto;
     align-items: center;
+    width: 80%;
 
     p {
       line-height: 36px;
       font-size: 20px;
-      width: 70%;
+      width: 65%;
       color: #1e1e1e;
       line-height: 40px;
     }
@@ -45,14 +47,15 @@
       line-height: 42px;
     }
 
-    img {
+    .big-image {
       margin: 15px 0;
+      width: 65%;
     }
 
     .container {
       display: flex;
       gap: 40px;
-      width: 70%;
+      width: 65%;
 
       div {
         border-radius: 20px;
@@ -77,6 +80,125 @@
           font-size: 16px;
           color: #ffffff;
         }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1501px) and (max-width: $desktop) {
+  .legal--container {
+    gap: 65px;
+
+    .info-container {
+      width: 85%;
+    }
+  }
+}
+
+@media only screen and (min-width: $tablet) and (max-width: 1500px) {
+  .legal--container {
+    padding: 40px 60px 80px 60px;
+    gap: 40px;
+
+    h1 {
+      font-size: 35px;
+    }
+
+    .info-container {
+      p {
+        width: 80%;
+        font-size: 1.1rem;
+      }
+
+      .container {
+        width: 80%;
+      }
+
+      .big-image {
+        width: 80%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $mobile) and (max-width: calc($tablet - 1px)) {
+  .legal--container {
+    padding: 20px 30px 40px 30px;
+    gap: 20px;
+
+    h1 {
+      font-size: 22px;
+    }
+
+    .info-container {
+      width: 92%;
+      gap: 20px;
+      max-width: 800px;
+
+      p {
+        width: 80%;
+        font-size: 0.8rem;
+        line-height: 25px;
+      }
+
+      .container {
+        width: 80%;
+
+        div {
+          padding: 15px 10px;
+
+          p {
+            font-size: 0.8rem;
+            line-height: 25px;
+          }
+        }
+      }
+
+      .big-image {
+        width: 80%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 0) and (max-width: calc($mobile )) {
+  .legal--container {
+    padding: 0 15px;
+    gap: 15px;
+    margin-bottom: 40px;
+
+    h1 {
+      font-size: 22px;
+    }
+
+    .info-container {
+      width: 90%;
+      gap: 25px;
+
+      p {
+        width: 90%;
+        font-size: 0.8rem;
+        line-height: 25px;
+      }
+
+      .container {
+        width: 50%;
+        flex-direction: column;
+        max-width: 280px;
+        gap: 25px;
+
+        div {
+          padding: 15px 10px;
+
+          p {
+            font-size: 0.8rem;
+            line-height: 25px;
+          }
+        }
+      }
+
+      .big-image {
+        width: 90%;
       }
     }
   }
