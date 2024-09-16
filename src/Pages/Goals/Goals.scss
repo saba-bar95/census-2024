@@ -135,7 +135,7 @@
   }
 }
 
-@media only screen and (min-width: 0) and (max-width: calc($mobile - 1px)) {
+@media only screen and (min-width: 0) and (max-width: $mobile) {
   .goals-container {
     padding: 10px 20px;
     gap: 15px;

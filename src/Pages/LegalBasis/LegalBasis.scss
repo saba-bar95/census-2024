@@ -161,7 +161,7 @@
   }
 }
 
-@media only screen and (min-width: 0) and (max-width: calc($mobile )) {
+@media only screen and (min-width: 0) and (max-width: $mobile) {
   .legal--container {
     padding: 0 15px;
     gap: 15px;
