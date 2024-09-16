@@ -1,3 +1,5 @@
+@use "src/styles/_breakpoints.scss" as *;
+
 @font-face {
   font-family: FiraGOBold;
   src: url(/src/assets/fonts/FiraGO/FiraGO-ExtraBold.otf);
@@ -110,6 +112,242 @@
             cursor: pointer;
             background-color: #165ce2;
             color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1501px) and (max-width: $desktop) {
+  .questionnaires-container {
+    .background-container {
+      .image-container {
+        img {
+          max-width: 620px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $tablet) and (max-width: 1500px) {
+  .questionnaires-container {
+    gap: 60px;
+
+    .background-container {
+      margin: 0 80px;
+
+      .image-container {
+        img {
+          max-width: 520px;
+        }
+      }
+    }
+
+    .container {
+      margin: auto;
+
+      .questionnaires {
+        margin-bottom: 60px;
+
+        .bot-side {
+          flex-direction: column;
+
+          .image-container {
+            max-width: 560px;
+          }
+
+          img {
+            max-width: 560px;
+          }
+
+          .info-container {
+            gap: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $mobile) and (max-width: calc($tablet - 1px)) {
+  .questionnaires-container {
+    gap: 30px;
+
+    .background-container {
+      margin: 0 40px;
+
+      .text-container {
+        h1 {
+          font-size: 22px;
+          line-height: 0;
+          width: 100%;
+        }
+
+        p {
+          font-size: 16px;
+          line-height: 25px;
+          width: 100%;
+        }
+      }
+
+      .image-container {
+        img {
+          max-width: 350px;
+        }
+      }
+    }
+
+    .container {
+      margin: auto;
+
+      .questionnaires {
+        margin-bottom: 40px;
+        padding: 0 70px;
+
+        .top-side {
+          p {
+            font-size: 16px;
+          }
+
+          h1 {
+            font-size: 22px;
+            line-height: 0;
+            width: 100%;
+          }
+        }
+
+        .bot-side {
+          flex-direction: column;
+
+          .image-container {
+            max-width: 300px;
+            display: flex;
+          }
+
+          .info-container {
+            p {
+              font-size: 18px;
+              line-height: 25px;
+            }
+
+            ul {
+              li {
+                font-size: 16px;
+              }
+            }
+
+            button {
+              padding: 10px 20px;
+              line-height: 15px;
+              font-size: 0.9em;
+            }
+          }
+
+          img {
+            max-width: 300px;
+          }
+
+          .info-container {
+            gap: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 0) and (max-width: calc($mobile - 1px)) {
+  .questionnaires-container {
+    gap: 20px;
+
+    .background-container {
+      margin: 0 15px;
+      flex-direction: column;
+      padding: 20px;
+      max-width: 430px;
+      margin: auto;
+
+      .text-container {
+        width: 100%;
+        gap: 15px;
+
+        h1 {
+          font-size: 22px;
+          line-height: 0;
+          width: 100%;
+          text-align: center;
+        }
+
+        p {
+          font-size: 16px;
+          line-height: 25px;
+          width: 100%;
+        }
+      }
+
+      .image-container {
+        img {
+          max-width: 230px;
+        }
+      }
+    }
+
+    .container {
+      margin: auto;
+
+      .questionnaires {
+        margin-bottom: 30px;
+        padding: 0 20px;
+
+        .top-side {
+          p {
+            font-size: 16px;
+          }
+
+          h1 {
+            font-size: 22px;
+            line-height: 0;
+            width: 100%;
+          }
+        }
+
+        .bot-side {
+          flex-direction: column;
+          gap: 15px;
+
+          .image-container {
+            max-width: 300px;
+            display: flex;
+          }
+
+          .info-container {
+            p {
+              font-size: 18px;
+              line-height: 25px;
+            }
+
+            ul {
+              li {
+                font-size: 16px;
+                line-height: 30px;
+              }
+            }
+
+            button {
+              padding: 10px 20px;
+              line-height: 15px;
+              font-size: 0.9em;
+            }
+          }
+
+          img {
+            max-width: 300px;
+          }
+
+          .info-container {
+            gap: 20px;
           }
         }
       }
