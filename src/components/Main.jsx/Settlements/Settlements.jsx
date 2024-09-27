@@ -8,6 +8,7 @@ export default function Settlements() {
   const apiKey = "AIzaSyB7D2WPALIsuME2Y8wbWGZuob19cbpuiR0";
   const settlements = ["მესტია", "ყაზბეგი", "ლენტეხი", "ახმეტა", "დუშეთი"];
   const [selected, setSelected] = useState(0);
+
   const initialCoordinates = { lat: 43.0334614, lng: 42.6894803 };
   const [selectedLocation, setSelectedLocation] = useState(initialCoordinates);
 
@@ -17,6 +18,7 @@ export default function Settlements() {
     try {
       const result = await getCoordinates(address);
       const location = result[0].geometry.location;
+
       const coordinates = {
         lat: location.lat(),
         lng: location.lng(),
@@ -42,8 +44,7 @@ export default function Settlements() {
             <li
               key={index}
               className={selected === index ? "selected" : ""}
-              onClick={() => handleClick(index)}
-            >
+              onClick={() => handleClick(index)}>
               {item}
             </li>
           ))}
