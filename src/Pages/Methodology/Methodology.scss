@@ -66,6 +66,34 @@
       margin-right: 0.3em;
       vertical-align: middle; /* align the dot with the text */
     }
+
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+
+      h2 {
+        font-size: 1.4em;
+        line-height: 35px;
+      }
+
+      p {
+        line-height: 10px;
+        display: flex;
+        gap: 7px;
+        align-items: center;
+
+        img {
+          width: 15px;
+          transition: width 0.3s, transform 0.3s; /* add a transition effect for width and transform */
+
+          &:hover {
+            width: 18px; /* increase the width to 20px on hover */
+            transform: scale(1.1); /* scale the image up by 10% on hover */
+          }
+        }
+      }
+    }
   }
 }
 
@@ -154,6 +182,21 @@
       li::before {
         font-size: 3em; /* adjust the size as needed */
       }
+
+      .wrapper {
+        gap: 15px;
+
+        h2 {
+          font-size: 1.2em;
+          line-height: 25px;
+        }
+
+        p {
+          img {
+            width: 10px;
+          }
+        }
+      }
     }
   }
 }
@@ -202,6 +245,21 @@
 
       li::before {
         font-size: 3em; /* adjust the size as needed */
+      }
+
+      .wrapper {
+        gap: 10px;
+
+        h2 {
+          font-size: 1em;
+          line-height: 25px;
+        }
+
+        p {
+          img {
+            width: 10px;
+          }
+        }
       }
     }
   }

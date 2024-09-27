@@ -26,17 +26,14 @@ export default function Navbar() {
               <Link to="/methodology">მეთოდოლოგია</Link>
             </li>
             <li>
-              <Link to="" onClick={(e) => e.preventDefault()}>
-                შედეგები
-              </Link>
+              <Link to="/results">შედეგები</Link>
             </li>
           </ul>
           <div className="buttons-container">
             <Link to="#">
               <button
                 className="vacancies--btn"
-                onClick={(e) => e.preventDefault()}
-              >
+                onClick={(e) => e.preventDefault()}>
                 ვაკანსიები
               </button>
             </Link>

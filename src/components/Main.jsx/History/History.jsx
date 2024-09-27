@@ -9,15 +9,15 @@ export default function History() {
       <div className="history--section">
         <div className="history-container">
           <div className="right-side">
-            <h1>აღწერების ისტორია საქართველოში</h1>
+            <h1>აღწერა 2024</h1>
             <div className="para-container">
               <p>
-                აღწერები ტარდება ქვეყნის განვითარებისთვის, გეგმებისა და
-                პროგრამების ეფექტიანი განხორციელების ხელშესაწყობად
+                2024 წლის 14 ნოემბრიდან 19 დეკემბრის ჩათვლით პერიოდში
+                საქართველოს მოსახლეობის და სასოფლო-სამეურნეო აღწერა ტარდება.
               </p>
               <p>
-                აღწერა ასევე წარმოადგენს მნიშვნელოვან წყაროს გაეროს მდგრადი
-                განვითარების 2030 წლის მიზნების განხორციელების შესაფასებლად.
+                აღწერა ტარდება საქართველოს ყველა ადმინისტრაციულ - ტერიტორიულ
+                ერთეულში, გარდა ოკუპირებული ტერიტორიებისა.
               </p>
             </div>
             <CountdownComponent />
@@ -31,14 +31,12 @@ export default function History() {
           <div className="years-child">
             <p
               className="dot"
-              style={{ fontSize: "1.5em", color: "rgba(247, 138, 35, 1)" }}
-            >
+              style={{ fontSize: "1.5em", color: "rgba(247, 138, 35, 1)" }}>
               •
             </p>
             <div
               className="border-container"
-              style={{ borderBottom: "3px solid rgba(247, 138, 35, 1)" }}
-            ></div>
+              style={{ borderBottom: "3px solid rgba(247, 138, 35, 1)" }}></div>
             <div className="text">
               <p className="dot">•</p>
               <p className="year">2014</p>

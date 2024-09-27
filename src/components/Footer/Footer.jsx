@@ -11,7 +11,7 @@ export default function Footer() {
         <div className="container">
           <p className="header">კონტაქტი</p>
           <div>
-            <p>საქართველოს სტატისტიკის სამსახური</p>
+            <p>საქართველოს სტატისტიკის ეროვნული სამსახური</p>
             <p> +995 32 2 36 72 10 | +995 32 2 60 11 60 </p>
             <p>info@geostat.ge</p>
             <p> ცოტნე დადიანის ქ. 30, თბილისი, 0180</p>

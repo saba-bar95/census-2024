@@ -90,6 +90,7 @@
             list-style-type: none;
             display: flex;
             flex-direction: column;
+            gap: 5px;
 
             li {
               display: flex;
@@ -98,19 +99,6 @@
               font-size: 20px;
               line-height: 45px;
             }
-          }
-
-          button {
-            align-self: start;
-            padding: 20px 40px;
-            border-radius: 15px;
-            line-height: 19px;
-            outline: none;
-            border: none;
-            font-size: 1.1em;
-            cursor: pointer;
-            background-color: #165ce2;
-            color: #ffffff;
           }
         }
       }
@@ -242,12 +230,6 @@
                 font-size: 16px;
               }
             }
-
-            button {
-              padding: 10px 20px;
-              line-height: 15px;
-              font-size: 0.9em;
-            }
           }
 
           img {
@@ -338,12 +320,6 @@
                 font-size: 16px;
                 line-height: 30px;
               }
-            }
-
-            button {
-              padding: 10px 20px;
-              line-height: 15px;
-              font-size: 0.9em;
             }
           }
 

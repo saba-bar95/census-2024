@@ -26,7 +26,7 @@ export default function Subject() {
             </li>
             <li>
               <img src={green} alt="" />
-              ქვეყანაში მყოფი მოქალაქეობის არმქონე პირი
+              საქართველოში მყოფი მოქალაქეობის არმქონე პირი
             </li>
           </ul>
         </div>

@@ -3,14 +3,15 @@ import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import unece from "/src/assets/images/unece.png";
 import fao from "/src/assets/images/fao.svg";
+import redirect from "/src/assets/images/redirect.png";
 
 const list = [
+  "შინამეურნეობები და საბინაო პირობები;",
   "დემოგრაფიული და სოციალური მახასიათებლები",
   "განათლების დონე;",
   "ეკონომიკური მახასიათებლები;",
   "ჯანმრთელობის მდგომარეობა;",
   "მიგრაცია;",
-  "შინამეურნეობები და საბინაო პირობები;",
   "შინამეურნეობების სარგებლობაში არსებული მიწის სტრუქტურა;",
   "პირუტყვისა და ფრინველის სულადობა;",
 ];
@@ -46,6 +47,27 @@ export default function Methodology() {
               return <li key={el}>{el}</li>;
             })}
           </ul>
+          <div className="wrapper">
+            <h2>
+              აღწერის ფარგლებში გამოყენებული მეთოდოლოგიები შეგიძლიათ იხილოთ
+              შემდეგ ბმულებზე:
+            </h2>
+
+            <p>
+              მოსახლეობის აღწერა
+              <a
+                target="_blank"
+                href="https://unece.org/DAM/stats/publications/2015/ECECES41_EN.pdf?fbclid=IwAR3m8pGgjKq3WjR0ZYq3OQ-K95hQYmjmK7T8SYADsQYggBdKD3pwidwXmbU">
+                <img src={redirect}></img>
+              </a>
+            </p>
+            <p>
+              სასოფლო-სამეურნეო აღწერა
+              <a href="#">
+                <img src={redirect}></img>
+              </a>
+            </p>
+          </div>
         </div>
       </div>
       <Footer />

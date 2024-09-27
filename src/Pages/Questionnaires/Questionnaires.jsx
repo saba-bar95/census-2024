@@ -61,7 +61,6 @@ export default function Questionnaires() {
                     საცხოვრისის სარგებლობის ფორმა
                   </li>
                 </ul>
-                <button>ნახვა</button>
               </div>
             </div>
           </div>
@@ -119,7 +118,6 @@ export default function Questionnaires() {
                     ჯანმრთელობის მდგომარეობა
                   </li>
                 </ul>
-                <button>ნახვა</button>
               </div>
             </div>
           </div>
@@ -131,8 +129,7 @@ export default function Questionnaires() {
             <div className="bot-side">
               <div
                 className="image-container"
-                style={{ backgroundColor: "#B0DAB9", borderRadius: "50px" }}
-              >
+                style={{ backgroundColor: "#B0DAB9", borderRadius: "50px" }}>
                 <img src={third} alt="house" />
               </div>
               <div className="info-container">
@@ -141,30 +138,34 @@ export default function Questionnaires() {
                 </p>
                 <ul>
                   <li>
-                    <img src={green} alt="" /> შინამეურნეობის შემადგენლობა
+                    <img src={green} alt="" /> მიწის ფართობები საკუთრების
+                    ფორმების მიხედვით
+                  </li>
+                  <li>
+                    <img src={green} alt="" /> მიწის ფართობები სარგებლობის
+                    სახეების მიხედვით
                   </li>
                   <li>
                     <img src={green} alt="" />
-                    საცხოვრისის ტიპი (ინდივიდუალური სახლი, ბინა და ა.შ.)
+                    სახნავი მიწის ფართობის სტრუქტურა (ერთწლიანი კულტურები)
                   </li>
                   <li>
                     <img src={green} alt="" />
-                    შენობის აშენების წელი
+                    მრავალწლოვანი ნარგავების რაოდენობა
                   </li>
                   <li>
                     <img src={green} alt="" />
-                    ფართობი და ოთახების რაოდენობა
+                    ვაზის ჯიშები და ძირთა რაოდენობა
                   </li>
                   <li>
                     <img src={green} alt="" />
-                    კეთილმოწყობის სახეები (ელექტროენერგია, გაზი, წყალი და ა. შ.)
+                    პირუტყვის და ფრინველის სულადობა
                   </li>
                   <li>
                     <img src={green} alt="" />
-                    საცხოვრისის სარგებლობის ფორმა
+                    ფუტკრის ოჯახების რაოდენობა
                   </li>
                 </ul>
-                <button>ნახვა</button>
               </div>
             </div>
           </div>

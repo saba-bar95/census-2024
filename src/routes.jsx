@@ -59,7 +59,7 @@ const routes = [
     element: (
       <>
         <ScrollToTop />
-        <App />
+        <Results />
       </>
     ),
   },

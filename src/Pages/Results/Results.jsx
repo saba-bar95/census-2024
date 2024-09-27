@@ -1,13 +1,16 @@
-import "./Results";
+import "./Results.scss";
 import Navbar from "../../components/Navbar/Navbar";
-import Footer from "../../components/Footer/Footer";
 
 export default function Results() {
   return (
     <>
       <Navbar />
-      <h2>Results</h2>
-      <Footer />
+      <div className="results-container">
+        <h1>
+          აღწერის წინასწარი შედეგები ხელმისაწვდომი იქნება არაუგვიანეს 2025 წლის
+          ივნისისა, ხოლო საბოლოო შედეგები - არაუგვიანეს 2026 წლის ივნისისა.
+        </h1>
+      </div>
     </>
   );
 }
