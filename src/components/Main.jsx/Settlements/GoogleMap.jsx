@@ -1,6 +1,7 @@
-import { APIProvider, Map, Marker } from "@vis.gl/react-google-maps";
+/* eslint-disable react/prop-types */
 // import { useMap, useMapsLibrary } from "@vis.gl/react-google-maps";
 // import { useMemo, useEffect } from "react";
+import { APIProvider, Map, Marker } from "@vis.gl/react-google-maps";
 
 const GoogleMap = ({ apiKey, location }) => {
   return (
@@ -14,8 +15,7 @@ const GoogleMap = ({ apiKey, location }) => {
         center={location ? { lat: location.lat, lng: location.lng } : undefined}
         zoom={location ? 11 : 5}
         gestureHandling={"greedy"}
-        disableDefaultUI={true}
-      >
+        disableDefaultUI={true}>
         {" "}
         {location && (
           <Marker position={{ lat: location.lat, lng: location.lng }} />
