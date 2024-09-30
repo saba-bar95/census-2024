@@ -33,7 +33,10 @@ export default function Navbar() {
             <Link to="#">
               <button
                 className="vacancies--btn"
-                onClick={(e) => e.preventDefault()}>
+                onClick={(e) => {
+                  window.open("https://census-cv.geostat.ge/", "_blank");
+                  e.preventDefault();
+                }}>
                 ვაკანსიები
               </button>
             </Link>

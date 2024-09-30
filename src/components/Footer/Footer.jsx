@@ -38,9 +38,7 @@ export default function Footer() {
               <Link to="/methodology">მეთოდოლოგია</Link>
             </li>
             <li>
-              <Link to="#" onClick={(e) => e.preventDefault()}>
-                შედეგები
-              </Link>
+              <Link to="/results">შედეგები</Link>
             </li>
           </ul>
         </div>
