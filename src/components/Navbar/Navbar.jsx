@@ -30,16 +30,14 @@ export default function Navbar() {
             </li>
           </ul>
           <div className="buttons-container">
-            <Link to="#">
-              <button
-                className="vacancies--btn"
-                onClick={(e) => {
-                  window.open("https://census-cv.geostat.ge/", "_blank");
-                  e.preventDefault();
-                }}>
-                ვაკანსიები
-              </button>
-            </Link>
+            <button
+              className="vacancies--btn"
+              onClick={(e) => {
+                window.open("https://census-cv.geostat.ge/", "_blank");
+                e.preventDefault();
+              }}>
+              ვაკანსიები
+            </button>
             <button className="self-registration--btn">თვითრეგისტრაცია</button>
           </div>
           <LanguageChanger />

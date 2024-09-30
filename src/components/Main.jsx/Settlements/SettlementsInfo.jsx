@@ -39,7 +39,7 @@ const settlementsInfo = [
   },
   {
     "first-header": "ლენტეხი",
-    settlements: ``,
+    settlements: `ჟახუნდრის, რცხმელურის, ჩიხარეშის, ჩოლურის, ცანის, ხელედის, ხოფურის ადმინსტრაციული ერთეულები`,
   },
   {
     "first-header": "ახმეტა",

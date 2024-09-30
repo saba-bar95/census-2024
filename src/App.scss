@@ -9,3 +9,14 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+.section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s, transform 1s;
+}
+
+.section.active {
+  opacity: 1;
+  transform: translateY(0);
+}

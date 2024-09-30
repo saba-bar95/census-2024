@@ -58,6 +58,11 @@
           cursor: pointer;
           text-decoration: none;
           color: $header-color;
+          transition: transform 0.3s; /* Add this line */
+
+          &:hover {
+            transform: scale(1.1); /* Add this line */
+          }
         }
       }
 
@@ -83,6 +88,12 @@
           color: #fe7155;
           border: 1px solid #fe7155;
           background-color: #ffffff;
+          transition: background-color 0.3s, color 0.3s; /* Add this line */
+
+          &:hover {
+            background-color: #fe7155;
+            color: #ffffff;
+          }
         }
 
         .self-registration--btn {
