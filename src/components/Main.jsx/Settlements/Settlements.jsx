@@ -55,7 +55,10 @@ export default function Settlements() {
             <img src={images[selected]} alt="" />
             <h2>{settlementsInfo[selected]["first-header"]}</h2>
             <h3>{settlementsInfo[selected]["second-header"]}</h3>
-            <p>{settlementsInfo[selected].settlements}</p>
+
+            {settlementsInfo[selected].settlements && (
+              <p>{settlementsInfo[selected].settlements}</p>
+            )}
           </div>
           <div className="right-side">
             <GoogleMap location={selectedLocation} key={apiKey} />
