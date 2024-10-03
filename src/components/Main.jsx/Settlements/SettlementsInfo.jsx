@@ -6,13 +6,13 @@ import lentekhi from "/src/assets/images/lentekhi.jpg";
 
 const settlementsInfo = [
   {
-    "first-header": "მესტიის მუნიპალიტეტი",
+    "first-header": "მესტიის მუნიციპალიტეტი",
   },
   {
-    "first-header": "ყაზბეგის მუნიპალიტეტი",
+    "first-header": "ყაზბეგის მუნიციპალიტეტი",
   },
   {
-    "first-header": "ლენტეხის მუნიპალიტეტი",
+    "first-header": "ლენტეხის მუნიციპალიტეტი",
   },
   {
     "first-header": "ახმეტა",
