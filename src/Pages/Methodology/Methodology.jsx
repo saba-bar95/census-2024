@@ -65,7 +65,9 @@ export default function Methodology() {
               </p>
               <p>
                 სასოფლო-სამეურნეო აღწერა
-                <a href="#">
+                <a
+                  target="_blank"
+                  href="https://www.geostat.ge/media/19735/World-Programme-for-the-Census-of-Agriculture-2020.pdf">
                   <img src={redirect}></img>
                 </a>
               </p>
