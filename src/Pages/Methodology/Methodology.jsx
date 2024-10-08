@@ -5,6 +5,7 @@ import unece from "/src/assets/images/unece.png";
 import fao from "/src/assets/images/fao.svg";
 import redirect from "/src/assets/images/redirect.png";
 import Section from "../../components/Main.jsx/Section";
+import TopArrow from "../../components/TopArrow/TopArrow";
 
 const list = [
   "შინამეურნეობები და საბინაო პირობები;",
@@ -74,6 +75,7 @@ export default function Methodology() {
             </div>
           </div>
         </div>
+        <TopArrow />
       </Section>
       <Footer />
     </>

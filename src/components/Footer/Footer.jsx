@@ -19,9 +19,18 @@ export default function Footer() {
           <div className="socials">
             <p>სოციალური ქსელები</p>
             <div className="icons">
-              <img src={facebook} alt="facebook" />
-              <img src={twitter} alt="twitter" />
-              <img src={linkedIn} alt="linkedIn" />
+              <a href="https://www.facebook.com/geostat.ge" target="_blank">
+                <img src={facebook} alt="facebook" />
+              </a>
+
+              <a href="https://www.x.com/Geostat100" target="_blank">
+                <img src={twitter} alt="twitter" />
+              </a>
+              <a
+                href="https://ge.linkedin.com/company/national-statistics-office-of-georgia"
+                target="_blank">
+                <img src={linkedIn} alt="linkedIn" />
+              </a>
             </div>
           </div>
         </div>
@@ -43,7 +52,11 @@ export default function Footer() {
           </ul>
         </div>
         <div className="container">
-          <p>მონაცემთა გამოყენების პირობები</p>
+          <a
+            href="https://www.geostat.ge/ka/page/monacemta-gamoyenebis-pirobebi"
+            target="_blank">
+            მონაცემთა გამოყენების პირობები
+          </a>
         </div>
       </div>
     </footer>

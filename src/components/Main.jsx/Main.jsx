@@ -7,6 +7,7 @@ import Date from "./Date/Date";
 import Settlements from "./Settlements/Settlements";
 import Methods from "./Methods/Methods";
 import Section from "./Section";
+import TopArrow from "../TopArrow/TopArrow";
 
 export default function Main() {
   return (
@@ -36,6 +37,7 @@ export default function Main() {
         <Section>
           <Methods />
         </Section>
+        <TopArrow />
       </main>
     </>
   );

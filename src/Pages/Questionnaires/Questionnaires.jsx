@@ -7,6 +7,7 @@ import green from "/src/assets/images/green-accept.png";
 import personal from "/src/assets/images/personal.png";
 import third from "/src/assets/images/third.png";
 import Section from "../../components/Main.jsx/Section";
+import TopArrow from "../../components/TopArrow/TopArrow";
 
 export default function Questionnaires() {
   return (
@@ -102,10 +103,6 @@ export default function Questionnaires() {
                     </li>
                     <li>
                       <img src={green} alt="" />
-                      ქორწინების მდგომარეობა და შვილიანობა
-                    </li>
-                    <li>
-                      <img src={green} alt="" />
                       შიდა მიგრაცია
                     </li>
                     <li>
@@ -174,6 +171,7 @@ export default function Questionnaires() {
             </div>
           </div>
         </div>
+        <TopArrow />
       </Section>
       <Footer />
     </>

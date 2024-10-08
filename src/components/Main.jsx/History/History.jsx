@@ -62,6 +62,14 @@ export default function History() {
             <div className="border-container"></div>
             <div className="text">
               <p className="dot">•</p>
+              <p className="year">1979</p>
+            </div>
+          </div>
+          <div className="years-child">
+            {" "}
+            <div className="border-container"></div>
+            <div className="text">
+              <p className="dot">•</p>
               <p className="year">1970</p>
             </div>
           </div>

@@ -5,6 +5,7 @@ import image1 from "/src/assets/images/date-image1.png";
 import image2 from "/src/assets/images/date-image2.png";
 import CountdownComponent from "../../components/Main.jsx/History/CountDown/CountDown";
 import Section from "../../components/Main.jsx/Section";
+import TopArrow from "../../components/TopArrow/TopArrow";
 
 export default function Date() {
   return (
@@ -43,6 +44,7 @@ export default function Date() {
             </p>
           </div>
         </div>
+        <TopArrow />
       </Section>
       <Footer />
     </>

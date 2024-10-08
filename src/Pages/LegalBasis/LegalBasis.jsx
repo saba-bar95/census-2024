@@ -7,6 +7,7 @@ import defence from "/src/assets/images/defence.svg";
 import image1 from "/src/assets/images/legal-image1.png";
 import image2 from "/src/assets/images/legal-image2.png";
 import Section from "../../components/Main.jsx/Section";
+import TopArrow from "../../components/TopArrow/TopArrow";
 
 export default function LegalBasis() {
   return (
@@ -65,10 +66,11 @@ export default function LegalBasis() {
               მუხლი).
             </p>
             <p style={{ marginTop: "-15px" }}>
-              აღმწერ პერსონალს ეკრძალება აცნობოს ვინმეს, რესპონდენტის შესახებ
-              შევსებული აღწერის კითხვარის შინაარსი. მონაცემების გამოყენების
-              წესის დარღვევისთვის აღმწერ პერსონალს დაეკისრება პასუხისმგებლობა
-              საქართველოს მოქმედი კანონმდებლობით დადგენილი წესით.
+              აღმწერ პერსონალს ეკრძალება აცნობოს მესამე პირს, რესპონდენტის
+              შესახებ შევსებული აღწერის კითხვარის შინაარსი. მონაცემების
+              გამოყენების წესის დარღვევისთვის აღმწერ პერსონალს დაეკისრება
+              პასუხისმგებლობა საქართველოს მოქმედი კანონმდებლობით დადგენილი
+              წესით.
             </p>
             <img src={image2} alt="legal-image2" className="big-image" />
             <p>
@@ -78,6 +80,7 @@ export default function LegalBasis() {
             </p>
           </div>
         </div>
+        <TopArrow />
       </Section>
       <Footer />
     </>
