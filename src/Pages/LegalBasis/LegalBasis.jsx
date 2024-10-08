@@ -2,7 +2,7 @@ import "./LegalBasis.scss";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import hammer from "/src/assets/images/hammer.svg";
-import sakstat from "/src/assets/images/sakstat-logo.svg";
+import sakstat from "/src/assets/images/logo-transparent-ka.png";
 import defence from "/src/assets/images/defence.svg";
 import image1 from "/src/assets/images/legal-image1.png";
 import image2 from "/src/assets/images/legal-image2.png";
@@ -34,7 +34,7 @@ export default function LegalBasis() {
                 <p>კანონი „ოფიციალური სტატისტიკის შესახებ“</p>
               </div>
               <div>
-                <img src={sakstat} alt="sakstat" />
+                <img src={sakstat} alt="sakstat" style={{ width: "120px" }} />
                 <p>საქსტატის დებულება</p>
               </div>
               <div>

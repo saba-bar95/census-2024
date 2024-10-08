@@ -28,6 +28,8 @@
 
       .sakstat-logo {
         cursor: pointer;
+        transform: translateY(5px);
+        max-width: 150px;
       }
     }
 
@@ -112,8 +114,12 @@
 
       .right-side {
         img {
-          width: 90px;
+          width: 100px;
           height: auto;
+        }
+
+        .sakstat-logo {
+          width: 110px;
         }
       }
 
@@ -141,6 +147,10 @@
 
       .right-side {
         gap: 20px;
+
+        .sakstat-logo {
+          width: 75px;
+        }
 
         img {
           width: 60px;

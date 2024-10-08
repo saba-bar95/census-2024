@@ -54,8 +54,6 @@ export default function Settlements() {
           <div className="left-side">
             <img src={images[selected]} alt="" />
             <h2>{settlementsInfo[selected]["first-header"]}</h2>
-            <h3>{settlementsInfo[selected]["second-header"]}</h3>
-
             {settlementsInfo[selected].settlements && (
               <p>{settlementsInfo[selected].settlements}</p>
             )}

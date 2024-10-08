@@ -1,6 +1,6 @@
 import "./Responsible.scss";
 import group from "/src/assets/images/group.png";
-import sakstat from "/src/assets/images/sakstat.svg";
+import sakstat from "/src/assets/images/logo-transparent-ka.png";
 import stat from "/src/assets/images/stat.png";
 import stat2 from "/src/assets/images/stat2.png";
 import stat3 from "/src/assets/images/stat3.png";

@@ -3,7 +3,7 @@ import { useState } from "react";
 import changeLanguage from "/src/assets/images/change-language.png";
 import downArrow from "/src/assets/images/down-arrow.png";
 
-const languages = ["Geo", "Eng"];
+const languages = ["ქარ", "Eng"];
 
 function LanguageChanger() {
   const [showLanguages, setShowLanguages] = useState(false);
@@ -17,8 +17,7 @@ function LanguageChanger() {
   return (
     <div
       className={`language-changer ${showLanguages ? "show-languages" : ""}`}
-      onClick={() => setShowLanguages(!showLanguages)}
-    >
+      onClick={() => setShowLanguages(!showLanguages)}>
       <img src={changeLanguage} alt="change-language" />
       <p>{selectedLanguage}</p>
       <img src={downArrow} alt="down-arrow" className="down-arrow" />

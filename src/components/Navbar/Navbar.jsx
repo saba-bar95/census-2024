@@ -1,7 +1,7 @@
 import "./Navbar.scss";
 import { Link } from "react-router-dom";
 import LanguageChanger from "./LanguageChanger/LanguageChanger";
-import sakstat from "/src/assets/images/sakstat.svg";
+import sakstat from "/src/assets/images/logo-transparent-ka.png";
 import census from "/src/assets/images/census.svg";
 
 export default function Navbar() {
