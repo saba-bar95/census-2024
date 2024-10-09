@@ -95,7 +95,7 @@ export default function Questionnaires() {
                     </li>
                     <li>
                       <img src={green} alt="" />
-                      ენების ფლობა
+                      ენის ფლობა
                     </li>
                     <li>
                       <img src={green} alt="" />
