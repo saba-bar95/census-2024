@@ -1,13 +1,19 @@
+/* eslint-disable react/prop-types */
 import "./LanguageChanger.scss";
-import { useState } from "react";
-import changeLanguage from "/src/assets/images/change-language.png";
+import { useState, useEffect } from "react";
 import downArrow from "/src/assets/images/down-arrow.png";
+import upArrow from "/src/assets/images/up-arrow.png";
+import georgian from "/src/assets/images/georgian-flag.svg";
+import english from "/src/assets/images/uk-flag.svg";
 
-const languages = ["ქარ", "Eng"];
+const languages = ["ქარ", "EN"];
 
-function LanguageChanger() {
+function LanguageChanger({ selectedLanguage, setSelectedLanguage }) {
   const [showLanguages, setShowLanguages] = useState(false);
-  const [selectedLanguage, setSelectedLanguage] = useState(languages[0]);
+
+  useEffect(() => {
+    localStorage.setItem("selectedLanguage", selectedLanguage);
+  }, [selectedLanguage]);
 
   const handleLanguageChange = (language) => {
     setSelectedLanguage(language);
@@ -18,9 +24,17 @@ function LanguageChanger() {
     <div
       className={`language-changer ${showLanguages ? "show-languages" : ""}`}
       onClick={() => setShowLanguages(!showLanguages)}>
-      <img src={changeLanguage} alt="change-language" />
-      <p>{selectedLanguage}</p>
-      <img src={downArrow} alt="down-arrow" className="down-arrow" />
+      <img
+        src={selectedLanguage === "ქარ" ? georgian : english}
+        alt="language-flag"
+        style={{ width: "20px" }}
+      />
+      <p style={{ fontSize: "0.9rem" }}>{selectedLanguage}</p>
+      <img
+        src={showLanguages ? upArrow : downArrow}
+        alt="arrow"
+        style={{ width: "10px" }}
+      />
       {showLanguages && (
         <ul className="language-options">
           {languages.map((language, index) => (

@@ -1,11 +1,23 @@
 import "./Results.scss";
 import Navbar from "../../components/Navbar/Navbar";
 import Section from "../../components/Main.jsx/Section";
+import { useState, useEffect } from "react";
 
 export default function Results() {
+  const [selectedLanguage, setSelectedLanguage] = useState(
+    localStorage.getItem("selectedLanguage") || "ქარ"
+  );
+
+  useEffect(() => {
+    localStorage.setItem("selectedLanguage", selectedLanguage);
+  }, [selectedLanguage]);
+
   return (
     <>
-      <Navbar />
+      <Navbar
+        selectedLanguage={selectedLanguage}
+        setSelectedLanguage={setSelectedLanguage}
+      />
       <Section>
         <div className="results-container">
           <h1>

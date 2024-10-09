@@ -103,23 +103,6 @@
             min-width: 60px;
           }
         }
-        .border-container {
-          border: 1px solid rgba(208, 208, 208, 1);
-          width: 100%;
-        }
-
-        button {
-          align-self: start;
-          padding: 20px 40px;
-          border-radius: 15px;
-          line-height: 19px;
-          outline: none;
-          border: none;
-          font-size: 1.1em;
-          cursor: pointer;
-          background-color: #165ce2;
-          color: #ffffff;
-        }
       }
     }
   }
@@ -209,13 +192,6 @@
                 font-size: 20px;
               }
             }
-          }
-
-          button {
-            padding: 10px 20px;
-            line-height: 15px;
-            font-size: 0.9em;
-            align-self: center;
           }
         }
       }

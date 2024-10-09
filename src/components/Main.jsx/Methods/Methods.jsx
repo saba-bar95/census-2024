@@ -19,7 +19,7 @@ export default function Methods() {
             <div className="top">
               <img src={questions} alt="" />
               <h2>
-                კომპიუტერის დახმარებით პერსონალური ინტერვიუს მეთოდით (CAPI)
+                კომპიუტერის დახმარებით - პერსონალური ინტერვიუს მეთოდი (CAPI)
               </h2>
             </div>
             <div className="bot">
@@ -37,7 +37,7 @@ export default function Methods() {
           <div className="left-side">
             <div className="top">
               <img src={comp} alt="comp" />
-              <h2>კომპიუტერის დახმარებით ვებ-ინტერვიუს მეთოდი (CAWI)</h2>
+              <h2>კომპიუტერის დახმარებით - ვებ-ინტერვიუს მეთოდი (CAWI)</h2>
             </div>
             <p>
               CAWI წარმოადგენს მონაცემთა შეგროვების მეთოდს, როდესაც

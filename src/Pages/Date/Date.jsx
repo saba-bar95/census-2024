@@ -6,11 +6,23 @@ import image2 from "/src/assets/images/date-image2.png";
 import CountdownComponent from "../../components/Main.jsx/History/CountDown/CountDown";
 import Section from "../../components/Main.jsx/Section";
 import TopArrow from "../../components/TopArrow/TopArrow";
+import { useState, useEffect } from "react";
 
 export default function Date() {
+  const [selectedLanguage, setSelectedLanguage] = useState(
+    localStorage.getItem("selectedLanguage") || "ქარ"
+  );
+
+  useEffect(() => {
+    localStorage.setItem("selectedLanguage", selectedLanguage);
+  }, [selectedLanguage]);
+
   return (
     <>
-      <Navbar />
+      <Navbar
+        selectedLanguage={selectedLanguage}
+        setSelectedLanguage={setSelectedLanguage}
+      />
       <Section>
         <div className="date-container">
           <h1>აღწერის ჩატარების თარიღი</h1>
@@ -19,7 +31,8 @@ export default function Date() {
               გაეროს რეკომენდაციებისა და საერთაშორისო პრაქტიკის შესაბამისად,
               აღწერები ქვეყანაში ტარდება 10 წელიწადში ერთხელ. საქართველოში
               უკანასკნელი აღწერა ჩატარდა 2014 წელს. შესაბამისად, მომდევნო
-              აღწერის ჩატარება დაგეგმილია 2024 წლის ნოემბერ-დეკემბერში.
+              მოსახლეობის აღწერა საქართველოში 14 ნოემბრიდან 19 დეკემბრის ჩათვლით
+              პერიოდში ჩატარდება.
             </p>
             <div className="background">
               <img src={image1} alt="" />

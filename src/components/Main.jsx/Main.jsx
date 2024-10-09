@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import History from "./History/History";
 import Goals from "./Goals/Goals";
 import LegalBasis from "./LegalBasis/LegalBasis";
@@ -9,7 +10,7 @@ import Methods from "./Methods/Methods";
 import Section from "./Section";
 import TopArrow from "../TopArrow/TopArrow";
 
-export default function Main() {
+export default function Main({ selectedLanguage }) {
   return (
     <>
       <main>
@@ -20,7 +21,7 @@ export default function Main() {
           <Goals />
         </Section>
         <Section>
-          <LegalBasis />
+          <LegalBasis selectedLanguage={selectedLanguage} />
         </Section>
         <Section>
           <Subject />

@@ -1,10 +1,12 @@
+/* eslint-disable react/prop-types */
 import "./LegalBasis.scss";
 import hammer from "/src/assets/images/hammer.svg";
 import sakstat from "/src/assets/images/logo-transparent-ka.png";
+import sakstatEn from "/src/assets/images/logo-transparent-en.png";
 import defence from "/src/assets/images/defence.svg";
 import { Link } from "react-router-dom";
 
-export default function LegalBasis() {
+export default function LegalBasis({ selectedLanguage }) {
   return (
     <>
       <div className="legal--section">
@@ -24,7 +26,11 @@ export default function LegalBasis() {
                 <p>კანონი „ოფიციალური სტატისტიკის შესახებ“</p>
               </div>
               <div>
-                <img src={sakstat} alt="sakstat" style={{ width: "120px" }} />
+                <img
+                  src={selectedLanguage === "ქარ" ? sakstat : sakstatEn}
+                  alt="sakstat"
+                  style={{ width: "120px" }}
+                />
                 <p>საქსტატის დებულება</p>
               </div>
               <div>

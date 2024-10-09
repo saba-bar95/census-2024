@@ -78,12 +78,6 @@ const CountdownComponent = (page) => {
           <p>წამი</p>
         </div>
       </div>
-      {page.page && (
-        <>
-          <div className="border-container"></div>
-          <button>შემახსენე</button>
-        </>
-      )}
     </div>
   );
 };

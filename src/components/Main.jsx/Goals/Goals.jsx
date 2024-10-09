@@ -66,7 +66,7 @@ export default function Goals() {
           </div>
         </div>
         <Link to="/goals">
-          <button style={{ display: "none" }}>სრულად</button>
+          <button>სრულად</button>
         </Link>
       </div>
     </>

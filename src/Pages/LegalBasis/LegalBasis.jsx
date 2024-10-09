@@ -8,11 +8,23 @@ import image1 from "/src/assets/images/legal-image1.png";
 import image2 from "/src/assets/images/legal-image2.png";
 import Section from "../../components/Main.jsx/Section";
 import TopArrow from "../../components/TopArrow/TopArrow";
+import { useState, useEffect } from "react";
 
 export default function LegalBasis() {
+  const [selectedLanguage, setSelectedLanguage] = useState(
+    localStorage.getItem("selectedLanguage") || "ქარ"
+  );
+
+  useEffect(() => {
+    localStorage.setItem("selectedLanguage", selectedLanguage);
+  }, [selectedLanguage]);
+
   return (
     <>
-      <Navbar />
+      <Navbar
+        selectedLanguage={selectedLanguage}
+        setSelectedLanguage={setSelectedLanguage}
+      />
       <Section>
         <div className="legal--container">
           <h1>სამართლებრივი საფუძვლები</h1>
@@ -30,15 +42,30 @@ export default function LegalBasis() {
               დამუშავების, შედეგების გამოქვეყნებისა და გავრცელების წესს.
             </p>
             <div className="container">
-              <div>
+              <div
+                onClick={() => {
+                  window.open(
+                    "https://www.geostat.ge/media/54263/%E1%83%A1%E1%83%90%E1%83%A5%E1%83%90%E1%83%A0%E1%83%97%E1%83%95%E1%83%94%E1%83%9A%E1%83%9D%E1%83%A1-%E1%83%99%E1%83%90%E1%83%9C%E1%83%9D%E1%83%9C%E1%83%98-%E1%83%9D%E1%83%A4%E1%83%98%E1%83%AA%E1%83%98%E1%83%90%E1%83%9A%E1%83%A3%E1%83%A0%E1%83%98-%E1%83%A1%E1%83%A2%E1%83%90%E1%83%A2%E1%83%98%E1%83%A1%E1%83%A2%E1%83%98%E1%83%99%E1%83%98%E1%83%A1-%E1%83%A8%E1%83%94%E1%83%A1%E1%83%90%E1%83%AE%E1%83%94%E1%83%91.pdf"
+                  );
+                }}>
                 <img src={hammer} alt="hammer" />
                 <p>კანონი „ოფიციალური სტატისტიკის შესახებ“</p>
               </div>
-              <div>
+              <div
+                onClick={() => {
+                  window.open(
+                    "https://www.geostat.ge/media/20600/10%2Csaqstatis-konsolidirebuli-debuleba.pdf"
+                  );
+                }}>
                 <img src={sakstat} alt="sakstat" style={{ width: "120px" }} />
                 <p>საქსტატის დებულება</p>
               </div>
-              <div>
+              <div
+                onClick={() => {
+                  window.open(
+                    "https://matsne.gov.ge/ka/document/view/1561437?publication=33"
+                  );
+                }}>
                 <img src={defence} alt="defence" />
                 <p>კანონი „პერსონალურ მონაცემთა დაცვის შესახებ“</p>
               </div>

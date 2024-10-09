@@ -1,32 +1,39 @@
+/* eslint-disable react/prop-types */
 import "./Navbar.scss";
 import { Link } from "react-router-dom";
 import LanguageChanger from "./LanguageChanger/LanguageChanger";
-import sakstat from "/src/assets/images/logo-transparent-ka.png";
 import census from "/src/assets/images/census.svg";
+import sakstatKa from "/src/assets/images/logo-transparent-ka.png";
+import sakstatEn from "/src/assets/images/logo-transparent-en.png";
+import translations from "../../translation";
 
-export default function Navbar() {
+export default function Navbar({ selectedLanguage, setSelectedLanguage }) {
+  const navBarText = translations[selectedLanguage].navbar;
+
   return (
     <div className="nav-container">
       <nav>
         <div className="right-side">
-          <Link to="/">
-            <img src={sakstat} alt="sakstat" className="sakstat-logo" />
-          </Link>
+          <img
+            src={selectedLanguage === "ქარ" ? sakstatKa : sakstatEn}
+            alt="sakstat"
+            className="sakstat-logo"
+          />
           <img src={census} alt="აღწერა" className="census-logo" />
         </div>
         <div className="left-side">
           <ul>
             <li>
-              <Link to="/main">მთავარი</Link>
+              <Link to="/main">{navBarText.main}</Link>
             </li>
             <li>
-              <Link to="/questionnaries">კითხვარები</Link>
+              <Link to="/questionnaries">{navBarText.questionnaries}</Link>
             </li>
             <li>
-              <Link to="/methodology">მეთოდოლოგია</Link>
+              <Link to="/methodology">{navBarText.methodology}</Link>
             </li>
             <li>
-              <Link to="/results">შედეგები</Link>
+              <Link to="/results">{navBarText.results}</Link>
             </li>
           </ul>
           <div className="buttons-container">
@@ -36,11 +43,16 @@ export default function Navbar() {
                 window.open("https://census-cv.geostat.ge/", "_blank");
                 e.preventDefault();
               }}>
-              ვაკანსიები
+              {navBarText.vacancies}
             </button>
-            <button className="self-registration--btn">თვითრეგისტრაცია</button>
+            <button className="self-registration--btn">
+              {navBarText.selfRegistration}
+            </button>
           </div>
-          <LanguageChanger />
+          <LanguageChanger
+            selectedLanguage={selectedLanguage}
+            setSelectedLanguage={setSelectedLanguage}
+          />
         </div>
       </nav>
     </div>

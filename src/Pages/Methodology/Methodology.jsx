@@ -6,22 +6,34 @@ import fao from "/src/assets/images/fao.svg";
 import redirect from "/src/assets/images/redirect.png";
 import Section from "../../components/Main.jsx/Section";
 import TopArrow from "../../components/TopArrow/TopArrow";
+import { useState, useEffect } from "react";
 
 const list = [
-  "შინამეურნეობები და საბინაო პირობები;",
+  "შინამეურნეობები და საბინაო პირობები",
   "დემოგრაფიული და სოციალური მახასიათებლები",
-  "განათლების დონე;",
-  "ეკონომიკური მახასიათებლები;",
-  "ჯანმრთელობის მდგომარეობა;",
-  "მიგრაცია;",
-  "შინამეურნეობების სარგებლობაში არსებული მიწის სტრუქტურა;",
-  "პირუტყვისა და ფრინველის სულადობა;",
+  "განათლების დონე",
+  "ეკონომიკური მახასიათებლები",
+  "ჯანმრთელობის მდგომარეობა",
+  "მიგრაცია",
+  "შინამეურნეობების სარგებლობაში არსებული მიწის სტრუქტურა",
+  "პირუტყვისა და ფრინველის სულადობა",
 ];
 
 export default function Methodology() {
+  const [selectedLanguage, setSelectedLanguage] = useState(
+    localStorage.getItem("selectedLanguage") || "ქარ"
+  );
+
+  useEffect(() => {
+    localStorage.setItem("selectedLanguage", selectedLanguage);
+  }, [selectedLanguage]);
+
   return (
     <>
-      <Navbar />
+      <Navbar
+        selectedLanguage={selectedLanguage}
+        setSelectedLanguage={setSelectedLanguage}
+      />
       <Section>
         <div className="methodology-container">
           <h1>აღწერის მეთოდოლოგია</h1>

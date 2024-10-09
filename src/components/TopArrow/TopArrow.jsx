@@ -1,4 +1,4 @@
-import arrow from "/src/assets/images/white-top-arrow.svg";
+import arrowimg from "/src/assets/images/caret-arrow.png";
 import "./TopArrow.scss";
 
 const TopArrow = () => {
@@ -11,8 +11,8 @@ const TopArrow = () => {
   };
 
   return (
-    <div className="top-arrow">
-      <img src={arrow} alt="" onClick={scrollToTop} />
+    <div className="top-arrow" onClick={scrollToTop}>
+      <img src={arrowimg} alt="" />
     </div>
   );
 };
