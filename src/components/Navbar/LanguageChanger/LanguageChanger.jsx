@@ -16,8 +16,13 @@ function LanguageChanger({ selectedLanguage, setSelectedLanguage }) {
   }, [selectedLanguage]);
 
   const handleLanguageChange = (language) => {
-    setSelectedLanguage(language);
-    setShowLanguages(false);
+    if (language !== selectedLanguage) {
+      setSelectedLanguage(language);
+      setShowLanguages(false);
+      window.location.reload(); // Only reload if language has changed
+    } else {
+      setShowLanguages(false); // Just close the language dropdown
+    }
   };
 
   return (
