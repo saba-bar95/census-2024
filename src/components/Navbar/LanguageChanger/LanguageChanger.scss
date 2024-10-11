@@ -7,6 +7,18 @@
   gap: 10px;
   cursor: pointer;
 
+  img {
+    width: 20px;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  .arrow-img {
+    width: 10px;
+  }
+
   &.show-languages {
     .language-options {
       display: block;

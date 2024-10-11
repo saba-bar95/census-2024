@@ -4,12 +4,16 @@ import flower from "/src/assets/images/flower.svg";
 import exact from "/src/assets/images/exact.svg";
 import settings from "/src/assets/images/settings.svg";
 import { Link } from "react-router-dom";
+import translations from "../../../translation";
 
 export default function Goals() {
+  const selectedLanguage = localStorage.getItem("selectedLanguage");
+  const text = translations[selectedLanguage].main.goals;
+
   return (
     <>
       <div className="goals--section">
-        <h1>2024 წლის აღწერის მიზნები და ამოცანები</h1>
+        <h1>{text.header}</h1>
         <div className="info-container">
           <div className="goal-container">
             <div
@@ -17,11 +21,7 @@ export default function Goals() {
               style={{ backgroundColor: "#54B2FF" }}>
               <img src={people} alt="people" />
             </div>
-            <p>
-              მოსახლეობის აღწერის ფარგლებში შეგროვდება მონაცემები მოსახლეობის
-              რიცხოვნობის, მისი სქესობრივ-ასაკობრივი შემადგენლობის, სხვადასხვა
-              დემოგრაფიული და სოციალურ-ეკონომიკური მახასიათებლების მიხედვით.
-            </p>
+            <p>{text.para1}</p>
           </div>
           <div className="goal-container">
             <div
@@ -29,12 +29,7 @@ export default function Goals() {
               style={{ backgroundColor: "#9FCF88" }}>
               <img src={flower} alt="flower" />
             </div>
-            <p>
-              სასოფლო-სამეურნეო აღწერის ფარგლებში შეგროვდება ინფორმაცია,
-              შინამეურნეობების სასოფლო-სამეურნეო აქტივობის შესახებ, კერძოდ,
-              შინამეურნეობების კუთვნილი მიწის სტრუქტურის, პირუტყვისა და
-              ფრინველის სულადობის და სხვა მნიშვნელოვანი საკითხების შესახებ.
-            </p>
+            <p>{text.para2}</p>
           </div>
           <div className="goal-container">
             <div
@@ -42,14 +37,7 @@ export default function Goals() {
               style={{ backgroundColor: "#FCB765" }}>
               <img src={exact} alt="exact" />
             </div>
-            <p>
-              აღწერის შედეგად ხელმისაწვდომი იქნება ზუსტი და განახლებული
-              მონაცემები როგორც მოსახლეობის რაოდენობის, მისი
-              სქესობრივ-ასაკობრივი შემადგენლობის, დემოგრაფიული და
-              სოციალურ-ეკონომიკური მახასიათებლების მიხედვით, ასევე
-              შინამეურნეობების სასოფლო-სამეურნეო აქტივობის შესახებ,
-              თვითმმართველი ერთეულებისა და დასახლებების დონეზე.
-            </p>
+            <p>{text.para3}</p>
           </div>
           <div className="goal-container">
             <div
@@ -57,16 +45,11 @@ export default function Goals() {
               style={{ backgroundColor: "#FE7155" }}>
               <img src={settings} alt="settings" />
             </div>
-            <p>
-              აღწერები ტარდება ქვეყნის განვითარებისთვის, გეგმებისა და
-              პროგრამების განხორციელების ხელშესაწყობად. აღწერა ასევე წარმოადგენს
-              მნიშვნელოვან წყაროს გაეროს მდგრადი განვითარების 2030 წლის მიზნების
-              განხორციელების შესაფასებლად.
-            </p>
+            <p>{text.para4}</p>
           </div>
         </div>
         <Link to="/goals">
-          <button>სრულად</button>
+          <button>{text.more}</button>
         </Link>
       </div>
     </>

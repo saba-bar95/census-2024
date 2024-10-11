@@ -17,9 +17,10 @@ function LanguageChanger({ selectedLanguage, setSelectedLanguage }) {
 
   const handleLanguageChange = (language) => {
     if (language !== selectedLanguage) {
-      setSelectedLanguage(language);
-      setShowLanguages(false);
       window.location.reload(); // Only reload if language has changed
+
+      setShowLanguages(false);
+      setSelectedLanguage(language);
     } else {
       setShowLanguages(false); // Just close the language dropdown
     }
@@ -32,13 +33,12 @@ function LanguageChanger({ selectedLanguage, setSelectedLanguage }) {
       <img
         src={selectedLanguage === "ქარ" ? georgian : english}
         alt="language-flag"
-        style={{ width: "20px" }}
       />
-      <p style={{ fontSize: "0.9rem" }}>{selectedLanguage}</p>
+      <p>{selectedLanguage}</p>
       <img
+        className="arrow-img"
         src={showLanguages ? upArrow : downArrow}
         alt="arrow"
-        style={{ width: "10px" }}
       />
       {showLanguages && (
         <ul className="language-options">

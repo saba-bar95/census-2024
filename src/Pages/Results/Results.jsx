@@ -2,6 +2,7 @@ import "./Results.scss";
 import Navbar from "../../components/Navbar/Navbar";
 import Section from "../../components/Main.jsx/Section";
 import { useState, useEffect } from "react";
+import translations from "../../translation";
 
 export default function Results() {
   const [selectedLanguage, setSelectedLanguage] = useState(
@@ -12,6 +13,8 @@ export default function Results() {
     localStorage.setItem("selectedLanguage", selectedLanguage);
   }, [selectedLanguage]);
 
+  const text = translations[selectedLanguage].pages.results;
+
   return (
     <>
       <Navbar
@@ -20,11 +23,7 @@ export default function Results() {
       />
       <Section>
         <div className="results-container">
-          <h1>
-            აღწერის წინასწარი შედეგები ხელმისაწვდომი იქნება არაუგვიანეს 2025
-            წლის ივნისისა, ხოლო საბოლოო შედეგები - არაუგვიანეს 2026 წლის
-            ივნისისა.
-          </h1>
+          <h1>{text.header}</h1>
         </div>
       </Section>
     </>

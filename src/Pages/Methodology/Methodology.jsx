@@ -7,17 +7,7 @@ import redirect from "/src/assets/images/redirect.png";
 import Section from "../../components/Main.jsx/Section";
 import TopArrow from "../../components/TopArrow/TopArrow";
 import { useState, useEffect } from "react";
-
-const list = [
-  "შინამეურნეობები და საბინაო პირობები",
-  "დემოგრაფიული და სოციალური მახასიათებლები",
-  "განათლების დონე",
-  "ეკონომიკური მახასიათებლები",
-  "ჯანმრთელობის მდგომარეობა",
-  "მიგრაცია",
-  "შინამეურნეობების სარგებლობაში არსებული მიწის სტრუქტურა",
-  "პირუტყვისა და ფრინველის სულადობა",
-];
+import translations from "../../translation";
 
 export default function Methodology() {
   const [selectedLanguage, setSelectedLanguage] = useState(
@@ -28,6 +18,8 @@ export default function Methodology() {
     localStorage.setItem("selectedLanguage", selectedLanguage);
   }, [selectedLanguage]);
 
+  const text = translations[selectedLanguage].pages.methodology;
+
   return (
     <>
       <Navbar
@@ -36,7 +28,7 @@ export default function Methodology() {
       />
       <Section>
         <div className="methodology-container">
-          <h1>აღწერის მეთოდოლოგია</h1>
+          <h1>{text.header}</h1>
           <div className="container">
             <div className="background">
               <img src={unece} alt="unece" />
@@ -45,31 +37,19 @@ export default function Methodology() {
           </div>
           <div className="text-container">
             <p>
-              მოსახლეობის აღწერის მეთოდოლოგიურ საფუძველს წარმოადგენს გაეროს
-              ევროპის ეკონომიკური კომისიის (UNECE) მეთოდოლოგიური
-              სახელმძღვანელოები, ხოლო სასოფლო-სამეურნეო აღწერის მეთოდოლოგიური
-              საფუძველია გაეროს სურსათისა და სოფლის მეურნეობის ორგანიზაციის
-              (UNFAO) რეკომენდაციები.
-              <span>
-                აღნიშნული მეთოდოლოგიური სახელმძღვანელოებისა და რეკომენდაციების
-                საფუძველზე შემუშავებულია აღწერის კითხვარები, რომლის მეშვეობით
-                მიღებულ იქნება ისეთი ინფორმაცია თვითმმართველი ერთეულების და
-                დასახლებების დონეზე, როგორიცაა:
-              </span>
+              {text.para1}
+              <span>{text.para2}</span>
             </p>
             <ul>
-              {list.map((el) => {
-                return <li key={el}>{el}</li>;
+              {text.list.map((item, index) => {
+                return <li key={index}>{item}</li>;
               })}
             </ul>
             <div className="wrapper">
-              <h2>
-                აღწერის ფარგლებში გამოყენებული მეთოდოლოგიები შეგიძლიათ იხილოთ
-                შემდეგ ბმულებზე:
-              </h2>
+              <h2>{text.header2}</h2>
 
               <p>
-                მოსახლეობის აღწერა
+                {text.para3}
                 <a
                   target="_blank"
                   href="https://unece.org/DAM/stats/publications/2015/ECECES41_EN.pdf?fbclid=IwAR3m8pGgjKq3WjR0ZYq3OQ-K95hQYmjmK7T8SYADsQYggBdKD3pwidwXmbU">
@@ -77,7 +57,7 @@ export default function Methodology() {
                 </a>
               </p>
               <p>
-                სასოფლო-სამეურნეო აღწერა
+                {text.para4}
                 <a
                   target="_blank"
                   href="https://www.geostat.ge/media/19735/World-Programme-for-the-Census-of-Agriculture-2020.pdf">

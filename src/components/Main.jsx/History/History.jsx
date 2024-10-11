@@ -2,23 +2,21 @@ import "./History.scss";
 import CountdownComponent from "./CountDown/CountDown";
 import polygon from "/src/assets/images/polygon.svg";
 import map from "/src/assets/images/georgian-map.svg";
+import translations from "../../../translation";
 
 export default function History() {
+  const selectedLanguage = localStorage.getItem("selectedLanguage");
+  const text = translations[selectedLanguage].main.history;
+
   return (
     <>
       <div className="history--section">
         <div className="history-container">
           <div className="right-side">
-            <h1>აღწერა 2024</h1>
+            <h1>{text.header}</h1>
             <div className="para-container">
-              <p>
-                2024 წლის 14 ნოემბრიდან 19 დეკემბრის ჩათვლით პერიოდში
-                საქართველოს მოსახლეობის და სასოფლო-სამეურნეო აღწერა ტარდება.
-              </p>
-              <p>
-                აღწერა ტარდება საქართველოს ყველა ადმინისტრაციულ - ტერიტორიულ
-                ერთეულში, გარდა ოკუპირებული ტერიტორიებისა.
-              </p>
+              <p>{text.firsPara}</p>
+              {/* <p>{text.secondPara}</p> */}
             </div>
             <CountdownComponent />
             <img src={polygon} alt="polygon" className="polygon" />

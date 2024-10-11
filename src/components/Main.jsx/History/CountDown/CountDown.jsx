@@ -1,6 +1,10 @@
 import { useState, useEffect } from "react";
+import translations from "../../../../translation";
 
 const CountdownComponent = (page) => {
+  const selectedLanguage = localStorage.getItem("selectedLanguage");
+  const text = translations[selectedLanguage].main.history.countDown;
+
   const [days, setDays] = useState(0);
   const [hours, setHours] = useState(0);
   const [minutes, setMinutes] = useState(0);
@@ -57,25 +61,25 @@ const CountdownComponent = (page) => {
       {page.page || (
         <div className="top-side">
           <p className="year">2024</p>
-          <p className="time-left--para">აღწერამდე დარჩა</p>
+          <p className="time-left--para">{text.timeLeft}</p>
         </div>
       )}
       <div className="bottom-side">
         <div className="days">
           <h1>{days} :</h1>
-          <p>დღე</p>
+          <p>{text.day}</p>
         </div>
         <div className="hours">
-          <h1>{hours > 10 ? hours : `0${hours}`} :</h1>
-          <p>საათი</p>
+          <h1>{hours >= 10 ? hours : `0${hours}`} :</h1>
+          <p>{text.hour}</p>
         </div>
         <div className="minutes">
-          <h1>{minutes > 10 ? minutes : `0${minutes}`} :</h1>
-          <p>წუთი</p>
+          <h1>{minutes >= 10 ? minutes : `0${minutes}`} :</h1>
+          <p>{text.minute}</p>
         </div>
         <div className="seconds">
           <h1>{seconds < 10 ? `0${seconds}` : seconds}</h1>
-          <p>წამი</p>
+          <p>{text.second}</p>
         </div>
       </div>
     </div>

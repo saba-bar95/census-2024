@@ -2,19 +2,30 @@ import "./Settlements.scss";
 import { useState } from "react";
 import GoogleMap from "./GoogleMap";
 import getCoordinates from "./GetCoordinates";
-import { settlementsInfo, images } from "./SettlementsInfo";
+import images from "./SettlementImages";
+import translations from "../../../translation";
 
 export default function Settlements() {
-  const apiKey = "AIzaSyB7D2WPALIsuME2Y8wbWGZuob19cbpuiR0";
-  const settlements = ["მესტია", "ყაზბეგი", "ლენტეხი", "ახმეტა", "დუშეთი"];
-  const [selected, setSelected] = useState(0);
+  const selectedLanguage = localStorage.getItem("selectedLanguage");
+  const text = translations[selectedLanguage].main.settlements;
 
+  const apiKey = "AIzaSyB7D2WPALIsuME2Y8wbWGZuob19cbpuiR0";
+
+  const settlementNames = [];
+  const settlements = [];
+
+  text.names.forEach((el) => {
+    settlements.push(el);
+    settlementNames.push(el.name);
+  });
+
+  const [selected, setSelected] = useState(0);
   const initialCoordinates = { lat: 43.0334614, lng: 42.6894803 };
   const [selectedLocation, setSelectedLocation] = useState(initialCoordinates);
 
   const handleClick = async (index) => {
     setSelected(index);
-    const address = settlements[index];
+    const address = settlementNames[index];
     try {
       const result = await getCoordinates(address);
       const location = result[0].geometry.location;
@@ -31,13 +42,8 @@ export default function Settlements() {
 
   return (
     <div className="settlements--section">
-      <h1>აღწერა ძნელად მისადგომ დასახლებებში</h1>
-      <p>
-        იმის გათვალისწინებით, რომ ნოემბერ-დეკემბრის პერიოდში ზოგიერთ მთიან,
-        ძნელად მისადგომ მუნიციპალიტეტსა და დასახლებაში ამინდის გაუარესების გამო
-        შესაძლოა გართულებულიყო საველე სამუშაოების ჩატარება, მოსახლეობის აღწერა
-        2024 წლის 18 სექტემბრიდან 8 ოქტომბრის ჩათვლით პერიოდში ჩატარდა.
-      </p>
+      <h1>{text.header}</h1>
+      <p>{text.para}</p>
       <div className="container">
         <ul>
           {settlements.map((item, index) => (
@@ -45,7 +51,7 @@ export default function Settlements() {
               key={index}
               className={selected === index ? "selected" : ""}
               onClick={() => handleClick(index)}>
-              {item}
+              {item.name}
             </li>
           ))}
         </ul>
@@ -53,9 +59,9 @@ export default function Settlements() {
         <div className="wrapper">
           <div className="left-side">
             <img src={images[selected]} alt="" />
-            <h2>{settlementsInfo[selected]["first-header"]}</h2>
-            {settlementsInfo[selected].settlements && (
-              <p>{settlementsInfo[selected].settlements}</p>
+            <h2>{settlements[selected]["municipality"]}</h2>
+            {settlements[selected]["units"] && (
+              <p>{settlements[selected]["units"]}</p>
             )}
           </div>
           <div className="right-side">

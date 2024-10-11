@@ -112,6 +112,29 @@
           background-color: #165ce2;
           color: #ffffff;
           align-self: start;
+          position: relative; /* Add this line */
+
+          .tooltip {
+            position: absolute;
+            top: 170%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: display 0.3s; /* Add this line */
+            background-color: #fff; /* Add a background color to the tooltip */
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 0.8rem;
+            color: red;
+            border: 1px solid blue;
+            width: 200px;
+            display: none;
+          }
+
+          &:hover {
+            .tooltip {
+              display: block;
+            }
+          }
         }
       }
     }

@@ -4,32 +4,26 @@ import questions from "/src/assets/images/questions.png";
 import interviewer2 from "/src/assets/images/interviewer3.png";
 import comp from "/src/assets/images/comp.png";
 import vector from "/src/assets/images/rightVector.png";
+import translations from "../../../translation";
 
 export default function Methods() {
+  const selectedLanguage = localStorage.getItem("selectedLanguage");
+  const text = translations[selectedLanguage].main.methods;
+
   return (
     <div className="methods--section">
-      <h1>მონაცემთა შეგროვების მეთოდები</h1>
-      <h2>
-        2024 წლის აღწერის ფარგლებში მონაცემთა შეგროვება დაგეგმილია ორი მეთოდით:
-      </h2>
+      <h1>{text.header1}</h1>
+      <h2>{text.header2}</h2>
       <div className="container">
         <div className="top-side">
           <img src={interviewer} alt="interviewer" className="img" />
           <div className="right-side">
             <div className="top">
               <img src={questions} alt="" />
-              <h2>
-                კომპიუტერის დახმარებით - პერსონალური ინტერვიუს მეთოდი (CAPI)
-              </h2>
+              <h2>{text.header3}</h2>
             </div>
             <div className="bot">
-              <p>
-                CAPI მეთოდით მონაცემები გროვდება კარდაკარის პრინციპით, პირისპირ
-                ინტერვიუს დროს, პლანშეტური კომპიუტერის მეშვეობით. ინტერვიუს
-                დამთავრების შემდეგ მონაცემები პირდაპირ გადაეცემა ცენტრალურ
-                კომპიუტერულ ქსელს ინტერნეტით ან მონაცემთა გადაცემის სხვა
-                არხებით.
-              </p>
+              <p>{text.para1}</p>
             </div>
           </div>
         </div>
@@ -37,16 +31,14 @@ export default function Methods() {
           <div className="left-side">
             <div className="top">
               <img src={comp} alt="comp" />
-              <h2>კომპიუტერის დახმარებით - ვებ-ინტერვიუს მეთოდი (CAWI)</h2>
+              <h2>{text.header4}</h2>
             </div>
-            <p>
-              CAWI წარმოადგენს მონაცემთა შეგროვების მეთოდს, როდესაც
-              რესპონდენტები დამოუკიდებლად, აღმწერების გარეშე, კომპიუტერის
-              მეშვეობით, სტანდარტული ინტერნეტ ბრაუზერის გამოყენებით,
-              ელექტრონულად ავსებენ კითხვარებს.
-            </p>
+            <p>{text.para2}</p>
             <button className="self-registration--btn">
-              თვითრეგისტრაცია <img src={vector} alt="" />
+              {text.registration} <img src={vector} alt="" />
+              <span className="tooltip">
+                თვითრეგისტრაცია შესაძლებელია 14 - 23 ნოემბრის პერიოდში
+              </span>
             </button>
           </div>
           <img src={interviewer2} alt="interviewer" className="img" />

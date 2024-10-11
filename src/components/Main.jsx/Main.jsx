@@ -10,7 +10,7 @@ import Methods from "./Methods/Methods";
 import Section from "./Section";
 import TopArrow from "../TopArrow/TopArrow";
 
-export default function Main({ selectedLanguage }) {
+export default function Main() {
   return (
     <>
       <main>
@@ -21,7 +21,7 @@ export default function Main({ selectedLanguage }) {
           <Goals />
         </Section>
         <Section>
-          <LegalBasis selectedLanguage={selectedLanguage} />
+          <LegalBasis />
         </Section>
         <Section>
           <Subject />

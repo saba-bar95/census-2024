@@ -2,25 +2,23 @@ import "./Date.scss";
 import { Link } from "react-router-dom";
 import interviewer from "/src/assets/images/interviewer.png";
 import date from "/src/assets/images/date.png";
+import translations from "../../../translation";
 
 export default function Date() {
+  const selectedLanguage = localStorage.getItem("selectedLanguage");
+  const text = translations[selectedLanguage].main.date;
+
   return (
     <div className="date--section">
-      <h1>აღწერის ჩატარების თარიღი</h1>
+      <h1>{text.header}</h1>
       <div className="container">
         <div className="left-side">
-          <p>
-            გაეროს რეკომენდაციებისა და საერთაშორისო პრაქტიკის შესაბამისად,
-            აღწერები ქვეყანაში ტარდება 10 წელიწადში ერთხელ. საქართველოში
-            უკანასკნელი აღწერა ჩატარდა 2014 წელს. შესაბამისად, მომდევნო
-            მოსახლეობის აღწერა საქართველოში 14 ნოემბრიდან 19 დეკემბრის ჩათვლით
-            პერიოდში ჩატარდება.
-          </p>
+          <p>{text.para}</p>
           <div className="date-container">
             <img src={date} alt="" />
           </div>
           <Link to="/date">
-            <button>სრულად</button>
+            <button>{text.more}</button>
           </Link>
         </div>
         <div className="right-side">

@@ -3,30 +3,33 @@ import green from "/src/assets/images/green.png";
 import red from "/src/assets/images/red.png";
 import greenArrow from "/src/assets/images/green-arrow.png";
 import redArrow from "/src/assets/images/red-arrow.png";
+import translations from "../../../translation";
 
 export default function Subject() {
+  const selectedLanguage = localStorage.getItem("selectedLanguage");
+  const text = translations[selectedLanguage].main.subjects;
+
   return (
     <div className="subject--section">
-      <h1>ვინ ექვემდებარება აღწერას?</h1>
+      <h1>{text.header}</h1>
       <div className="container">
         <div className="wrapper">
           <div className="icon-container">
             <img src={greenArrow} alt="" />
           </div>
-          <h2 className="green">აღწერას ექვემდებარება:</h2>
+          <h2 className="green">{text.header2}</h2>
           <ul>
             <li>
               <img src={green} alt="" />
-              საქართველოს მოქალაქე (მათ შორის ქვეყანაში დროებით არ მყოფი პირი)
+              {text.para1}
             </li>
             <li>
               <img src={green} alt="" />
-              საქართველოს ტერიტორიაზე მყოფი უცხო ქვეყნის მოქალაქე (მიუხედავად
-              ქვეყანაში ყოფნის ხანგრძლივობისა)
+              {text.para2}
             </li>
             <li>
               <img src={green} alt="" />
-              საქართველოში მყოფი მოქალაქეობის არმქონე პირი
+              {text.para3}
             </li>
           </ul>
         </div>
@@ -34,16 +37,15 @@ export default function Subject() {
           <div className="icon-container red">
             <img src={redArrow} alt="" />
           </div>
-          <h2 className="red">აღწერას არ ექვემდებარება:</h2>
+          <h2 className="red">{text.headerRight}</h2>
           <ul>
             <li>
               <img src={red} alt="" />
-              დიპლომატიური იმუნიტეტის მქონე უცხო ქვეყნის მოქალაქე და მისი ოჯახის
-              წევრები
+              {text.para1Right}
             </li>
             <li>
               <img src={red} alt="" />
-              უცხო ქვეყნის სამხედრო მოსამსახურე და მისი ოჯახის წევრები
+              {text.para2Right}
             </li>
           </ul>
         </div>

@@ -88,7 +88,6 @@
           color: #fe7155;
           border: 1px solid #fe7155;
           background-color: #ffffff;
-          transition: background-color 0.3s, color 0.3s; /* Add this line */
 
           &:hover {
             background-color: #fe7155;
@@ -99,6 +98,31 @@
         .self-registration--btn {
           background-color: #165ce2;
           color: #ffffff;
+          position: relative;
+
+          .tooltip {
+            position: absolute;
+            top: 200%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: opacity 0.3s; /* Add this line */
+            background-color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 0.8rem;
+            color: red;
+            border: 1px solid blue;
+            width: 200px;
+            opacity: 0; /* Add this line */
+            pointer-events: none; /* Add this line */
+          }
+
+          &:hover {
+            .tooltip {
+              opacity: 1; /* Change opacity to 1 on hover */
+              pointer-events: auto; /* Enable pointer events on hover */
+            }
+          }
         }
       }
     }
@@ -174,15 +198,18 @@
             padding: 5px 10px;
             font-size: 0.7rem;
           }
+
+          .self-registration--btn {
+            .tooltip {
+              top: 220%;
+              font-size: 0.7rem;
+              width: 150px;
+            }
+          }
         }
 
         .language-changer {
           gap: 5px;
-
-          img {
-            width: 12px;
-            height: auto;
-          }
 
           p {
             font-size: 0.7rem;
@@ -217,13 +244,17 @@
             padding: 7px 14px;
             font-size: 0.8rem;
           }
+
+          .self-registration--btn {
+            .tooltip {
+              top: 210%;
+              left: 125%;
+              width: 170px;
+            }
+          }
         }
 
         .language-changer {
-          img {
-            width: 15px;
-          }
-
           img.down-arrow {
             width: 10px;
           }

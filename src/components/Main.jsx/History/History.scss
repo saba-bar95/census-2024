@@ -248,16 +248,6 @@
   }
 }
 
-@media only screen and (min-width: calc($mobile + 1px)) and (max-width: 850px) {
-  .history--section {
-    .history-container {
-      .right-side {
-        padding-left: 30px;
-      }
-    }
-  }
-}
-
 @media only screen and (min-width: 0) and (max-width: $mobile) {
   .history--section {
     padding: 20px 40px 40px 40px;

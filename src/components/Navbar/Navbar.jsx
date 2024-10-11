@@ -11,7 +11,7 @@ export default function Navbar({ selectedLanguage, setSelectedLanguage }) {
   const navBarText = translations[selectedLanguage].navbar;
 
   return (
-    <div className="nav-container">
+    <div className="nav-container loading">
       <nav>
         <div className="right-side">
           <img
@@ -47,6 +47,9 @@ export default function Navbar({ selectedLanguage, setSelectedLanguage }) {
             </button>
             <button className="self-registration--btn">
               {navBarText.selfRegistration}
+              <span className="tooltip">
+                თვითრეგისტრაცია შესაძლებელია 14 - 23 ნოემბრის პერიოდში
+              </span>
             </button>
           </div>
           <LanguageChanger

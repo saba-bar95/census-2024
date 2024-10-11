@@ -3,21 +3,25 @@ import { Link } from "react-router-dom";
 import facebook from "/src/assets/images/facebook.svg";
 import twitter from "/src/assets/images/twitter.svg";
 import linkedIn from "/src/assets/images/linkedin.svg";
+import translations from "../../translation";
 
 export default function Footer() {
+  const selectedLanguage = localStorage.getItem("selectedLanguage");
+  const text = translations[selectedLanguage].footer;
+
   return (
     <footer>
       <div className="footer-container">
         <div className="container">
-          <p className="header">კონტაქტი</p>
+          <p className="header">{text.contact}</p>
           <div>
-            <p>საქართველოს სტატისტიკის ეროვნული სამსახური</p>
-            <p> +995 32 2 36 72 10 | +995 32 2 60 11 60 </p>
+            <p>{text.sakstat}</p>
+            <p>+995 32 2 36 72 10 | +995 32 2 60 11 60 </p>
             <p>info@geostat.ge</p>
-            <p> ცოტნე დადიანის ქ. 30, თბილისი, 0180</p>
+            <p>{text.address}</p>
           </div>
           <div className="socials">
-            <p>სოციალური ქსელები</p>
+            <p>{text.socials}</p>
             <div className="icons">
               <a href="https://www.facebook.com/geostat.ge" target="_blank">
                 <img src={facebook} alt="facebook" />
@@ -35,19 +39,19 @@ export default function Footer() {
           </div>
         </div>
         <div className="container">
-          <p className="header">მენიუ</p>
+          <p className="header">{text.menu}</p>
           <ul>
             <li>
-              <Link to="/main">მთავარი</Link>
+              <Link to="/main">{text.main}</Link>
             </li>
             <li>
-              <Link to="/questionnaries">კითხვარები</Link>
+              <Link to="/questionnaries">{text.questionnaries}</Link>
             </li>
             <li>
-              <Link to="/methodology">მეთოდოლოგია</Link>
+              <Link to="/methodology">{text.methodology}</Link>
             </li>
             <li>
-              <Link to="/results">შედეგები</Link>
+              <Link to="/results">{text.results}</Link>
             </li>
           </ul>
         </div>
@@ -55,7 +59,7 @@ export default function Footer() {
           <a
             href="https://www.geostat.ge/ka/page/monacemta-gamoyenebis-pirobebi"
             target="_blank">
-            მონაცემთა გამოყენების პირობები
+            {text.terms}
           </a>
         </div>
       </div>

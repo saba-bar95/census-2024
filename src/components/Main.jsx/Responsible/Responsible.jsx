@@ -4,15 +4,19 @@ import sakstat from "/src/assets/images/logo-transparent-ka.png";
 import stat from "/src/assets/images/stat.png";
 import stat2 from "/src/assets/images/stat2.png";
 import stat3 from "/src/assets/images/stat3.png";
+import translations from "../../../translation";
 
 export default function Responsible() {
+  const selectedLanguage = localStorage.getItem("selectedLanguage");
+  const text = translations[selectedLanguage].main.responsible;
+
   return (
     <div className="responsible--section">
-      <h1>აღწერის ჩატარებაზე პასუხისმგებელი ორგანო</h1>
+      <h1>{text.header}</h1>
       <div className="container">
         <div className="icons-container">
           <img src={group} alt="group" className="main" />
-          <div className="sakstat-logo">
+          <div className="sakstat-logo" style={{ display: "none" }}>
             <img src={sakstat} alt="sakstat-logo" />
           </div>
           <div className="stat-logo">
@@ -26,12 +30,7 @@ export default function Responsible() {
           </div>
         </div>
         <div className="text-container">
-          <p>
-            მოსახლეობის და სასოფლო-სამეურნეო აღწერის ჩატარებაზე პასუხისმგებელია
-            საქართველოს სტატისტიკის ეროვნული სამსახური (საქსტატი), რომელიც თავის
-            საქმიანობას ახორციელებს დამოუკიდებლად, საერთაშორისო სტანდარტებისა და
-            საერთაშორისოდ აღიარებული საუკეთესო პრაქტიკის შესაბამისად.
-          </p>
+          <p>{text.para}</p>
         </div>
       </div>
     </div>
