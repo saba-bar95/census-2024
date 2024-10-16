@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import History from "./History/History";
 import Goals from "./Goals/Goals";
 import LegalBasis from "./LegalBasis/LegalBasis";

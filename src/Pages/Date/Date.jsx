@@ -40,8 +40,15 @@ export default function Date() {
               <img src={image2} alt="" />
               <CountdownComponent page={true} />
             </div>
-            <p>{text.para3}</p>
-            <p>{text.para4}</p>
+            <p className="header">{text.header3}</p>
+            <p>
+              <span style={{ fontWeight: "900" }}>In the first stage, </span>
+              {text.para3}
+            </p>
+            <p>
+              <span style={{ fontWeight: "900" }}>In the second stage, </span>
+              {text.para4}
+            </p>
           </div>
         </div>
         <TopArrow />

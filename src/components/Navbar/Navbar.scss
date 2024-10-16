@@ -15,6 +15,7 @@
   width: 100%;
   top: 0;
   z-index: 1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
   nav {
     display: flex;
@@ -58,10 +59,10 @@
           cursor: pointer;
           text-decoration: none;
           color: $header-color;
-          transition: transform 0.3s; /* Add this line */
+          transition: transform 0.3s;
 
           &:hover {
-            transform: scale(1.1); /* Add this line */
+            transform: scale(1.1);
           }
         }
       }
@@ -88,6 +89,7 @@
           color: #fe7155;
           border: 1px solid #fe7155;
           background-color: #ffffff;
+          transition: background-color 0.5s ease, color 0.5s ease;
 
           &:hover {
             background-color: #fe7155;
@@ -105,7 +107,7 @@
             top: 200%;
             left: 50%;
             transform: translate(-50%, -50%);
-            transition: opacity 0.3s; /* Add this line */
+            transition: opacity 0.3s;
             background-color: #fff;
             padding: 5px 10px;
             border-radius: 5px;
@@ -113,14 +115,15 @@
             color: red;
             border: 1px solid blue;
             width: 200px;
-            opacity: 0; /* Add this line */
-            pointer-events: none; /* Add this line */
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.7s;
           }
 
           &:hover {
             .tooltip {
-              opacity: 1; /* Change opacity to 1 on hover */
-              pointer-events: auto; /* Enable pointer events on hover */
+              opacity: 1;
+              pointer-events: auto;
             }
           }
         }

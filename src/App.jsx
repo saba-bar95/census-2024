@@ -19,7 +19,7 @@ export default function App() {
         selectedLanguage={selectedLanguage}
         setSelectedLanguage={setSelectedLanguage}
       />
-      <Main selectedLanguage={selectedLanguage} />
+      <Main />
       <Footer />
     </>
   );

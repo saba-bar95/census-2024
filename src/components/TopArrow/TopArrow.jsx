@@ -12,7 +12,7 @@ const TopArrow = () => {
 
   return (
     <div className="top-arrow" onClick={scrollToTop}>
-      <img src={arrowimg} alt="" />
+      <img src={arrowimg} alt="top-arrow" />
     </div>
   );
 };

@@ -16,7 +16,7 @@ export default function History() {
             <h1>{text.header}</h1>
             <div className="para-container">
               <p>{text.firsPara}</p>
-              {/* <p>{text.secondPara}</p> */}
+              {/* <p>{text.para2}</p> */}
             </div>
             <CountdownComponent />
             <img src={polygon} alt="polygon" className="polygon" />

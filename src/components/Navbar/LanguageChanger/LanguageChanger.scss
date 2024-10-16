@@ -50,10 +50,26 @@
   }
 }
 
+@media only screen and (min-width: 0) and (max-width: calc($tablet - 1px)) {
+  .language-changer {
+    img {
+      width: 15px;
+    }
+  }
+
+  .language-options {
+    padding: 5px;
+
+    li {
+      padding: 8px;
+    }
+  }
+}
+
 @media only screen and (min-width: 0) and (max-width: $mobile) {
   .language-options {
     li {
-      font-size: 0.8rem;
+      font-size: 0.8rem !important;
     }
   }
 }

@@ -84,6 +84,11 @@
         cursor: pointer;
         background-color: #ff3a6e;
         color: #ffffff;
+        transition: transform 0.5s;
+
+        &:hover {
+          transform: translateX(10px);
+        }
       }
     }
   }

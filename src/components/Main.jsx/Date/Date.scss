@@ -57,6 +57,11 @@
         cursor: pointer;
         background-color: #165ce2;
         color: #ffffff;
+        transition: transform 0.5s;
+
+        &:hover {
+          transform: translateX(10px);
+        }
       }
     }
   }

@@ -14,12 +14,16 @@ export default function Navbar({ selectedLanguage, setSelectedLanguage }) {
     <div className="nav-container loading">
       <nav>
         <div className="right-side">
-          <img
-            src={selectedLanguage === "ქარ" ? sakstatKa : sakstatEn}
-            alt="sakstat"
-            className="sakstat-logo"
-          />
-          <img src={census} alt="აღწერა" className="census-logo" />
+          <Link to="/main">
+            <img
+              src={selectedLanguage === "ქარ" ? sakstatKa : sakstatEn}
+              alt="sakstat"
+              className="sakstat-logo"
+            />
+          </Link>
+          <Link to="/main">
+            <img src={census} alt="აღწერა" className="census-logo" />
+          </Link>
         </div>
         <div className="left-side">
           <ul>
@@ -47,9 +51,7 @@ export default function Navbar({ selectedLanguage, setSelectedLanguage }) {
             </button>
             <button className="self-registration--btn">
               {navBarText.selfRegistration}
-              <span className="tooltip">
-                თვითრეგისტრაცია შესაძლებელია 14 - 23 ნოემბრის პერიოდში
-              </span>
+              <span className="tooltip">{navBarText.tooltip}</span>
             </button>
           </div>
           <LanguageChanger

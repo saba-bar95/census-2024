@@ -215,6 +215,8 @@ const translations = {
         header: "აღწერა 2024",
         firsPara:
           "2024 წლის 14 ნოემბრიდან 19 დეკემბრის ჩათვლით საქართველოში მოსახლეობის და სასოფლო-სამეურნეო აღწერა ტარდება",
+        para2:
+          "აღწერა ტარდება საქართველოს ყველა ადმინისტრაციულ - ტერიტორიულ ერთეულში, გარდა ოკუპირებული ტერიტორიებისა",
         countDown: {
           timeLeft: "აღწერამდე დარჩა",
           day: "დღე",
@@ -245,6 +247,7 @@ const translations = {
       results: "შედეგები",
       vacancies: "ვაკანსიები",
       selfRegistration: "თვითრეგისტრაცია",
+      tooltip: "თვითრეგისტრაცია შესაძლებელია 14 - 23 ნოემბრის პერიოდში",
     },
 
     footer: {
@@ -267,12 +270,14 @@ const translations = {
         para1:
           "In accordance with UN recommendations and international practice, censuses are conducted in the country once every 10 years. The last census in Georgia was conducted in 2014. Accordingly, the next census is planned for 2024.",
         para2:
-          "Within the framework of the census, data will be collected in the period from November 14 to December 19, and the moment of population calculation (the critical moment of the census, according to which the facts will be registered) is determined to be 12 o'clock at night on November 13-14.",
+          "Within the framework of Census, data will be collected from November 14 to December 19, and as the population calculation moment (the moment of the census, according to which the facts will be registered) is set on November 13-14, at 12 o'clock (midnight).",
         header2: "Time left before Census:",
+        header3:
+          "Data collection will be conducted in two stages, using combined methods",
         para3:
-          "Data collection will be carried out in two stages, using a combined method. In the first stage, during the period of November 14 - 23 (10 days), data will be collected using the self-registration method (CAWI), within which the respondents will have the opportunity to independently fill out the electronic questionnaire.",
+          "from November 14-23 (10 days) the data will be collected through self-registration -  Computer-Assisted Web Interviewing (CAWI), during which respondents will have the opportunity to independently complete an electronic questionnaire.",
         para4:
-          "And in the second stage, during the period from November 29 to December 19 (21 days), data will be collected by Saxstat interviewers, on a door-to-door basis, using a tablet computer (CAPI).",
+          "from November 29 to December 19 (21 days), the data will be collected by the Geostat interviewers through door-to-door method, using tablets - computer-assisted personal interview (CAPI).",
       },
 
       legal: {
@@ -410,7 +415,7 @@ const translations = {
 
       settlements: {
         header: "Census in hard-to-reach administrative units",
-        para: "In some mountainous and hard-to-reach administrative units, due to possible weather deterioration and difficult meteorological conditions, the census was conducted in the period from September 18 to October 8, 2024",
+        para: "Due to the possible worsening of weather and difficult meteorological terms in some mountainous and hard-to-reach administrative units, the Census was conducted from September 18 to October 8, 2024.",
         names: [
           { name: "Mestia", municipality: "Mestia Municipality" },
           {
@@ -430,14 +435,14 @@ const translations = {
             name: "Dusheti",
             municipality: "Dusheti",
             units:
-              "Administrative units of Gudamakri, Kusheti, Khevsureti, Uksapshavi, Shatili, Magharoskar and Fasanauri",
+              "Administrative units of Gudamakari, Kvesheti, Khevsureti, Ukanapshavi, Shatili, Magharoskari and Fasanauri",
           },
         ],
       },
 
       date: {
         header: "Date of the Census",
-        para: "The Censuses in Georgia are conducted once every 10 years, in accordance with UN recommendations and international practice. The last Census took place in 2014, and the next one is scheduled for November-December 2024.",
+        para: "In accordance with UN recommendations and international practice, censuses are conducted in the country once every 10 years. The last census in Georgia was conducted in 2014. Consequently, the next census is scheduled for 2024.",
         more: "Read Fully",
       },
 
@@ -474,11 +479,11 @@ const translations = {
       goals: {
         header: "Goals and Objectives of the 2024 Census",
         para1:
-          "Within the framework of the Population Census, collected data will be based on the population size,  age and sex structure, various demographic and socio-economic characteristics.",
+          "As part of the Census, the data will be collected on population size, age and sex structure, various demographic and socio-economic characteristics.",
         para2:
-          "Within the framework of the Agricultural Census, collected information about the agricultural activity of households, in particular, regarding the structure of land owned by households, the number of livestock and poultry, and other important issues.",
+          "In addition, as part of the Census, the information on the agricultural activity of households, including the structure of land owned by households, permanent crops and wine species, the number of livestock and poultry, and other important issues will be collected.",
         para3:
-          "As a result of the Census, accurate and updated data will be available with regard to the population size, age and sex structure, demographic and socio-economic characteristics, as well as the agricultural activity of households, at the level of self-governing units and settlements.",
+          "As a result of the Census, accurate and updated data will be available at the level of self-governing units and settlements.",
         para4:
           "Censuses are conducted for the development of the country, to facilitate the implementation of plans and programs. The Census is also an important source for assessing the implementation of the UN Sustainable Development Goals 2030.",
         more: "Read Fully",
@@ -488,6 +493,8 @@ const translations = {
         header: "Census 2024",
         firsPara:
           "The Population and Agricultural Census in Georgia is conducted from November 14 to December 19, 2024.",
+        para2:
+          "The Census will be conducted in all administrative-territorial units of Georgia, except the occupied territories.",
         countDown: {
           timeLeft: "Time left before Census",
           day: "Days",
@@ -518,6 +525,7 @@ const translations = {
       results: "Results",
       vacancies: "Vacancies",
       selfRegistration: "Self-registration",
+      tooltip: "Self-registration is possible from November 14 to 23",
     },
   },
 };
