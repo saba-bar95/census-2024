@@ -9,6 +9,7 @@ import translations from "../../../translation";
 export default function Methods() {
   const selectedLanguage = localStorage.getItem("selectedLanguage");
   const text = translations[selectedLanguage].main.methods;
+  const navBarText = translations[selectedLanguage].navbar;
 
   return (
     <div className="methods--section">
@@ -36,9 +37,7 @@ export default function Methods() {
             <p>{text.para2}</p>
             <button className="self-registration--btn">
               {text.registration} <img src={vector} alt="" />
-              <span className="tooltip">
-                თვითრეგისტრაცია შესაძლებელია 14 - 23 ნოემბრის პერიოდში
-              </span>
+              <span className="tooltip">{navBarText.tooltip}</span>
             </button>
           </div>
           <img src={interviewer2} alt="interviewer" className="img" />
