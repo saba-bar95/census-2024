@@ -5,6 +5,9 @@ import routes from "./routes";
 
 const router = createBrowserRouter(routes);
 
+if (!localStorage.getItem("selectedLanguage"))
+  localStorage.setItem("selectedLanguage", "ქარ");
+
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <RouterProvider router={router} />
