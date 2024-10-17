@@ -42,6 +42,7 @@ export default function Goals() {
             <img src={image3} alt="goals-image3" />
             <p className="header">{text.header3}</p>
             <p>{text.para3}</p>
+            <p>{text.para6}</p>
             <img src={image4} alt="goals-image4" />
             <p className="header">{text.header4}</p>
             <p>{text.para4}</p>

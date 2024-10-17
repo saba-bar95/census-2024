@@ -42,11 +42,15 @@ export default function Date() {
             </div>
             <p className="header">{text.header3}</p>
             <p>
-              <span style={{ fontWeight: "900" }}>In the first stage, </span>
+              <span style={{ fontFamily: "FiraGOBold" }}>
+                {text.span1 && text.span1}
+              </span>
               {text.para3}
             </p>
             <p>
-              <span style={{ fontWeight: "900" }}>In the second stage, </span>
+              <span style={{ fontFamily: "FiraGOBold" }}>
+                {text.span2 && text.span2}
+              </span>
               {text.para4}
             </p>
           </div>

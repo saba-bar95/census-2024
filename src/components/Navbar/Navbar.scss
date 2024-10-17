@@ -30,6 +30,23 @@
       .sakstat-logo {
         max-width: 150px;
       }
+
+      .census {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: inherit;
+        gap: 3px;
+
+        h2 {
+          font-size: 1.2em;
+          text-wrap: nowrap;
+          color: #214476;
+          font-family: FiraGOBold;
+        }
+      }
     }
 
     .left-side {
@@ -43,6 +60,7 @@
         color: $header-color;
         text-decoration: none;
         font-family: FiraGOBold;
+        font-size: 1.3em;
       }
 
       a:visited {
@@ -72,6 +90,7 @@
         gap: 20px;
 
         button {
+          font-size: 1.2em;
           padding: 20px 40px;
           border-radius: 15px;
           font-family: inherit;
@@ -79,10 +98,7 @@
           line-height: 19px;
           outline: none;
           border: none;
-          font-size: 1.1em;
           cursor: pointer;
-          font-size: 0.9rem;
-          font-size: 1rem;
         }
 
         .vacancies--btn {
@@ -138,18 +154,21 @@
       gap: 60px;
 
       .right-side {
-        img {
-          width: 100px;
-          height: auto;
-        }
+        gap: 20px;
 
-        .sakstat-logo {
-          width: 110px;
+        .census {
+          h2 {
+            font-size: 0.9em;
+          }
         }
       }
 
       .left-side {
         gap: 20px;
+
+        a {
+          font-size: 1em;
+        }
 
         ul {
           gap: 15px;
@@ -158,6 +177,7 @@
         .buttons-container {
           button {
             padding: 10px 20px;
+            font-size: 0.9em;
           }
         }
       }
@@ -173,18 +193,27 @@
       .right-side {
         gap: 20px;
 
-        .sakstat-logo {
-          width: 75px;
+        img {
+          max-width: 50px;
         }
 
-        img {
-          width: 60px;
-          height: auto;
+        .sakstat-logo {
+          max-width: 100px;
+        }
+
+        .census {
+          h2 {
+            font-size: 0.8em;
+          }
         }
       }
 
       .left-side {
         gap: 10px;
+
+        a {
+          font-size: 1.1em;
+        }
 
         ul {
           gap: 10px;
@@ -227,19 +256,29 @@
   .nav-container {
     nav {
       flex-direction: column;
-      gap: 25px;
+      gap: 15px;
       align-items: center;
+
+      .right-side {
+        img {
+          max-width: 50px;
+        }
+
+        .sakstat-logo {
+          max-width: 120px;
+        }
+      }
 
       .left-side {
         gap: 20px;
         flex-direction: column;
 
+        a {
+          font-size: 14px;
+        }
+
         ul {
           gap: 5px;
-
-          li {
-            font-size: 14px;
-          }
         }
 
         .buttons-container {

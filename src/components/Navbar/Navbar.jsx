@@ -2,7 +2,7 @@
 import "./Navbar.scss";
 import { Link } from "react-router-dom";
 import LanguageChanger from "./LanguageChanger/LanguageChanger";
-import census from "/src/assets/images/census.svg";
+import census from "/src/assets/images/census.png";
 import sakstatKa from "/src/assets/images/logo-transparent-ka.png";
 import sakstatEn from "/src/assets/images/logo-transparent-en.png";
 import translations from "../../translation";
@@ -21,8 +21,9 @@ export default function Navbar({ selectedLanguage, setSelectedLanguage }) {
               className="sakstat-logo"
             />
           </Link>
-          <Link to="/main">
+          <Link to="/main" className="census">
             <img src={census} alt="აღწერა" className="census-logo" />
+            <h2>{navBarText.header}</h2>
           </Link>
         </div>
         <div className="left-side">

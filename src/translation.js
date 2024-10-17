@@ -46,7 +46,9 @@ const translations = {
           "დანახარჯებისა და ადამიანური რესურსების ოპტიმალურად გამოყენების მიზნით, ასევე, იმის გათვალისწინებით, რომ საქართველოში სასოფლო-სამეურნეო აქტივობა და პროდუქციის წარმოება ძირითადად ხორციელდება შინამეურნეობების სექტორში, მოსახლეობის აღწერასთან ერთად ჩატარდება სასოფლო-სამეურნეო აღწერაც.",
         header3: "აღწერა 2024-ის მიზნები",
         para3:
-          "აღწერის ფარგლებში შეგროვდება მონაცემები მოსახლეობის რიცხოვნობის, მისი სქესობრივ-ასაკობრივი შემადგენლობის, სხვადასხვა დემოგრაფიული და სოციალურ-ეკონომიკური მახასიათებლების მიხედვით. ასევე, აღწერა მოიცავს როგორც საცხოვრისებში და ინსტიტუციონალურ დაწესებულებებში მცხოვრებ მუდმივ მოსახლეობას, ისე უსახლკარო პირებს და მომთაბარე ჯგუფებს, რომლებიც აღწერის კრიტიკული მომენტისთვის მუდმივად ცხოვრობენ ქვეყნის ტერიტორიაზე. ამასთან, აღწერის ფარგლებში შეგროვდება ინფორმაცია, შინამეურნეობების სასოფლო-სამეურნეო აქტივობის შესახებ, კერძოდ, შინამეურნეობების სარგებლობაში არსებული მიწის სტრუქტურის, პირუტყვისა და ფრინველის სულადობის და სხვა მნიშვნელოვანი საკითხების შესახებ.",
+          "აღწერის ფარგლებში შეგროვდება მონაცემები მოსახლეობის რიცხოვნობის, მისი სქესობრივ-ასაკობრივი შემადგენლობის, სხვადასხვა დემოგრაფიული და სოციალურ-ეკონომიკური მახასიათებლების მიხედვით.",
+        para6:
+          "ასევე, აღწერა მოიცავს როგორც საცხოვრისებში და ინსტიტუციონალურ დაწესებულებებში მცხოვრებ მუდმივ მოსახლეობას, ისე უსახლკარო პირებს და მომთაბარე ჯგუფებს, რომლებიც აღწერის კრიტიკული მომენტისთვის მუდმივად ცხოვრობენ ქვეყნის ტერიტორიაზე. ამასთან, აღწერის ფარგლებში შეგროვდება ინფორმაცია, შინამეურნეობების სასოფლო-სამეურნეო აქტივობის შესახებ, კერძოდ, შინამეურნეობების სარგებლობაში არსებული მიწის სტრუქტურის, პირუტყვისა და ფრინველის სულადობის და სხვა მნიშვნელოვანი საკითხების შესახებ.",
         heade4: "აღწერა 2024-ის ამოცანები",
         para4:
           "აღწერის შედეგების საფუძველზე ხელმისაწვდომი იქნება ზუსტი და განახლებული მონაცემები როგორც მოსახლეობის რაოდენობის, მისი სქესობრივ-ასაკობრივი შემადგენლობის, სხვადასხვა დემოგრაფიული, სოციალურ-ეკონომიკური მახასიათებლების მიხედვით, ასევე შინამეურნეობების სასოფლო-სამეურნეო აქტივობის შესახებ, თვითმმართველი ერთეულებისა და დასახლებების დონეზე",
@@ -242,6 +244,7 @@ const translations = {
 
     navbar: {
       main: "მთავარი",
+      header: "აღწერა 2024",
       questionnaries: "კითხვარები",
       methodology: "მეთოდოლოგია",
       results: "შედეგები",
@@ -268,9 +271,9 @@ const translations = {
       date: {
         header: "The date of the census",
         para1:
-          "In accordance with UN recommendations and international practice, censuses are conducted in the country once every 10 years. The last census in Georgia was conducted in 2014. Accordingly, the next census is planned for 2024.",
+          "In accordance with UN recommendations and international practice, censuses are conducted in the country once every 10 years. The last census in Georgia was conducted in 2014. Consequently, the next census is scheduled for 2024.",
         para2:
-          "Within the framework of Census, data will be collected from November 14 to December 19, and as the population calculation moment (the moment of the census, according to which the facts will be registered) is set on November 13-14, at 12 o'clock (midnight).",
+          "Within the framework of Census, data will be collected from November 14 to December 19, and as the population calculation moment (the moment of the census, according to which the facts will be registered) is set for November 13-14 at 12 o’clock (midnight).",
         header2: "Time left before Census:",
         header3:
           "Data collection will be conducted in two stages, using combined methods",
@@ -278,41 +281,45 @@ const translations = {
           "from November 14-23 (10 days) the data will be collected through self-registration -  Computer-Assisted Web Interviewing (CAWI), during which respondents will have the opportunity to independently complete an electronic questionnaire.",
         para4:
           "from November 29 to December 19 (21 days), the data will be collected by the Geostat interviewers through door-to-door method, using tablets - computer-assisted personal interview (CAPI).",
+        span1: "In the first stage ",
+        span2: "In the second stage ",
       },
 
       legal: {
         header: "Legal Basis",
-        para1: `The legal basis of the census is the Law of Georgia "On Official Statistics", the Regulation of the National Statistical Service of Georgia and the Law of Georgia "On Personal Data Protection".`,
-        para2: `The legal basis of the census is the Law of Georgia "On Official Statistics", the Regulation of the National Statistical Service of Georgia and the Law of Georgia "On Personal Data Protection".`,
-        header2: `Law "On Official Statistics"`,
-        header3: "The statute of limitations",
+        para1: `The legal basis for the census is the Law of Georgia "On Official Statistics", The Charter of Geostat, and the Law of Georgia "On Personal Data Protection".`,
+        para2: `The Law "On Official Statistics" defines the procedure for determining the date of the census, its preparation, conducting, processing of the obtained materials, publication and distribution of the results.`,
+        header2: `The Law of Georgia On Official Statistics`,
+        header3: "TThe Charter of Geostat",
         header4: `Law "On Personal Data Protection"`,
-        header5: "Let's find out how many there are!",
+        header5: "Let's find out, how many we are!",
         para3:
-          "Participation in the census is mandatory for all legal and physical persons, including citizens of Georgia, foreigners residing in the territory of Georgia, and stateless persons with status in Georgia.",
+          "Participation in the census is mandatory for every natural and legal person, as well as for all foreigners and stateless persons residing in the territory of Georgia.",
         para4:
-          "During the census, the respondent is obliged to provide accurate data in his possession to the surveyor.",
+          "During a census, a respondent is obliged to provide reliable data to the Geostat.",
         header6: "Privacy",
         para5:
-          "The data collected by Sakstat within the scope of the census are confidential, not subject to transfer to third parties, used only for statistical purposes and distributed in an aggregated form (Article 34 of the Law on Official Statistics).",
+          "Data collected, processed, and stored to produce official statistics are confidential if they enable the direct or indirect identification of a statistical unit. In addition, aggregated data are subject to statistical confidentiality (the Law of Georgia on Official Statistics, Article 34).",
         para6:
-          "Enumerators are prohibited from disclosing to a third party the content of the completed enumeration questionnaire about the respondent. For violation of the data usage rules, the descriptive staff will be held responsible according to the rules established by the current legislation of Georgia.",
+          "Geostat interviewers may not disclose individual data to a third party (person), about the content of the questionnaire filled by the respondent. For violation of the data usage rules, the Geostat interviewers will be held responsible according to the rules established by the current legislation of Georgia.",
         para7: `The security of the data collected during the census is also ensured by Article 27 of the Law of Georgia "On Personal Data Protection".`,
       },
 
       goals: {
         header: "Objectives and Goals of the 2024 Census",
         para1:
-          "The census of 2024 is conducted in all administrative-territorial units of Georgia, except for the occupied territories, in order to obtain accurate data about the population and agricultural farms, which is necessary for determining the priorities of the socio-economic development of the country and informing the public.",
+          "The 2024 Census will be conducted in all administrative-territorial units of Georgia, except the occupied territories, in order to obtain accurate data on the Population and Agricultural holdings. Collecting data is necessary to determine the country's socio-economic development priorities and inform the public.",
         header2: "Agricultural census",
         para2:
-          "In order to optimally use costs and human resources, also, taking into account that agricultural activity and production of products in Georgia is mainly carried out in the household sector, together with the population census, an agricultural census will be conducted.",
-        header3: "Goals of the 2024 Census",
+          "In order to optimize the use funds and human resources, and considering that agricultural activity and  products production in Georgia are mainly carried out in the household sector, an Agricultural Census will be conducted together with the Population Census.",
+        header3: "2024 Census goals",
         para3:
-          "In order to optimally use costs and human resources, also, taking into account that agricultural activity and production of products in Georgia is mainly carried out in the household sector, together with the population census, an agricultural census will be conducted.",
+          "As part of the Census, the data will be collected on population size, age and sex structure, various demographic and socio-economic characteristics. Also, the census includes both housing and institutional facilities, where people actually live, as well as homeless persons and nomadic groups who are living in the territory of the country at the moment of the census.",
+        para6:
+          "In addition, as part of the Census, the information on the agricultural activity of households, including the structure of land owned by households, the number of livestock and poultry, and other important issues will be collected.",
         heade4: "Objectives of the 2024 Census",
         para4:
-          "Based on the results of the census, accurate and updated data will be available on the number of the population, its gender-age composition, various demographic, socio-economic characteristics, as well as on the agricultural activity of households at the level of self-governing units and settlements.",
+          "Based on the results of the census, accurate and updated data will be available on population size, age and sex structure, various demographic and socio-economic characteristics, as well as on the agricultural activity of households at the level of self-governing units and settlements.",
         para5:
           "Censuses are conducted for the development of the country, to facilitate the effective implementation of plans and programs. The Census is also an important source for assessing the implementation of the UN Sustainable Development Goals 2030.",
       },
@@ -520,12 +527,14 @@ const translations = {
 
     navbar: {
       main: "Home",
+      header: "Census 2024",
       questionnaries: "Questionnaries",
       methodology: "Methodology",
       results: "Results",
       vacancies: "Vacancies",
       selfRegistration: "Self-registration",
-      tooltip: "Self-registration is possible from November 14 to 23",
+      tooltip:
+        "Self-registration will be available from November 14 to November 23.",
     },
   },
 };
