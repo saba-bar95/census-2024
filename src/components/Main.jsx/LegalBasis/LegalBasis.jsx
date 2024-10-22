@@ -7,8 +7,8 @@ import { Link } from "react-router-dom";
 import translations from "../../../translation";
 
 export default function LegalBasis() {
-  const selectedLanguage = localStorage.getItem("selectedLanguage");
-  const text = translations[selectedLanguage].main.legal;
+  const language = localStorage.getItem("language");
+  const text = translations[language].main.legal;
 
   return (
     <>
@@ -34,7 +34,7 @@ export default function LegalBasis() {
                   );
                 }}>
                 <img
-                  src={selectedLanguage === "ქარ" ? sakstat : sakstatEn}
+                  src={language === "ka" ? sakstat : sakstatEn}
                   alt="sakstat"
                   style={{ width: "120px" }}
                 />
@@ -50,7 +50,7 @@ export default function LegalBasis() {
                 <p>{text.para4}</p>
               </div>
             </div>
-            <Link to="/legalbasis">
+            <Link to={`/${language}/legalbasis`}>
               <button>{text.more}</button>
             </Link>
           </div>

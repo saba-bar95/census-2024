@@ -8,28 +8,16 @@ import third from "/src/assets/images/third.png";
 import house from "/src/assets/images/house.png";
 import Section from "../../components/Main.jsx/Section";
 import TopArrow from "../../components/TopArrow/TopArrow";
-import { useState, useEffect } from "react";
 import translations from "../../translation";
 
 export default function Questionnaires() {
-  const [selectedLanguage, setSelectedLanguage] = useState(
-    localStorage.getItem("selectedLanguage") || "ქარ"
-  );
-
-  useEffect(() => {
-    localStorage.setItem("selectedLanguage", selectedLanguage);
-  }, [selectedLanguage]);
-
-  const text = translations[selectedLanguage].pages.questionnaries;
-
+  const language = localStorage.getItem("language");
+  const text = translations[language].pages.questionnaries;
   const images = [personal, house, third];
 
   return (
     <>
-      <Navbar
-        selectedLanguage={selectedLanguage}
-        setSelectedLanguage={setSelectedLanguage}
-      />
+      <Navbar />
       <Section>
         <div className="questionnaires-container">
           <div className="background-container">

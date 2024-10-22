@@ -6,8 +6,8 @@ import images from "./SettlementImages";
 import translations from "../../../translation";
 
 export default function Settlements() {
-  const selectedLanguage = localStorage.getItem("selectedLanguage");
-  const text = translations[selectedLanguage].main.settlements;
+  const language = localStorage.getItem("language");
+  const text = translations[language].main.settlements;
 
   const apiKey = "AIzaSyB7D2WPALIsuME2Y8wbWGZuob19cbpuiR0";
 

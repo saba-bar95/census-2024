@@ -6,8 +6,8 @@ import linkedIn from "/src/assets/images/linkedin.svg";
 import translations from "../../translation";
 
 export default function Footer() {
-  const selectedLanguage = localStorage.getItem("selectedLanguage");
-  const text = translations[selectedLanguage].footer;
+  const language = localStorage.getItem("language");
+  const text = translations[language].footer;
 
   return (
     <footer>
@@ -42,16 +42,18 @@ export default function Footer() {
           <p className="header">{text.menu}</p>
           <ul>
             <li>
-              <Link to="/main">{text.main}</Link>
+              <Link to={`/${language}`}>{text.main}</Link>
             </li>
             <li>
-              <Link to="/questionnaries">{text.questionnaries}</Link>
+              <Link to={`/${language}/questionnaires`}>
+                {text.questionnaries}
+              </Link>
             </li>
             <li>
-              <Link to="/methodology">{text.methodology}</Link>
+              <Link to={`/${language}/methodology`}>{text.methodology}</Link>
             </li>
             <li>
-              <Link to="/results">{text.results}</Link>
+              <Link to={`/${language}/results`}>{text.results}</Link>
             </li>
           </ul>
         </div>

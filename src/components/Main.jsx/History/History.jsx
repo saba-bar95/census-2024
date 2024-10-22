@@ -5,8 +5,8 @@ import map from "/src/assets/images/georgian-map.svg";
 import translations from "../../../translation";
 
 export default function History() {
-  const selectedLanguage = localStorage.getItem("selectedLanguage");
-  const text = translations[selectedLanguage].main.history;
+  const language = localStorage.getItem("language");
+  const text = translations[language].main.history;
 
   return (
     <>

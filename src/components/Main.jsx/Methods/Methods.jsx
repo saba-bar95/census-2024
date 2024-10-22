@@ -7,9 +7,9 @@ import vector from "/src/assets/images/rightVector.png";
 import translations from "../../../translation";
 
 export default function Methods() {
-  const selectedLanguage = localStorage.getItem("selectedLanguage");
-  const text = translations[selectedLanguage].main.methods;
-  const navBarText = translations[selectedLanguage].navbar;
+  const language = localStorage.getItem("language");
+  const text = translations[language].main.methods;
+  const navBarText = translations[language].navbar;
 
   return (
     <div className="methods--section">

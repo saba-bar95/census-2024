@@ -1,5 +1,5 @@
 const translations = {
-  ქარ: {
+  ka: {
     pages: {
       date: {
         header: "აღწერის ჩატარების თარიღი",
@@ -266,7 +266,7 @@ const translations = {
       results: "შედეგები",
     },
   },
-  EN: {
+  en: {
     pages: {
       date: {
         header: "The date of the census",
@@ -290,7 +290,7 @@ const translations = {
         para1: `The legal basis for the census is the Law of Georgia "On Official Statistics", The Charter of Geostat, and the Law of Georgia "On Personal Data Protection".`,
         para2: `The Law "On Official Statistics" defines the procedure for determining the date of the census, its preparation, conducting, processing of the obtained materials, publication and distribution of the results.`,
         header2: `The Law of Georgia On Official Statistics`,
-        header3: "TThe Charter of Geostat",
+        header3: "The Charter of Geostat",
         header4: `Law "On Personal Data Protection"`,
         header5: "Let's find out, how many we are!",
         para3:

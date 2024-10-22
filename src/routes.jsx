@@ -6,86 +6,75 @@ import Goals from "./Pages/Goals/Goals.jsx";
 import LegalBasis from "./Pages/LegalBasis/LegalBasis.jsx";
 import ScrollToTop from "./ScrollToTop";
 import Date from "./Pages/Date/Date.jsx";
+import { Navigate } from "react-router-dom";
+
+const language = localStorage.getItem("language") || "ka";
 
 const routes = [
   {
     path: "/",
+    element: <Navigate to={`/${language}`} />,
+  },
+  {
+    path: `/:language`,
     element: (
       <>
         <ScrollToTop />
-        <App />
+        <App />,
       </>
     ),
   },
   {
-    path: "main",
+    path: "/:language/questionnaires",
     element: (
       <>
         <ScrollToTop />
-        <App />
+        <Questionnaires />,
       </>
     ),
   },
   {
-    path: "questionnaries",
+    path: "/:language/methodology",
     element: (
       <>
         <ScrollToTop />
-        <Questionnaires />
+        <Methodology />,
       </>
     ),
   },
   {
-    path: "date",
+    path: "/:language/results",
     element: (
       <>
         <ScrollToTop />
-        <Date />
+        <Results />,
       </>
     ),
   },
   {
-    path: "methodology",
+    path: "/:language/goals",
     element: (
       <>
         <ScrollToTop />
-        <Methodology />
+        <Goals />,
       </>
     ),
   },
   {
-    path: "results",
+    path: "/:language/legalBasis",
     element: (
       <>
         <ScrollToTop />
-        <Results />
+        <LegalBasis />,
       </>
     ),
   },
   {
-    path: "vacancies",
+    path: "/:language/date",
     element: (
       <>
         <ScrollToTop />
-        <App />
-      </>
-    ),
-  },
-  {
-    path: "goals",
-    element: (
-      <>
-        <ScrollToTop />
-        <Goals />
-      </>
-    ),
-  },
-  {
-    path: "legalbasis",
-    element: (
-      <>
-        <ScrollToTop />
-        <LegalBasis />
+        <Date />,
       </>
     ),
   },

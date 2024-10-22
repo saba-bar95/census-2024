@@ -6,26 +6,15 @@ import image2 from "/src/assets/images/date-image2.png";
 import CountdownComponent from "../../components/Main.jsx/History/CountDown/CountDown";
 import Section from "../../components/Main.jsx/Section";
 import TopArrow from "../../components/TopArrow/TopArrow";
-import { useState, useEffect } from "react";
 import translations from "../../translation";
 
 export default function Date() {
-  const [selectedLanguage, setSelectedLanguage] = useState(
-    localStorage.getItem("selectedLanguage") || "ქარ"
-  );
-
-  useEffect(() => {
-    localStorage.setItem("selectedLanguage", selectedLanguage);
-  }, [selectedLanguage]);
-
-  const text = translations[selectedLanguage].pages.date;
+  const language = localStorage.getItem("language");
+  const text = translations[language].pages.date;
 
   return (
     <>
-      <Navbar
-        selectedLanguage={selectedLanguage}
-        setSelectedLanguage={setSelectedLanguage}
-      />
+      <Navbar />
       <Section>
         <div className="date-container">
           <h1>{text.header1}</h1>

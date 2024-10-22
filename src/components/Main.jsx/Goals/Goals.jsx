@@ -7,8 +7,8 @@ import { Link } from "react-router-dom";
 import translations from "../../../translation";
 
 export default function Goals() {
-  const selectedLanguage = localStorage.getItem("selectedLanguage");
-  const text = translations[selectedLanguage].main.goals;
+  const language = localStorage.getItem("language");
+  const text = translations[language].main.goals;
 
   return (
     <>
@@ -48,7 +48,7 @@ export default function Goals() {
             <p>{text.para4}</p>
           </div>
         </div>
-        <Link to="/goals">
+        <Link to={`/${language}/goals`}>
           <button>{text.more}</button>
         </Link>
       </div>

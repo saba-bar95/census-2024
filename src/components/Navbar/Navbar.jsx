@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import "./Navbar.scss";
 import { Link } from "react-router-dom";
 import LanguageChanger from "./LanguageChanger/LanguageChanger";
@@ -7,21 +6,22 @@ import sakstatKa from "/src/assets/images/logo-transparent-ka.png";
 import sakstatEn from "/src/assets/images/logo-transparent-en.png";
 import translations from "../../translation";
 
-export default function Navbar({ selectedLanguage, setSelectedLanguage }) {
-  const navBarText = translations[selectedLanguage].navbar;
+export default function Navbar() {
+  const language = localStorage.getItem("language");
+  const navBarText = translations[language].navbar;
 
   return (
     <div className="nav-container loading">
       <nav>
         <div className="right-side">
-          <Link to="/main">
+          <Link to={`/${language}`}>
             <img
-              src={selectedLanguage === "ქარ" ? sakstatKa : sakstatEn}
+              src={language === "ka" ? sakstatKa : sakstatEn}
               alt="sakstat"
               className="sakstat-logo"
             />
           </Link>
-          <Link to="/main" className="census">
+          <Link to={`/${language}`} className="census">
             <img src={census} alt="აღწერა" className="census-logo" />
             <h2>{navBarText.header}</h2>
           </Link>
@@ -29,16 +29,20 @@ export default function Navbar({ selectedLanguage, setSelectedLanguage }) {
         <div className="left-side">
           <ul>
             <li>
-              <Link to="/main">{navBarText.main}</Link>
+              <Link to={`/${language}`}>{navBarText.main}</Link>
             </li>
             <li>
-              <Link to="/questionnaries">{navBarText.questionnaries}</Link>
+              <Link to={`/${language}/questionnaires`}>
+                {navBarText.questionnaries}
+              </Link>
             </li>
             <li>
-              <Link to="/methodology">{navBarText.methodology}</Link>
+              <Link to={`/${language}/methodology`}>
+                {navBarText.methodology}
+              </Link>
             </li>
             <li>
-              <Link to="/results">{navBarText.results}</Link>
+              <Link to={`/${language}/results`}>{navBarText.results}</Link>
             </li>
           </ul>
           <div className="buttons-container">
@@ -55,10 +59,7 @@ export default function Navbar({ selectedLanguage, setSelectedLanguage }) {
               <span className="tooltip">{navBarText.tooltip}</span>
             </button>
           </div>
-          <LanguageChanger
-            selectedLanguage={selectedLanguage}
-            setSelectedLanguage={setSelectedLanguage}
-          />
+          <LanguageChanger />
         </div>
       </nav>
     </div>

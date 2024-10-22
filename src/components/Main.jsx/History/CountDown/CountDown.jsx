@@ -2,8 +2,8 @@ import { useState, useEffect } from "react";
 import translations from "../../../../translation";
 
 const CountdownComponent = (page) => {
-  const selectedLanguage = localStorage.getItem("selectedLanguage");
-  const text = translations[selectedLanguage].main.history.countDown;
+  const language = localStorage.getItem("language");
+  const text = translations[language].main.history.countDown;
 
   const [days, setDays] = useState(0);
   const [hours, setHours] = useState(0);

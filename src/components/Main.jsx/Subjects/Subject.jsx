@@ -6,8 +6,8 @@ import redArrow from "/src/assets/images/red-arrow.png";
 import translations from "../../../translation";
 
 export default function Subject() {
-  const selectedLanguage = localStorage.getItem("selectedLanguage");
-  const text = translations[selectedLanguage].main.subjects;
+  const language = localStorage.getItem("language");
+  const text = translations[language].main.subjects;
 
   return (
     <div className="subject--section">

@@ -9,26 +9,15 @@ import image1 from "/src/assets/images/legal-image1.png";
 import image2 from "/src/assets/images/legal-image2.png";
 import Section from "../../components/Main.jsx/Section";
 import TopArrow from "../../components/TopArrow/TopArrow";
-import { useState, useEffect } from "react";
 import translations from "../../translation";
 
 export default function LegalBasis() {
-  const [selectedLanguage, setSelectedLanguage] = useState(
-    localStorage.getItem("selectedLanguage") || "ქარ"
-  );
-
-  useEffect(() => {
-    localStorage.setItem("selectedLanguage", selectedLanguage);
-  }, [selectedLanguage]);
-
-  const text = translations[selectedLanguage].pages.legal;
+  const language = localStorage.getItem("language");
+  const text = translations[language].pages.legal;
 
   return (
     <>
-      <Navbar
-        selectedLanguage={selectedLanguage}
-        setSelectedLanguage={setSelectedLanguage}
-      />
+      <Navbar />
       <Section>
         <div className="legal--container">
           <h1>{text.header1}</h1>
@@ -52,7 +41,7 @@ export default function LegalBasis() {
                   );
                 }}>
                 <img
-                  src={selectedLanguage === "ქარ" ? sakstat : sakstatEn}
+                  src={language === "ka" ? sakstat : sakstatEn}
                   alt="sakstat"
                   style={{ width: "120px" }}
                 />

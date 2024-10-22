@@ -6,28 +6,17 @@ import image2 from "/src/assets/images/goals-image2.png";
 import image3 from "/src/assets/images/goals-image3.png";
 import image4 from "/src/assets/images/goals-image4.png";
 import image5 from "/src/assets/images/goals-image5.png";
-import { useState, useEffect } from "react";
 import TopArrow from "../../components/TopArrow/TopArrow";
 import Section from "../../components/Main.jsx/Section";
 import translations from "../../translation";
 
 export default function Goals() {
-  const [selectedLanguage, setSelectedLanguage] = useState(
-    localStorage.getItem("selectedLanguage") || "ქარ"
-  );
-
-  useEffect(() => {
-    localStorage.setItem("selectedLanguage", selectedLanguage);
-  }, [selectedLanguage]);
-
-  const text = translations[selectedLanguage].pages.goals;
+  const language = localStorage.getItem("language");
+  const text = translations[language].pages.goals;
 
   return (
     <>
-      <Navbar
-        selectedLanguage={selectedLanguage}
-        setSelectedLanguage={setSelectedLanguage}
-      />
+      <Navbar />
       <Section>
         <div className="goals-container">
           <h1>{text.header}</h1>

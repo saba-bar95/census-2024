@@ -7,8 +7,8 @@ import stat3 from "/src/assets/images/stat3.png";
 import translations from "../../../translation";
 
 export default function Responsible() {
-  const selectedLanguage = localStorage.getItem("selectedLanguage");
-  const text = translations[selectedLanguage].main.responsible;
+  const language = localStorage.getItem("language");
+  const text = translations[language].main.responsible;
 
   return (
     <div className="responsible--section">

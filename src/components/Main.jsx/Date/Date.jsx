@@ -5,8 +5,8 @@ import date from "/src/assets/images/date.png";
 import translations from "../../../translation";
 
 export default function Date() {
-  const selectedLanguage = localStorage.getItem("selectedLanguage");
-  const text = translations[selectedLanguage].main.date;
+  const language = localStorage.getItem("language");
+  const text = translations[language].main.date;
 
   return (
     <div className="date--section">
@@ -17,7 +17,7 @@ export default function Date() {
           <div className="date-container">
             <img src={date} alt="" />
           </div>
-          <Link to="/date">
+          <Link to={`/${language}/date`}>
             <button>{text.more}</button>
           </Link>
         </div>
