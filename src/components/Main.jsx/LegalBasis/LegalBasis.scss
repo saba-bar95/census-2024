@@ -10,6 +10,16 @@
   background-color: #f3eeff;
   border-radius: 50px;
 
+  .lang-en {
+    background-image: url("/src/assets/images/en-text.png"),
+      url("/src/assets/images/scales-en.png"),
+      url("/src/assets/images/legal-background2.svg"),
+      url("/src/assets/images/legal-background1.svg") !important;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat !important;
+    background-position: 91% 17%, right, right, 85% center !important;
+    background-size: 8%, contain, contain, contain !important;
+  }
+
   .legal-container {
     gap: 50px;
     display: flex;
@@ -46,11 +56,11 @@
       .container {
         display: flex;
         gap: 40px;
-        width: 60%;
+        width: 55%;
 
         div {
           border-radius: 20px;
-          padding: 30px 20px;
+          padding: 30px 10px;
           background-color: #8e5aff;
           color: #ffffff;
           display: flex;
@@ -94,11 +104,38 @@
   }
 }
 
+@media only screen and (min-width: 2251px) and (max-width: 2327px) {
+  .legal--section {
+    .lang-en {
+      background-position: 90% 18%, right, right, 85% center !important;
+      // background-size: 9%, contain, contain, contain !important;
+    }
+  }
+}
+
+@media only screen and (min-width: 2051px) and (max-width: 2250px) {
+  .legal--section {
+    .lang-en {
+      background-position: 89% 18%, right, right, 85% center !important;
+      background-size: 9%, contain, contain, contain !important;
+    }
+  }
+}
+
+@media only screen and (min-width: 1920px) and (max-width: 2050px) {
+  .legal--section {
+    .lang-en {
+      background-position: 87% 15%, right, right, 85% center !important;
+      background-size: 10%, contain, contain, contain !important;
+    }
+  }
+}
+
 @media only screen and (min-width: $tablet) and (max-width: $desktop) {
   .legal--section {
     .legal-container {
       background-image: url("/src/assets/images/legal-background2.svg"),
-        url("/src/assets/images/legal-background1.svg");
+        url("/src/assets/images/legal-background1.svg") !important;
       background-position: right, 80% center;
 
       .right-side {
@@ -123,7 +160,7 @@
     margin: 0 80px 40px 80px;
 
     .legal-container {
-      background: none;
+      background: none !important;
 
       .right-side {
         gap: 25px;
@@ -172,7 +209,7 @@
     max-width: 500px;
 
     .legal-container {
-      background: none;
+      background: none !important;
 
       .right-side {
         gap: 25px;

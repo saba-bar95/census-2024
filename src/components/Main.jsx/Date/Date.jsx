@@ -2,6 +2,7 @@ import "./Date.scss";
 import { Link } from "react-router-dom";
 import interviewer from "/src/assets/images/interviewer.png";
 import date from "/src/assets/images/date.png";
+import dateEn from "/src/assets/images/date-en.png";
 import translations from "../../../translation";
 
 export default function Date() {
@@ -15,7 +16,7 @@ export default function Date() {
         <div className="left-side">
           <p>{text.para}</p>
           <div className="date-container">
-            <img src={date} alt="" />
+            <img src={language === "ka" ? date : dateEn} alt="" />
           </div>
           <Link to={`/${language}/date`}>
             <button>{text.more}</button>

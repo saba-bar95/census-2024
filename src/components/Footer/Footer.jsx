@@ -58,11 +58,13 @@ export default function Footer() {
           </ul>
         </div>
         <div className="container">
-          <a
-            href="https://www.geostat.ge/ka/page/monacemta-gamoyenebis-pirobebi"
-            target="_blank">
-            {text.terms}
-          </a>
+          <p className="header">
+            <a
+              href="https://www.geostat.ge/ka/page/monacemta-gamoyenebis-pirobebi"
+              target="_blank">
+              {text.terms}
+            </a>
+          </p>
         </div>
       </div>
     </footer>

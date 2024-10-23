@@ -5,7 +5,9 @@ import image1 from "/src/assets/images/goals-image1.png";
 import image2 from "/src/assets/images/goals-image2.png";
 import image3 from "/src/assets/images/goals-image3.png";
 import image4 from "/src/assets/images/goals-image4.png";
+import image4En from "/src/assets/images/image4-en.png";
 import image5 from "/src/assets/images/goals-image5.png";
+import bannerEn from "/src/assets/images/banner-en.png";
 import TopArrow from "../../components/TopArrow/TopArrow";
 import Section from "../../components/Main.jsx/Section";
 import translations from "../../translation";
@@ -32,11 +34,17 @@ export default function Goals() {
             <p className="header">{text.header3}</p>
             <p>{text.para3}</p>
             <p>{text.para6}</p>
-            <img src={image4} alt="goals-image4" />
+            <img
+              src={language === "ka" ? image4 : image4En}
+              alt="goals-image4"
+            />
             <p className="header">{text.header4}</p>
             <p>{text.para4}</p>
             <p>{text.para5}</p>
-            <img src={image5} alt="goals-image5" />
+            <img
+              src={language === "ka" ? image5 : bannerEn}
+              alt="goals-image5"
+            />
           </div>
         </div>
         <TopArrow />

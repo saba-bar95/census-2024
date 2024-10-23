@@ -1,7 +1,8 @@
 import "./Navbar.scss";
 import { Link } from "react-router-dom";
 import LanguageChanger from "./LanguageChanger/LanguageChanger";
-import census from "/src/assets/images/census.png";
+import census from "/src/assets/images/census-logo.png";
+import censusEn from "/src/assets/images/census-logo-en.svg";
 import sakstatKa from "/src/assets/images/logo-transparent-ka.png";
 import sakstatEn from "/src/assets/images/logo-transparent-en.png";
 import translations from "../../translation";
@@ -22,8 +23,11 @@ export default function Navbar() {
             />
           </Link>
           <Link to={`/${language}`} className="census">
-            <img src={census} alt="აღწერა" className="census-logo" />
-            <h2>{navBarText.header}</h2>
+            <img
+              src={language === "ka" ? census : censusEn}
+              alt="census"
+              className="census-logo"
+            />
           </Link>
         </div>
         <div className="left-side">

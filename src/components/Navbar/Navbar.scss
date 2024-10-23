@@ -31,21 +31,8 @@
         max-width: 150px;
       }
 
-      .census {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-decoration: none;
-        color: inherit;
-        gap: 3px;
-
-        h2 {
-          font-size: 1.2em;
-          text-wrap: nowrap;
-          color: #214476;
-          font-family: FiraGOBold;
-        }
+      .census-logo {
+        max-width: 120px;
       }
     }
 
@@ -201,10 +188,8 @@
           max-width: 100px;
         }
 
-        .census {
-          h2 {
-            font-size: 0.8em;
-          }
+        .census-logo {
+          max-width: 75px;
         }
       }
 
@@ -254,6 +239,8 @@
 
 @media only screen and (min-width: 0) and (max-width: $mobile) {
   .nav-container {
+    padding: 15px 80px;
+
     nav {
       flex-direction: column;
       gap: 15px;
@@ -266,6 +253,10 @@
 
         .sakstat-logo {
           max-width: 120px;
+        }
+
+        .census-logo {
+          max-width: 90px;
         }
       }
 

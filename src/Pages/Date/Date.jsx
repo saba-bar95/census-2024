@@ -1,7 +1,8 @@
 import "./Date.scss";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
-import image1 from "/src/assets/images/date-image1.png";
+import image1 from "/src/assets/images/date.png";
+import dateEn from "/src/assets/images/date-en.png";
 import image2 from "/src/assets/images/date-image2.png";
 import CountdownComponent from "../../components/Main.jsx/History/CountDown/CountDown";
 import Section from "../../components/Main.jsx/Section";
@@ -21,7 +22,7 @@ export default function Date() {
           <div className="info-container">
             <p>{text.para1}</p>
             <div className="background">
-              <img src={image1} alt="" />
+              <img src={language === "ka" ? image1 : dateEn} alt="" />
             </div>
             <p>{text.para2}</p>
             <p className="header">{text.header2}</p>
