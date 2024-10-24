@@ -3,7 +3,10 @@ import { useLocation } from "react-router-dom";
 
 const ScrollToTop = () => {
   const location = useLocation();
-  const urlLanguage = location.pathname.split("/")[1];
+
+  let urlLanguage = location.pathname.split("/")[1];
+
+  if (urlLanguage !== "ka" && urlLanguage !== "en") urlLanguage = "ka";
   localStorage.setItem("language", urlLanguage);
 
   useEffect(() => {

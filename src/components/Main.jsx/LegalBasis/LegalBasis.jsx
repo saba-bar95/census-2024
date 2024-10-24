@@ -11,8 +11,6 @@ export default function LegalBasis() {
   const language = localStorage.getItem("language");
   const text = translations[language].main.legal;
 
-  console.log(language);
-
   const isEnglish =
     language === "en" ? "legal-container lang-en" : "legal-container";
 
