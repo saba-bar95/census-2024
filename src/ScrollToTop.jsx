@@ -6,7 +6,9 @@ const ScrollToTop = () => {
 
   let urlLanguage = location.pathname.split("/")[1];
 
-  if (urlLanguage !== "ka" && urlLanguage !== "en") urlLanguage = "ka";
+  if (urlLanguage !== "ka" && urlLanguage !== "en")
+    window.location.href = "/ka";
+
   localStorage.setItem("language", urlLanguage);
 
   useEffect(() => {

@@ -3,6 +3,10 @@
   src: url(/src/assets/fonts/FiraGO/FiraGO-Regular.otf);
 }
 
+#root {
+  overflow-x: clip;
+}
+
 * {
   font-family: FiraGO;
   padding: 0;

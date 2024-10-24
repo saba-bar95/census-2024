@@ -7,6 +7,7 @@ import LegalBasis from "./Pages/LegalBasis/LegalBasis.jsx";
 import ScrollToTop from "./ScrollToTop";
 import Date from "./Pages/Date/Date.jsx";
 import { Navigate } from "react-router-dom";
+import ErrorPage from "./ErrorPage.jsx";
 
 const language = localStorage.getItem("language") || "ka";
 
@@ -77,6 +78,11 @@ const routes = [
         <Date />,
       </>
     ),
+  },
+
+  {
+    path: "*",
+    element: <ErrorPage />,
   },
 ];
 
