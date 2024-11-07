@@ -144,7 +144,7 @@ const translations = {
         header2:
           "2024 წლის აღწერის ფარგლებში მონაცემთა შეგროვება დაგეგმილია ორი მეთოდით:",
         header3: "კომპიუტერის დახმარებით - პერსონალური ინტერვიუს მეთოდი (CAPI)",
-        heade4: "კომპიუტერის დახმარებით - ვებ-ინტერვიუს მეთოდი (CAWI)",
+        header4: "კომპიუტერის დახმარებით - ვებ-ინტერვიუს მეთოდი (CAWI)",
         para1:
           "CAPI მეთოდით მონაცემები გროვდება კარდაკარის პრინციპით, პირისპირ ინტერვიუს დროს, პლანშეტური კომპიუტერის მეშვეობით. ინტერვიუს დამთავრების შემდეგ მონაცემები პირდაპირ გადაეცემა ცენტრალურ კომპიუტერულ ქსელს ინტერნეტით ან მონაცემთა გადაცემის სხვა არხებით.",
         para2:
@@ -415,7 +415,7 @@ const translations = {
         header2:
           "Within the framework of the 2024 Census, data collection is planned by two methods:",
         header3: "Computer-assisted personal interview (CAPI) ",
-        heade4: "Computer-Assisted Web Interviewing (CAWI)",
+        header4: "Computer-Assisted Web Interviewing (CAWI)",
         para1:
           "With the CAPI method, data is collected on a door-to-door basis, during face-to-face interviews, via the tablet. After the interview is completed, the data is transferred directly to the central computer network via the Internet or other data transmission channels.",
         para2:

@@ -281,8 +281,8 @@
           .self-registration--btn {
             .tooltip {
               top: 210%;
-              left: 125%;
               width: 170px;
+              z-index: 1;
             }
           }
         }
