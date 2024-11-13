@@ -31,7 +31,12 @@ const CountdownComponent = (page) => {
       const timeDiff = targetDate.getTime() - now.getTime();
 
       if (timeDiff <= 0) {
+        setDays(0);
+        setHours(0);
+        setMinutes(0);
+        setSeconds(0);
         clearInterval(intervalId);
+        localStorage.setItem("countdownTime", "0:0:0:0");
         return;
       }
 
