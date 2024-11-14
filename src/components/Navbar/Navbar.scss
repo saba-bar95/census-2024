@@ -104,6 +104,7 @@
           background-color: #165ce2;
           color: #ffffff;
           position: relative;
+          transition: transform 0.3s ease;
 
           .tooltip {
             position: absolute;
@@ -124,10 +125,11 @@
           }
 
           &:hover {
-            .tooltip {
-              opacity: 1;
-              pointer-events: auto;
-            }
+            transform: translateX(5px);
+            // .tooltip {
+            //   opacity: 1;
+            //   pointer-events: auto;
+            // }
           }
         }
       }

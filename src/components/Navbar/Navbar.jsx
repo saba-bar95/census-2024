@@ -58,7 +58,11 @@ export default function Navbar() {
               }}>
               {navBarText.vacancies}
             </button>
-            <button className="self-registration--btn">
+            <button
+              className="self-registration--btn"
+              onClick={() => {
+                window.open("https://self-registration.geostat.ge/");
+              }}>
               {navBarText.selfRegistration}
               <span className="tooltip">{navBarText.tooltip}</span>
             </button>
