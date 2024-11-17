@@ -52,6 +52,7 @@
           display: flex;
           justify-content: space-between;
           align-items: center;
+          gap: 5px;
 
           p {
             margin: 0;
@@ -64,13 +65,16 @@
             font-weight: 900;
             font-size: 2em;
             letter-spacing: 0.15em;
+            align-self: start;
+            display: flex;
+            align-items: center;
           }
 
           p.time-left--para {
-            text-align: center;
             flex: 1;
             font-size: 1.5em;
             font-weight: 900;
+            text-align: center;
           }
         }
 
@@ -78,6 +82,7 @@
           padding: 0 30px;
           display: flex;
           gap: 20px;
+          justify-content: center;
 
           h1,
           p {
@@ -175,6 +180,14 @@
         .polygon {
           margin-top: -15px;
         }
+
+        .time-left {
+          .top-side {
+            p.time-left--para {
+              font-size: 1.3em;
+            }
+          }
+        }
       }
 
       .left-side {
@@ -217,7 +230,8 @@
               font-size: 1em;
             }
             p.time-left--para {
-              font-size: 1em;
+              font-size: 0.85em;
+              padding-right: 20px;
             }
           }
         }
@@ -279,7 +293,7 @@
               font-size: 1em;
             }
             p.time-left--para {
-              font-size: 1em;
+              font-size: 0.7em;
             }
           }
           .bottom-side {
