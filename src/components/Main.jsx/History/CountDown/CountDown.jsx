@@ -10,7 +10,7 @@ const CountdownComponent = (page) => {
   const [minutes, setMinutes] = useState(0);
   const [seconds, setSeconds] = useState(0);
 
-  const targetDate = new Date("2024-11-24T00:00:00.000Z");
+  const targetDate = new Date("2025-02-24T00:00:00.000Z");
   targetDate.setUTCHours(targetDate.getUTCHours() - 4);
 
   useEffect(() => {
@@ -36,7 +36,6 @@ const CountdownComponent = (page) => {
         setMinutes(0);
         setSeconds(0);
         clearInterval(intervalId);
-        localStorage.setItem("countdownTime", "0:0:0:0");
         return;
       }
 
