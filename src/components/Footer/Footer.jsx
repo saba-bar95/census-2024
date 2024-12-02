@@ -17,6 +17,10 @@ export default function Footer() {
           <div>
             <p>{text.sakstat}</p>
             <p>+995 32 2 36 72 10 | +995 32 2 60 11 60 </p>
+            <p>ცხელი ხაზი: +995 32 2 50 13 53</p>
+            <p style={{ marginTop: "-10px" }}>
+              (სამუშაო საათები: ყოველდღე - 09:00 - 22:00)
+            </p>
             <p>info@geostat.ge</p>
             <p>{text.address}</p>
           </div>
