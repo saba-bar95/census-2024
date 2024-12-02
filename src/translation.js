@@ -266,6 +266,8 @@ const translations = {
       questionnaries: "კითხვარები",
       methodology: "მეთოდოლოგია",
       results: "შედეგები",
+      hotline1: "ცხელი ხაზი: +995 32 2 50 13 53",
+      hotline2: "(სამუშაო საათები: ყოველდღე - 09:00 - 22:00)",
     },
   },
   en: {
@@ -527,6 +529,8 @@ const translations = {
       questionnaries: "Questionnaires",
       methodology: "Methodology",
       results: "Results",
+      hotline1: "Hotline: +995 32 2 50 13 53",
+      hotline2: "(Working hours: everyday - 09:00 - 22:00)",
     },
 
     navbar: {
