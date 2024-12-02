@@ -278,7 +278,7 @@ const translations = {
           "In accordance with UN recommendations and international practice, censuses are conducted in the country once every 10 years. The last census in Georgia was conducted in 2014. Consequently, the next census is scheduled for 2024.",
         para2:
           "Within the framework of Census, data will be collected from November 14 to December 19, and as the population calculation moment (the moment of the census, according to which the facts will be registered) is set for November 13-14 at 12 o’clock (midnight).",
-        header2: "Time left before Census:",
+        header2: "Time left to complete self-registration",
         header3:
           "Data collection will be conducted in two stages, using combined methods",
         para3:
@@ -509,7 +509,7 @@ const translations = {
         para2:
           "The Census will be conducted in all administrative-territorial units of Georgia, except the occupied territories.",
         countDown: {
-          timeLeft: "Time left before Census",
+          timeLeft: "Time left to complete self-registration",
           day: "Days",
           minute: "Minutes",
           second: "Seconds",
