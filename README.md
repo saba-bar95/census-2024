@@ -7,6 +7,7 @@ Census 2024 serves as an informational portal for Georgians to learn about the i
 - Informational content about the Census 2024
 - User-friendly navigation
 - Responsive design
+- Available in both Georgian and English to cater to a wider audience
 
 ## Built With
 
