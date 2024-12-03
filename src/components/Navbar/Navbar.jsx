@@ -13,59 +13,67 @@ export default function Navbar() {
 
   return (
     <div className="nav-container loading">
-      <nav>
-        <div className="right-side">
-          <Link to={`/${language}`}>
-            <img
-              src={language === "ka" ? sakstatKa : sakstatEn}
-              alt="sakstat"
-              className="sakstat-logo"
-            />
-          </Link>
-          <Link to={`/${language}`} className="census">
-            <img
-              src={language === "ka" ? census : censusEn}
-              alt="census"
-              className="census-logo"
-            />
-          </Link>
-        </div>
-        <div className="left-side">
-          <ul>
-            <li>
-              <Link to={`/${language}`}>{navBarText.main}</Link>
-            </li>
-            <li>
-              <Link to={`/${language}/questionnaires`}>
-                {navBarText.questionnaries}
-              </Link>
-            </li>
-            <li>
-              <Link to={`/${language}/methodology`}>
-                {navBarText.methodology}
-              </Link>
-            </li>
-            <li>
-              <Link to={`/${language}/results`}>{navBarText.results}</Link>
-            </li>
-          </ul>
-          <div className="buttons-container">
-            <button
-              className="vacancies--btn"
-              onClick={(e) => {
-                window.open("https://census-cv.geostat.ge/", "_blank");
-                e.preventDefault();
-              }}>
-              {navBarText.vacancies}
-            </button>
-            <button className="self-registration--btn">
-              {navBarText.selfRegistration}
-              <span className="tooltip">{navBarText.tooltip}</span>
-            </button>
+      <div className="top-side">
+        <nav>
+          <div className="right-side">
+            <Link to={`/${language}`}>
+              <img
+                src={language === "ka" ? sakstatKa : sakstatEn}
+                alt="sakstat"
+                className="sakstat-logo"
+              />
+            </Link>
+            <Link to={`/${language}`} className="census">
+              <img
+                src={language === "ka" ? census : censusEn}
+                alt="census"
+                className="census-logo"
+              />
+            </Link>
           </div>
-          <LanguageChanger />
-        </div>
-      </nav>
+          <div className="left-side">
+            <ul>
+              <li>
+                <Link to={`/${language}`}>{navBarText.main}</Link>
+              </li>
+              <li>
+                <Link to={`/${language}/questionnaires`}>
+                  {navBarText.questionnaries}
+                </Link>
+              </li>
+              <li>
+                <Link to={`/${language}/methodology`}>
+                  {navBarText.methodology}
+                </Link>
+              </li>
+              <li>
+                <Link to={`/${language}/results`}>{navBarText.results}</Link>
+              </li>
+            </ul>
+            <div className="buttons-container">
+              <button
+                className="vacancies--btn"
+                onClick={(e) => {
+                  window.open("https://census-cv.geostat.ge/", "_blank");
+                  e.preventDefault();
+                }}>
+                {navBarText.vacancies}
+              </button>
+              <button className="self-registration--btn">
+                {navBarText.selfRegistration}
+                <span className="tooltip">{navBarText.tooltip}</span>
+              </button>
+            </div>
+            <LanguageChanger />
+          </div>
+        </nav>
+      </div>
+      <div className="bottom-side">
+        <a href="tel:+995322501353">
+          <p>{navBarText.hotline1}</p>
+        </a>
+        <p>{navBarText.hotline2}</p>
+      </div>
     </div>
   );
 }

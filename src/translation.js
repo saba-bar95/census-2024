@@ -253,6 +253,8 @@ const translations = {
       vacancies: "ვაკანსიები",
       selfRegistration: "თვითრეგისტრაცია",
       tooltip: "თვითრეგისტრაცია შესაძლებელია 14 - 23 ნოემბრის პერიოდში",
+      hotline1: "ცხელი ხაზი: +995 32 2 50 13 53",
+      hotline2: "(სამუშაო საათები: ყოველდღე - 09:00 - 22:00)",
     },
 
     footer: {
@@ -543,6 +545,8 @@ const translations = {
       selfRegistration: "Self-registration",
       tooltip:
         "Self-registration will be available from November 14 to November 23.",
+      hotline1: "Hotline: +995 32 2 50 13 53",
+      hotline2: "(Working hours: everyday - 09:00 - 22:00)",
     },
   },
 };

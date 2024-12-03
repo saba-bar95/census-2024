@@ -16,10 +16,36 @@
   top: 0;
   z-index: 1;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  flex-direction: column;
+  gap: 15px;
+
+  .bottom-side {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    color: #fe7155;
+    font-weight: 700;
+
+    p {
+      font-size: 1.3em;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      cursor: pointer;
+      transition: transform 0.3s ease, color 0.3s ease; /* Transition for color and transform */
+
+      &:hover {
+        transform: scale(1.05) translateX(-10px);
+        color: blue;
+      }
+    }
+  }
 
   nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 200px;
 
     .right-side {
@@ -139,6 +165,12 @@
 
 @media only screen and (min-width: $tablet) and (max-width: $desktop) {
   .nav-container {
+    .bottom-side {
+      p {
+        font-size: 1.1em;
+      }
+    }
+
     nav {
       gap: 60px;
 
@@ -176,6 +208,12 @@
 
 @media only screen and (min-width: calc($mobile + 1px)) and (max-width: calc($tablet - 1px)) {
   .nav-container {
+    .bottom-side {
+      p {
+        font-size: 0.9em;
+      }
+    }
+
     nav {
       gap: 20px;
 
@@ -242,6 +280,15 @@
 @media only screen and (min-width: 0) and (max-width: $mobile) {
   .nav-container {
     padding: 15px 80px;
+
+    .bottom-side {
+      flex-direction: column;
+
+      p {
+        font-size: 15px;
+        text-align: center;
+      }
+    }
 
     nav {
       flex-direction: column;
