@@ -35,7 +35,12 @@ export default function Methods() {
               <h2>{text.header4}</h2>
             </div>
             <p>{text.para2}</p>
-            <button className="self-registration--btn">
+            <button
+              className="self-registration--btn"
+              onClick={() => {
+                window.open("https://self-registration.geostat.ge/");
+              }}
+            >
               {text.registration} <img src={vector} alt="" />
               <span className="tooltip">{navBarText.tooltip}</span>
             </button>
