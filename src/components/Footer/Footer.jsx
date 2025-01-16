@@ -16,9 +16,13 @@ export default function Footer() {
           <p className="header">{text.contact}</p>
           <div>
             <p>{text.sakstat}</p>
-            <p>+995 32 2 36 72 10 | +995 32 2 60 11 60 </p>
-            <p>{text.hotline1}</p>
-            <p style={{ marginTop: "-10px" }}>{text.hotline2}</p>
+            <p style={{ display: "none" }}>
+              +995 32 2 36 72 10 | +995 32 2 60 11 60{" "}
+            </p>
+            <p style={{ display: "none" }}>{text.hotline1}</p>
+            <p style={{ marginTop: "-10px", display: "none" }}>
+              {text.hotline2}
+            </p>
             <p>info@geostat.ge</p>
             <p>{text.address}</p>
           </div>

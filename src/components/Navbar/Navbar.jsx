@@ -59,7 +59,9 @@ export default function Navbar() {
                 }}>
                 {navBarText.vacancies}
               </button>
-              <button className="self-registration--btn">
+              <button
+                className="self-registration--btn"
+                style={{ display: "none" }}>
                 {navBarText.selfRegistration}
                 <span className="tooltip">{navBarText.tooltip}</span>
               </button>
@@ -68,7 +70,7 @@ export default function Navbar() {
           </div>
         </nav>
       </div>
-      <div className="bottom-side">
+      <div className="bottom-side" style={{ display: "none" }}>
         <a href="tel:+995322501353">
           <p>{navBarText.hotline1}</p>
         </a>

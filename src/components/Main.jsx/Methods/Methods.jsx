@@ -35,7 +35,9 @@ export default function Methods() {
               <h2>{text.header4}</h2>
             </div>
             <p>{text.para2}</p>
-            <button className="self-registration--btn">
+            <button
+              className="self-registration--btn"
+              style={{ display: "none" }}>
               {text.registration} <img src={vector} alt="" />
               <span className="tooltip">{navBarText.tooltip}</span>
             </button>
