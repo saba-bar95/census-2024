@@ -56,16 +56,10 @@ export default function Navbar() {
                 onClick={(e) => {
                   window.open("https://census-cv.geostat.ge/", "_blank");
                   e.preventDefault();
-                }}
-              >
+                }}>
                 {navBarText.vacancies}
               </button>
-              <button
-                className="self-registration--btn"
-                onClick={() => {
-                  window.open("https://self-registration.geostat.ge/");
-                }}
-              >
+              <button className="self-registration--btn">
                 {navBarText.selfRegistration}
                 <span className="tooltip">{navBarText.tooltip}</span>
               </button>
