@@ -52,14 +52,6 @@ export default function Navbar() {
             </ul>
             <div className="buttons-container">
               <button
-                className="vacancies--btn"
-                onClick={(e) => {
-                  window.open("https://census-cv.geostat.ge/", "_blank");
-                  e.preventDefault();
-                }}>
-                {navBarText.vacancies}
-              </button>
-              <button
                 className="self-registration--btn"
                 style={{ display: "none" }}>
                 {navBarText.selfRegistration}
