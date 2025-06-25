@@ -76,7 +76,7 @@ export default function Results() {
               <li onClick={handleDownloadThird}>{links[language].third}</li>
               {language === "ka" && (
                 <li onClick={handleDownloadFourth}>
-                  2024 წლის მოსახლეობის აღწერის წინასწარი შედეგები
+                  2024 წლის მოსახლეობის აღწერის წინასწარი შედეგები (პრეზენტაცია)
                 </li>
               )}
             </ul>
