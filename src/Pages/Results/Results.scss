@@ -3,16 +3,32 @@
 .results-container {
   display: flex;
   flex-direction: column;
-  gap: 50px;
-  padding: 100px;
+  gap: 30px;
+  padding: 50px 100px;
 
   background-color: #f1f5f9;
   height: 100vh;
 
   h1 {
     line-height: 50px;
+    font-size: 1.4em;
     width: 80%;
     margin: 0 auto;
+    text-align: center;
+  }
+
+  .links {
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin: auto;
+      width: max-content;
+
+      li {
+        cursor: pointer;
+      }
+    }
   }
 }
 

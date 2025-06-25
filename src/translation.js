@@ -58,8 +58,7 @@ const translations = {
       },
 
       results: {
-        header:
-          "აღწერის წინასწარი შედეგები ხელმისაწვდომი იქნება 2025 წლის ივნისში, ხოლო საბოლოო შედეგები - 2026 წლის ივნისში",
+        header: "საქართველოს 2024 წლის მოსახლეობის აღწერის წინასწარი შედეგები",
       },
 
       methodology: {
@@ -332,8 +331,7 @@ const translations = {
       },
 
       results: {
-        header:
-          "Preliminary results of the census will be in June 2025, and final results in June 2026",
+        header: "2024 Population Census of Georgia Preliminary results",
       },
 
       methodology: {
