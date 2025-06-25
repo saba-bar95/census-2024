@@ -25,14 +25,18 @@ export default function Results() {
     },
   };
 
+  console.log(language);
+
   const handleDownload = () => {
-    const fileName = language === "ka" ? "census_geo.pdf" : "census.pdf";
-    const link = document.createElement("a");
-    link.href = `/${fileName}`;
-    link.download =
+    const fileName =
       language === "ka"
-        ? "საქართველოს 2024 წლის მოსახლეობის და სასოფლო-სამეურნეო აღწერის წინასწარი შედეგები"
-        : "2024 Population and Agricultural Census of Georgia Preliminary results";
+        ? "საქართველოს 2024 წლის მოსახლეობის და სასოფლო-სამეურნეო აღწერის წინასწარი შედეგები.pdf"
+        : "2024 Population and Agricultural Census of Georgia Preliminary results.pdf";
+
+    const link = document.createElement("a");
+    link.href = `/${encodeURIComponent(fileName)}`;
+    link.download = fileName;
+
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
