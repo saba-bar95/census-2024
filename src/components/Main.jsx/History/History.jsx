@@ -105,13 +105,18 @@ export default function History() {
 
         <div className="years-container">
           {censusYears.map((year) => {
+            const is1897 = year === 1897;
+
             return (
-              <div className="years-child" key={year}>
+              <div
+                className="years-child"
+                key={year}
+                style={is1897 ? { flex: 0 } : {}}>
                 <div className="text">
                   <p className="dot">•</p>
                   <p className="year">{year}</p>
                 </div>
-                {year !== 1897 && <div className="border-container"></div>}
+                {!is1897 && <div className="border-container"></div>}
               </div>
             );
           })}
