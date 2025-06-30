@@ -217,7 +217,7 @@ const translations = {
       history: {
         header: "აღწერა 2024",
         firsPara:
-          "2024 წლის 14 ნოემბრიდან 19 დეკემბრის ჩათვლით საქართველოში მოსახლეობის და სასოფლო-სამეურნეო აღწერა ტარდება.",
+          "2024 წლის 14 ნოემბრიდან 19 დეკემბრის ჩათვლით საქართველოში მოსახლეობის და სასოფლო-სამეურნეო აღწერა ჩატარდა.",
         para2:
           "აღწერა ტარდება საქართველოს ყველა ადმინისტრაციულ - ტერიტორიულ ერთეულში, გარდა ოკუპირებული ტერიტორიებისა",
         countDown: {
@@ -505,7 +505,7 @@ const translations = {
       history: {
         header: "Census 2024",
         firsPara:
-          "The Population and Agricultural Census in Georgia is conducted from November 14 to December 19, 2024.",
+          "The Population and Agricultural Census in Georgia was conducted from November 14 to December 19, 2024.",
         para2:
           "The Census will be conducted in all administrative-territorial units of Georgia, except the occupied territories.",
         countDown: {

@@ -15,6 +15,7 @@
   .history-container {
     display: flex;
     justify-content: space-around;
+    gap: 20px;
 
     .right-side {
       margin-top: 100px;
@@ -23,6 +24,11 @@
       flex-direction: column;
       flex: 1;
       justify-content: center;
+
+      .para-container {
+        width: max-content;
+        max-width: 450px;
+      }
 
       h1 {
         color: #ffffff;
@@ -144,16 +150,16 @@
 
       .text {
         position: relative;
+      }
 
-        p.dot {
-          font-size: 1.5em;
-        }
+      p.dot {
+        font-size: 1.5em;
+      }
 
-        p.year {
-          position: absolute;
-          transform: translateX(-12px);
-          font-size: 1.3em;
-        }
+      p.year {
+        position: absolute;
+        transform: translateX(-12px);
+        font-size: 1.3em;
       }
     }
   }
@@ -207,6 +213,10 @@
         margin-top: 40px;
         max-width: 350px;
 
+        .para-container {
+          max-width: 250px;
+        }
+
         h1 {
           font-size: 22px;
         }
@@ -214,10 +224,6 @@
         p {
           font-size: 12px;
           line-height: 20px;
-        }
-
-        .para-container {
-          width: 80%;
         }
 
         .time-left {
