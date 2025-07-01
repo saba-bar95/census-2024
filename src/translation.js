@@ -6,12 +6,14 @@ const translations = {
         para1:
           "გაეროს რეკომენდაციებისა და საერთაშორისო პრაქტიკის შესაბამისად, აღწერები ქვეყანაში ტარდება 10 წელიწადში ერთხელ. საქართველოში წინა აღწერა 2014 წელს ჩატარდა. შესაბამისად, ბოლო აღწერა 2024 წელს ჩატარდა.",
         para2:
-          "აღწერის ფარგლებში მონაცემები შეგროვდა 14 ნოემბრიდან 31 დეკემბრის ჩათვლით პერიოდში, ხოლო მოსახლეობის გამოთვლის მომენტად (აღწერის კრიტიკული მომენტი, რომლის მიხედვითაც მოხდება ფაქტების რეგისტრაცია) განისაზღვრა 13-14 ნოემბრის ღამის 12 საათი.",
+          "აღწერის ფარგლებში მონაცემები შეგროვდა 14 ნოემბრიდან 31 დეკემბრის ჩათვლით პერიოდში, ხოლო მოსახლეობის გამოთვლის მომენტად (აღწერის კრიტიკული მომენტი, რომლის მიხედვითაც მოხდა ფაქტების რეგისტრაცია) განისაზღვრა 13-14 ნოემბრის ღამის 12 საათი.",
         header2: "თვითრეგისტრაციის დასრულებამდე დარჩა:",
         para3:
-          "მონაცემთა შეგროვება განხორციელდა ორ ეტაპად, კომბინირებული მეთოდით. 14 - 23 ნოემბრის პერიოდში (10 დღე) და 19 -31 დეკემბერის პერიოდში (13 დღე) მონაცემები შეგროვდა თვითრეგისტრაციის მეთოდით (CAWI), რომლის ფარგლებშიც რესპოდენტებს ჰქონდათ შესაძლებლობა დამოუკიდებლად შეევსოთ ელექტრონული კითხვარი.",
+          ", 14 - 23 ნოემბრის პერიოდში (10 დღე) და 19 -31 დეკემბერის პერიოდში (13 დღე) მონაცემები შეგროვდა თვითრეგისტრაციის მეთოდით (CAWI), რომლის ფარგლებშიც რესპოდენტებს ჰქონდათ შესაძლებლობა დამოუკიდებლად შეევსოთ ელექტრონული კითხვარი.",
         para4:
-          "ხოლო, 29 ნოემბრიდან - 31 დეკემბრის ჩათვლით პერიოდში (33 დღე), მონაცემები შეგროვდა საქსტატის ინტერვიუერების მიერ, კარდაკარის პრინციპით, პლანშეტური კომპიუტერის გამოყენებით (CAPI).",
+          ", 29 ნოემბრიდან - 31 დეკემბრის ჩათვლით პერიოდში (33 დღე), მონაცემები შეგროვდა საქსტატის ინტერვიუერების მიერ, კარდაკარის პრინციპით, პლანშეტური კომპიუტერის გამოყენებით (CAPI).",
+        span1: "პირველ ეტაპზე",
+        span2: "მეორე ეტაპზე",
       },
 
       legal: {
@@ -140,7 +142,7 @@ const translations = {
     main: {
       methods: {
         header1: "მონაცემთა შეგროვების მეთოდები",
-        header2: "2024 წლის აღწერის ფარგლებში მონაცემთა შეგროვდა ორი მეთოდით:",
+        header2: "2024 წლის აღწერის ფარგლებში მონაცემები შეგროვდა ორი მეთოდით:",
         header3: "კომპიუტერის დახმარებით - პერსონალური ინტერვიუს მეთოდი (CAPI)",
         header4: "კომპიუტერის დახმარებით - ვებ-ინტერვიუს მეთოდი (CAWI)",
         para1:
@@ -216,7 +218,7 @@ const translations = {
       history: {
         header: "აღწერა 2024",
         firsPara:
-          "2024 წლის 14 ნოემბრიდან 19 დეკემბრის ჩათვლით საქართველოში მოსახლეობის და სასოფლო-სამეურნეო აღწერა ჩატარდა.",
+          "2024 წლის 14 ნოემბრიდან 31 დეკემბრის ჩათვლით პერიოდში საქართველოში მოსახლეობის და სასოფლო-სამეურნეო აღწერა ჩატარდა.",
         para2:
           "აღწერა ტარდება საქართველოს ყველა ადმინისტრაციულ - ტერიტორიულ ერთეულში, გარდა ოკუპირებული ტერიტორიებისა",
         countDown: {
@@ -282,11 +284,11 @@ const translations = {
         header3:
           "Data collection was conducted in two stages, using combined methods",
         para3:
-          "In the first stage, from November 14-23 (10 days) and from December 19-31 (13 days), data was collected through self-registration – Computer-Assisted Web Interviewing (CAWI). During these periods, respondents had the opportunity to independently complete an electronic questionnaire",
+          ", from November 14-23 (10 days) and from December 19-31 (13 days), data was collected through self-registration – Computer-Assisted Web Interviewing (CAWI). During these periods, respondents had the opportunity to independently complete an electronic questionnaire",
         para4:
-          "In the second stage, from November 29 to December 31 (33 days), data was collected by Geostat interviewers using a door-to-door method with tablet computers – Computer-Assisted Personal Interview (CAPI).",
-        span1: "In the first stage ",
-        span2: "In the second stage ",
+          ", from November 29 to December 31 (33 days), data was collected by Geostat interviewers using a door-to-door method with tablet computers – Computer-Assisted Personal Interview (CAPI).",
+        span1: "In the first stage",
+        span2: "In the second stage",
       },
 
       legal: {
@@ -319,9 +321,9 @@ const translations = {
           "In order to optimize the use funds and human resources, and considering that agricultural activity and  products production in Georgia are mainly carried out in the household sector, an Agricultural Census was conducted together with the Population Census.",
         header3: "2024 Census goals",
         para3:
-          "As part of the Census, the data was collected on population size, age and sex structure, various demographic and socio-economic characteristics. Also, the census includes both housing and institutional facilities, where people actually live, as well as homeless persons and nomadic groups who are living in the territory of the country at the moment of the census.",
+          "As part of the Census, the data was collected on population size, age and sex structure, various demographic and socio-economic characteristics.",
         para6:
-          "In addition, as part of the Census, the information on the agricultural activity of households, including the structure of land owned by households, the number of livestock and poultry, and other important issues was collected.",
+          "Also, the census includes both housing and institutional facilities, where people actually live, as well as homeless persons and nomadic groups who are living in the territory of the country at the moment of the census. In addition, as part of the Census, the information on the agricultural activity of households, including the structure of land owned by households, the number of livestock and poultry, and other important issues was collected.",
         heade4: "Objectives of the 2024 Census",
         para4:
           "Based on the results of the census, accurate and updated data will be available on population size, age and sex structure, various demographic and socio-economic characteristics, as well as on the agricultural activity of households at the level of self-governing units and settlements.",
