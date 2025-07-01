@@ -70,8 +70,8 @@
 
     .wrapper {
       margin: 40px;
-      gap: 50px;
       display: flex;
+      justify-content: center;
 
       .left-side {
         position: relative;
@@ -79,7 +79,7 @@
         display: flex;
         flex-direction: column;
         align-items: start;
-        max-width: 600px;
+        max-width: 40%;
         padding: 30px;
         border-radius: 35px;
         gap: 15px;
@@ -127,7 +127,7 @@
 
       .wrapper {
         .left-side {
-          max-width: 400px;
+          max-width: 300px;
         }
       }
     }
@@ -168,7 +168,7 @@
 
         .left-side {
           width: 70%;
-          max-width: 400px;
+          max-width: 300px;
           margin: auto;
           max-height: 500px;
           padding: 25px;

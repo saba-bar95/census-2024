@@ -64,9 +64,9 @@ export default function Settlements() {
               <p>{settlements[selected]["units"]}</p>
             )}
           </div>
-          <div className="right-side">
+          {/* <div className="right-side">
             <GoogleMap location={selectedLocation} key={apiKey} />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

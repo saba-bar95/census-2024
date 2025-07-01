@@ -25,10 +25,10 @@ export default function Date() {
               <img src={language === "ka" ? image1 : dateEn} alt="" />
             </div>
             <p>{text.para2}</p>
-            <p className="header">{text.header2}</p>
+            {/* <p className="header">{text.header2}</p> */}
             <div className="container">
               <img src={image2} alt="" />
-              <CountdownComponent page={true} />
+              {/* <CountdownComponent page={true} /> */}
             </div>
             <p className="header">{text.header3}</p>
             <p>

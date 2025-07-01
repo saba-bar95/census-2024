@@ -4,14 +4,14 @@ const translations = {
       date: {
         header: "აღწერის ჩატარების თარიღი",
         para1:
-          "გაეროს რეკომენდაციებისა და საერთაშორისო პრაქტიკის შესაბამისად, აღწერები ქვეყანაში ტარდება 10 წელიწადში ერთხელ. საქართველოში უკანასკნელი აღწერა 2014 წელს ჩატარდა. შესაბამისად, მომდევნო აღწერა 2024 წელსაა დაგეგმილი.",
+          "გაეროს რეკომენდაციებისა და საერთაშორისო პრაქტიკის შესაბამისად, აღწერები ქვეყანაში ტარდება 10 წელიწადში ერთხელ. საქართველოში წინა აღწერა 2014 წელს ჩატარდა. შესაბამისად, ბოლო აღწერა 2024 წელს ჩატარდა.",
         para2:
-          "აღწერის ფარგლებში მონაცემები შეგროვდება 14 ნოემბრიდან 19 დეკემბრის ჩათვლით პერიოდში, ხოლო მოსახლეობის გამოთვლის მომენტად (აღწერის კრიტიკული მომენტი, რომლის მიხედვითაც მოხდება ფაქტების რეგისტრაცია) განსაზღვრულია 13-14 ნოემბრის ღამის 12 საათი.",
+          "აღწერის ფარგლებში მონაცემები შეგროვდა 14 ნოემბრიდან 31 დეკემბრის ჩათვლით პერიოდში, ხოლო მოსახლეობის გამოთვლის მომენტად (აღწერის კრიტიკული მომენტი, რომლის მიხედვითაც მოხდება ფაქტების რეგისტრაცია) განისაზღვრა 13-14 ნოემბრის ღამის 12 საათი.",
         header2: "თვითრეგისტრაციის დასრულებამდე დარჩა:",
         para3:
-          "მონაცემთა შეგროვება განხორციელდება ორ ეტაპად, კომბინირებული მეთოდით. პირველ ეტაპზე, 14 - 23 ნოემბრის პერიოდში (10 დღე) მონაცემები შეგროვდება თვითრეგისტრაციის მეთოდით (CAWI), რომლის ფარგლებშიც რესპოდენტებს ექნებათ შესაძლებლობა დამოუკიდებლად შეავსონ ელექტრონული კითხვარი.",
+          "მონაცემთა შეგროვება განხორციელდა ორ ეტაპად, კომბინირებული მეთოდით. 14 - 23 ნოემბრის პერიოდში (10 დღე) და 19 -31 დეკემბერის პერიოდში (13 დღე) მონაცემები შეგროვდა თვითრეგისტრაციის მეთოდით (CAWI), რომლის ფარგლებშიც რესპოდენტებს ჰქონდათ შესაძლებლობა დამოუკიდებლად შეევსოთ ელექტრონული კითხვარი.",
         para4:
-          "ხოლო მეორე ეტაპზე, 29 ნოემბრიდან - 19 დეკემბრის ჩათვლით პერიოდში (21 დღე), მონაცემები შეგროვდება საქსტატის ინტერვიუერების მიერ, კარდაკარის პრინციპით, პლანშეტური კომპიუტერის გამოყენებით (CAPI).",
+          "ხოლო, 29 ნოემბრიდან - 31 დეკემბრის ჩათვლით პერიოდში (33 დღე), მონაცემები შეგროვდა საქსტატის ინტერვიუერების მიერ, კარდაკარის პრინციპით, პლანშეტური კომპიუტერის გამოყენებით (CAPI).",
       },
 
       legal: {
@@ -41,15 +41,15 @@ const translations = {
       goals: {
         header: "2024 წლის აღწერის მიზნები და ამოცანები",
         para1:
-          "2024 წლის აღწერა ტარდება საქართველოს ყველა ადმინისტრაციულ - ტერიტორიულ ერთეულში, გარდა ოკუპირებული ტერიტორიებისა, მოსახლეობის და სასოფლო მეურნეობების შესახებ ზუსტი მონაცემების მისაღებად, რაც აუცილებელია ქვეყნის სოციალურ-ეკონომიკური განვითარების პრიორიტეტების განსაზღვრისა და საზოგადოების ინფორმირების მიზნით.",
+          "2024 წლის აღწერა ჩატარდა საქართველოს ყველა ადმინისტრაციულ - ტერიტორიულ ერთეულში, გარდა ოკუპირებული ტერიტორიებისა, მოსახლეობის და სასოფლო მეურნეობების შესახებ ზუსტი მონაცემების მისაღებად, რაც აუცილებელია ქვეყნის სოციალურ-ეკონომიკური განვითარების პრიორიტეტების განსაზღვრისა და საზოგადოების ინფორმირების მიზნით.",
         header2: "სასოფლო-სამეურნეო აღწერა",
         para2:
-          "დანახარჯებისა და ადამიანური რესურსების ოპტიმალურად გამოყენების მიზნით, ასევე, იმის გათვალისწინებით, რომ საქართველოში სასოფლო-სამეურნეო აქტივობა და პროდუქციის წარმოება ძირითადად ხორციელდება შინამეურნეობების სექტორში, მოსახლეობის აღწერასთან ერთად ჩატარდება სასოფლო-სამეურნეო აღწერაც.",
+          "დანახარჯებისა და ადამიანური რესურსების ოპტიმალურად გამოყენების მიზნით, ასევე, იმის გათვალისწინებით, რომ საქართველოში სასოფლო-სამეურნეო აქტივობა და პროდუქციის წარმოება ძირითადად ხორციელდება შინამეურნეობების სექტორში, მოსახლეობის აღწერასთან ერთად ჩატარდა სასოფლო-სამეურნეო აღწერაც.",
         header3: "აღწერა 2024-ის მიზნები",
         para3:
-          "აღწერის ფარგლებში შეგროვდება მონაცემები მოსახლეობის რიცხოვნობის, მისი სქესობრივ-ასაკობრივი შემადგენლობის, სხვადასხვა დემოგრაფიული და სოციალურ-ეკონომიკური მახასიათებლების მიხედვით.",
+          "აღწერის ფარგლებში შეგროვდა მონაცემები მოსახლეობის რიცხოვნობის, მისი სქესობრივ-ასაკობრივი შემადგენლობის, სხვადასხვა დემოგრაფიული და სოციალურ-ეკონომიკური მახასიათებლების მიხედვით.",
         para6:
-          "ასევე, აღწერა მოიცავს როგორც საცხოვრისებში და ინსტიტუციონალურ დაწესებულებებში მცხოვრებ მუდმივ მოსახლეობას, ისე უსახლკარო პირებს და მომთაბარე ჯგუფებს, რომლებიც აღწერის კრიტიკული მომენტისთვის მუდმივად ცხოვრობენ ქვეყნის ტერიტორიაზე. ამასთან, აღწერის ფარგლებში შეგროვდება ინფორმაცია, შინამეურნეობების სასოფლო-სამეურნეო აქტივობის შესახებ, კერძოდ, შინამეურნეობების სარგებლობაში არსებული მიწის სტრუქტურის, პირუტყვისა და ფრინველის სულადობის და სხვა მნიშვნელოვანი საკითხების შესახებ.",
+          "ასევე, აღწერა მოიცავს როგორც საცხოვრისებში და ინსტიტუციონალურ დაწესებულებებში მცხოვრებ მუდმივ მოსახლეობას, ისე უსახლკარო პირებს და მომთაბარე ჯგუფებს, რომლებიც აღწერის კრიტიკული მომენტისთვის მუდმივად ცხოვრობენ ქვეყნის ტერიტორიაზე. ამასთან, აღწერის ფარგლებში შეგროვდა ინფორმაცია, შინამეურნეობების სასოფლო-სამეურნეო აქტივობის შესახებ, კერძოდ, შინამეურნეობების სარგებლობაში არსებული მიწის სტრუქტურის, პირუტყვისა და ფრინველის სულადობის და სხვა მნიშვნელოვანი საკითხების შესახებ.",
         heade4: "აღწერა 2024-ის ამოცანები",
         para4:
           "აღწერის შედეგების საფუძველზე ხელმისაწვდომი იქნება ზუსტი და განახლებული მონაცემები როგორც მოსახლეობის რაოდენობის, მისი სქესობრივ-ასაკობრივი შემადგენლობის, სხვადასხვა დემოგრაფიული, სოციალურ-ეკონომიკური მახასიათებლების მიხედვით, ასევე შინამეურნეობების სასოფლო-სამეურნეო აქტივობის შესახებ, თვითმმართველი ერთეულებისა და დასახლებების დონეზე.",
@@ -140,8 +140,7 @@ const translations = {
     main: {
       methods: {
         header1: "მონაცემთა შეგროვების მეთოდები",
-        header2:
-          "2024 წლის აღწერის ფარგლებში მონაცემთა შეგროვება დაგეგმილია ორი მეთოდით:",
+        header2: "2024 წლის აღწერის ფარგლებში მონაცემთა შეგროვდა ორი მეთოდით:",
         header3: "კომპიუტერის დახმარებით - პერსონალური ინტერვიუს მეთოდი (CAPI)",
         header4: "კომპიუტერის დახმარებით - ვებ-ინტერვიუს მეთოდი (CAWI)",
         para1:
@@ -180,7 +179,7 @@ const translations = {
 
       date: {
         header: "აღწერის ჩატარების თარიღი",
-        para: "გაეროს რეკომენდაციებისა და საერთაშორისო პრაქტიკის შესაბამისად, აღწერები ქვეყანაში ტარდება 10 წელიწადში ერთხელ. საქართველოში უკანასკნელი აღწერა 2014 წელს ჩატარდა. შესაბამისად, მომდევნო აღწერა 2024 წელსაა დაგეგმილი.",
+        para: "გაეროს რეკომენდაციებისა და საერთაშორისო პრაქტიკის შესაბამისად, აღწერები ქვეყანაში ტარდება 10 წელიწადში ერთხელ. საქართველოში წინა აღწერა 2014 წელს ჩატარდა. შესაბამისად, ბოლო აღწერა 2024 წელს ჩატარდა.",
         more: "სრულად",
       },
 
@@ -232,9 +231,9 @@ const translations = {
       goals: {
         header: "2024 წლის აღწერის მიზნები და ამოცანები",
         para1:
-          "აღწერის ფარგლებში შეგროვდება მონაცემები მოსახლეობის რიცხოვნობისა და სქესობრივ-ასაკობრივი შემადგენლობის შესახებ, სხვადასხვა დემოგრაფიული და სოციალურ-ეკონომიკური მახასიათებლების მიხედვით.",
+          "აღწერის ფარგლებში შეგროვდა მონაცემები მოსახლეობის რიცხოვნობისა და სქესობრივ-ასაკობრივი შემადგენლობის შესახებ, სხვადასხვა დემოგრაფიული და სოციალურ-ეკონომიკური მახასიათებლების მიხედვით.",
         para2:
-          "აღწერის ფარგლებში ასევე შეგროვდება ინფორმაცია, შინამეურნეობების სასოფლო-სამეურნეო აქტივობის შესახებ - მიწის სტრუქტურის, მრავალწლიანი ნარგავების და ვაზის ჯიშთა რაოდენობის, პირუტყვისა და ფრინველის სულადობის, ფუტკრის ოჯახების რაოდენობისა და სხვა მნიშვნელოვანი საკითხების შესახებ.",
+          "აღწერის ფარგლებში ასევე შეგროვდა ინფორმაცია, შინამეურნეობების სასოფლო-სამეურნეო აქტივობის შესახებ - მიწის სტრუქტურის, მრავალწლიანი ნარგავების და ვაზის ჯიშთა რაოდენობის, პირუტყვისა და ფრინველის სულადობის, ფუტკრის ოჯახების რაოდენობისა და სხვა მნიშვნელოვანი საკითხების შესახებ.",
         para3:
           "აღწერის შედეგად ხელმისაწვდომი იქნება უახლესი მონაცემები თვითმმართველი ერთეულებისა და დასახლებების დონეზე.",
         para4:
@@ -276,16 +275,16 @@ const translations = {
       date: {
         header: "The date of the census",
         para1:
-          "In accordance with UN recommendations and international practice, censuses are conducted in the country once every 10 years. The last census in Georgia was conducted in 2014. Consequently, the next census is scheduled for 2024.",
+          "In accordance with UN recommendations and international practice, censuses are conducted in the country once every 10 years. The previous census in Georgia was conducted in 2014. Accordingly, the last census was conducted in 2024.",
         para2:
-          "Within the framework of Census, data will be collected from November 14 to December 19, and as the population calculation moment (the moment of the census, according to which the facts will be registered) is set for November 13-14 at 12 o’clock (midnight).",
+          "Within the framework of the Census, data was collected from November 14 to December 31. The population calculation moment (the critical moment of the census, according to which facts were registered) was set for midnight on November 13-14.",
         header2: "Time left to complete self-registration",
         header3:
-          "Data collection will be conducted in two stages, using combined methods",
+          "Data collection was conducted in two stages, using combined methods",
         para3:
-          "from November 14-23 (10 days) the data will be collected through self-registration -  Computer-Assisted Web Interviewing (CAWI), during which respondents will have the opportunity to independently complete an electronic questionnaire.",
+          "In the first stage, from November 14-23 (10 days) and from December 19-31 (13 days), data was collected through self-registration – Computer-Assisted Web Interviewing (CAWI). During these periods, respondents had the opportunity to independently complete an electronic questionnaire",
         para4:
-          "from November 29 to December 19 (21 days), the data will be collected by the Geostat interviewers through door-to-door method, using tablets - computer-assisted personal interview (CAPI).",
+          "In the second stage, from November 29 to December 31 (33 days), data was collected by Geostat interviewers using a door-to-door method with tablet computers – Computer-Assisted Personal Interview (CAPI).",
         span1: "In the first stage ",
         span2: "In the second stage ",
       },
@@ -314,15 +313,15 @@ const translations = {
       goals: {
         header: "Objectives and Goals of the 2024 Census",
         para1:
-          "The 2024 Census will be conducted in all administrative-territorial units of Georgia, except the occupied territories, in order to obtain accurate data on the Population and Agricultural holdings. Collecting data is necessary to determine the country's socio-economic development priorities and inform the public.",
+          "The 2024 Census was conducted in all administrative-territorial units of Georgia, except the occupied territories, in order to obtain accurate data on the Population and Agricultural holdings. Collecting data is necessary to determine the country's socio-economic development priorities and inform the public.",
         header2: "Agricultural census",
         para2:
-          "In order to optimize the use funds and human resources, and considering that agricultural activity and  products production in Georgia are mainly carried out in the household sector, an Agricultural Census will be conducted together with the Population Census.",
+          "In order to optimize the use funds and human resources, and considering that agricultural activity and  products production in Georgia are mainly carried out in the household sector, an Agricultural Census was conducted together with the Population Census.",
         header3: "2024 Census goals",
         para3:
-          "As part of the Census, the data will be collected on population size, age and sex structure, various demographic and socio-economic characteristics. Also, the census includes both housing and institutional facilities, where people actually live, as well as homeless persons and nomadic groups who are living in the territory of the country at the moment of the census.",
+          "As part of the Census, the data was collected on population size, age and sex structure, various demographic and socio-economic characteristics. Also, the census includes both housing and institutional facilities, where people actually live, as well as homeless persons and nomadic groups who are living in the territory of the country at the moment of the census.",
         para6:
-          "In addition, as part of the Census, the information on the agricultural activity of households, including the structure of land owned by households, the number of livestock and poultry, and other important issues will be collected.",
+          "In addition, as part of the Census, the information on the agricultural activity of households, including the structure of land owned by households, the number of livestock and poultry, and other important issues was collected.",
         heade4: "Objectives of the 2024 Census",
         para4:
           "Based on the results of the census, accurate and updated data will be available on population size, age and sex structure, various demographic and socio-economic characteristics, as well as on the agricultural activity of households at the level of self-governing units and settlements.",
@@ -415,7 +414,7 @@ const translations = {
       methods: {
         header1: "Methods of data collection",
         header2:
-          "Within the framework of the 2024 Census, data collection is planned by two methods:",
+          "Within the framework of the 2024 Census, data was collected by two methods:",
         header3: "Computer-assisted personal interview (CAPI) ",
         header4: "Computer-Assisted Web Interviewing (CAWI)",
         para1:
@@ -454,7 +453,7 @@ const translations = {
 
       date: {
         header: "Date of the Census",
-        para: "In accordance with UN recommendations and international practice, censuses are conducted in the country once every 10 years. The last census in Georgia was conducted in 2014. Consequently, the next census is scheduled for 2024.",
+        para: "In accordance with UN recommendations and international practice, censuses are conducted in the country once every 10 years. The previous census in Georgia was conducted in 2014. Accordingly, the last census was conducted in 2024.",
         more: "Read Fully",
       },
 
@@ -492,9 +491,9 @@ const translations = {
       goals: {
         header: "Goals and Objectives of the 2024 Census",
         para1:
-          "As part of the Census, the data will be collected on population size, age and sex structure, various demographic and socio-economic characteristics.",
+          "As part of the Census, the data was collected on population size, age and sex structure, various demographic and socio-economic characteristics.",
         para2:
-          "In addition, as part of the Census, the information on the agricultural activity of households, including the structure of land owned by households, permanent crops and wine species, the number of livestock and poultry, and other important issues will be collected.",
+          "In addition, as part of the Census, the information on the agricultural activity of households, including the structure of land owned by households, permanent crops and wine species, the number of livestock and poultry, and other important issues was collected.",
         para3:
           "As a result of the Census, accurate and updated data will be available at the level of self-governing units and settlements.",
         para4:
@@ -505,7 +504,7 @@ const translations = {
       history: {
         header: "Census 2024",
         firsPara:
-          "The Population and Agricultural Census in Georgia was conducted from November 14 to December 19, 2024.",
+          "The Population and Agricultural Census in Georgia was conducted from November 14 to December 31, 2024.",
         para2:
           "The Census will be conducted in all administrative-territorial units of Georgia, except the occupied territories.",
         countDown: {
